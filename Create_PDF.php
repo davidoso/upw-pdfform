@@ -74,7 +74,7 @@ try {
     }
 
     // Download PDF ('i' to open file on another tab)
-    $pdf->Output('Ficha SIGEPRO.pdf', 'i');
+    $pdf->Output('Sample PDF.pdf', 'i');
 } // try
 catch(PDOException $e) {
     echo 'ERROR: ' . $e->getMessage();
