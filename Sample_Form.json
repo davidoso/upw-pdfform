@@ -1,0 +1,117 @@
+[
+  {
+    "type" : "text",
+    "title" : "Text Input",
+    "value" : "Mojan"
+  },
+  {
+    "type" : "text",
+    "title" : "Date",
+    "value" : "Aug 13, 2019"
+  },
+  {
+    "type" : "geo",
+    "title" : "Geo Location",
+    "value" : "VentureX"
+  },
+  {
+    "type" : "text",
+    "title" : "Email",
+    "value" : "tom@aol.com"
+  },
+  {
+    "type" : "text",
+    "title" : "Password",
+    "value" : "asdfg"
+  },
+  {
+    "type" : "text",
+    "title" : "Number",
+    "value" : "53"
+  },
+  {
+    "type" : "file",
+    "title" : "Photo Upload",
+    "value" : [
+      {
+        "lrImageURL" : "https:\/\/19b5bf454221a3009503-837ce6cc4941d82f7e9704a4735379b2.ssl.cf1.rackcdn.com\/ffc3279b663d.jpg"
+      },
+      {
+        "lrImageURL" : "https:\/\/19b5bf454221a3009503-837ce6cc4941d82f7e9704a4735379b2.ssl.cf1.rackcdn.com\/695dd5058348.jpg"
+      },
+      {
+        "lrImageURL" : "https:\/\/19b5bf454221a3009503-837ce6cc4941d82f7e9704a4735379b2.ssl.cf1.rackcdn.com\/833cd79c2f53.jpg"
+      }
+    ]
+  },
+  {
+    "type" : "dropdownmultiple",
+    "title" : "Select Multiple",
+    "value" : [
+      "Blue",
+      "Green"
+    ]
+  },
+  {
+    "type" : "comment",
+    "title" : "Text Box",
+    "value" : "Jsjd"
+  },
+  {
+    "type" : "radiogroup",
+    "title" : "Radio Group",
+    "value" : "No"
+  },
+  {
+    "type" : "comment",
+    "title" : "Text Box",
+    "value" : "JJ JD"
+  },
+  {
+    "type" : "radiogroup",
+    "title" : "Radio Group",
+    "value" : "Yes"
+  },
+  {
+    "title" : "Weather",
+    "type" : "comment",
+    "value" : "\r\nWeather condition is Partly Cloudy with temperature of 89.1 F (31.72 C) and wind from the N at 5.86 MPH. Currently there is no precipitation reported."
+  },
+  {
+    "title" : "Sketch",
+    "type" : "sketch",
+    "value" : {
+      "lrImageURL" : "https:\/\/19b5bf454221a3009503-837ce6cc4941d82f7e9704a4735379b2.ssl.cf1.rackcdn.com\/88eac2243ee8.jpg"
+    }
+  },
+  {
+    "type" : "signaturepad",
+    "title" : "Signature",
+    "value" : {
+      "lrImageURL" : "https:\/\/19b5bf454221a3009503-837ce6cc4941d82f7e9704a4735379b2.ssl.cf1.rackcdn.com\/b4357c30dfbc.jpg"
+    }
+  },
+  {
+    "type" : "dropdown",
+    "title" : "Select",
+    "value" : "Blue"
+  },
+  {
+    "type" : "checkbox",
+    "title" : "Checkboxes",
+    "value" : [
+      "Blue",
+      "Black"
+    ]
+  },
+  {
+    "type" : "url",
+    "title" : "URL",
+    "value" : "http:\/\/www.yourwebsite.com"
+  },
+  {
+    "type" : "text",
+    "title" : "Phone",
+    "value" : "(245) 882 4516"
+  }
+]
