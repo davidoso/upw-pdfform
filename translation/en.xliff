@@ -12,37 +12,37 @@
       </trans-unit>
       <trans-unit id="NSBluetoothPeripheralUsageDescription" xml:space="preserve">
         <source>Sitefotos will use your bluetooth to scan and read the sensor readings.</source>
-        <target>Sitefotos will use your bluetooth to scan and read the sensor readings.</target>
+        <target>Sitefotos usará el bluetooth para escanear y consultar las lecturas del sensor.</target>
         <note>Privacy - Bluetooth Peripheral Usage Description</note>
       </trans-unit>
       <trans-unit id="NSCameraUsageDescription" xml:space="preserve">
         <source>If you allow Sitefotos access to your camera, you can capture photos on your job sites.</source>
-        <target>If you allow Sitefotos access to your camera, you can capture photos on your job sites.</target>
+        <target>Si permite el acceso de Sitefotos a la cámara, puede capturar fotos en sus lugares de trabajo.</target>
         <note>Privacy - Camera Usage Description</note>
       </trans-unit>
       <trans-unit id="NSLocationAlwaysAndWhenInUseUsageDescription" xml:space="preserve">
         <source>If you allow Sitefotos to use location service in the background, this can assist with tagging your photos, forms and time tracking.</source>
-        <target>If you allow Sitefotos to use location service in the background, this can assist with tagging your photos, forms and time tracking.</target>
+        <target>Si permite que Sitefotos use el servicio de ubicación en segundo plano, esto puede ayudarlo a etiquetar sus fotos, formularios y rastreo del tiempo.</target>
         <note>Privacy - Location Always and When In Use Usage Description</note>
       </trans-unit>
       <trans-unit id="NSLocationAlwaysUsageDescription" xml:space="preserve">
         <source>If you allow Sitefotos to use location service in the background, this can assist with tagging your photos, forms and time tracking.</source>
-        <target>If you allow Sitefotos to use location service in the background, this can assist with tagging your photos, forms and time tracking.</target>
+        <target>Si permite que Sitefotos use el servicio de ubicación en segundo plano, esto puede ayudarlo a etiquetar sus fotos, formularios y rastreo del tiempo.</target>
         <note>Privacy - Location Always Usage Description</note>
       </trans-unit>
       <trans-unit id="NSLocationWhenInUseUsageDescription" xml:space="preserve">
         <source>If you allow Sitefotos access to your location, you can tag your photos to your job sites.</source>
-        <target>If you allow Sitefotos access to your location, you can tag your photos to your job sites.</target>
+        <target>Si permite que Sitefotos acceda a su ubicación, puede etiquetar sus fotos con sus lugares de trabajo.</target>
         <note>Privacy - Location When In Use Usage Description</note>
       </trans-unit>
       <trans-unit id="NSPhotoLibraryAddUsageDescription" xml:space="preserve">
         <source>If you allow Sitefotos access to your library, you can save photos that you have already captured.</source>
-        <target>If you allow Sitefotos access to your library, you can save photos that you have already captured.</target>
+        <target>Si permite que Sitefotos acceda a su galería, puede guardar fotos que ya haya capturado.</target>
         <note>Privacy - Photo Library Additions Usage Description</note>
       </trans-unit>
       <trans-unit id="NSPhotoLibraryUsageDescription" xml:space="preserve">
         <source>If you allow Sitefotos access to your library, you can upload photos that you have already captured and save captured photos.</source>
-        <target>If you allow Sitefotos access to your library, you can upload photos that you have already captured and save captured photos.</target>
+        <target>Si permite que Sitefotos acceda a su galería, puede subir fotos que ya haya capturado y guardar las fotos capturadas.</target>
         <note>Privacy - Photo Library Usage Description</note>
       </trans-unit>
     </body>
@@ -54,17 +54,17 @@
     <body>
       <trans-unit id="AddProperty" xml:space="preserve">
         <source>Add Property</source>
-        <target>Add Property</target>
+        <target>Agregar propiedad</target>
         <note>Add property screen title</note>
       </trans-unit>
       <trans-unit id="Address" xml:space="preserve">
         <source>Address</source>
-        <target>Address</target>
+        <target>Dirección</target>
         <note>Address</note>
       </trans-unit>
       <trans-unit id="AppAlbumName" xml:space="preserve">
         <source>Sitefotos - Camera Uploads</source>
-        <target>Sitefotos - Camera Uploads</target>
+        <target>Sitefotos - Subidas desde cámara</target>
         <note>Application saved photos album name</note>
       </trans-unit>
       <trans-unit id="AppName" xml:space="preserve">
@@ -73,296 +73,296 @@
         <note>Application name</note>
       </trans-unit>
       <trans-unit id="ApplyPreviousCrewMessage" xml:space="preserve">
-        <source>Do you want to use crew selection from previous site ?</source>
-        <target>Do you want to use crew selection from previous site ?</target>
+        <source>Do you want to use crew selection from previous site?</source>
+        <target>¿Desea utilizar la selección de equipo del sitio anterior?</target>
         <note>Crew selection message</note>
       </trans-unit>
       <trans-unit id="Back" xml:space="preserve">
         <source>Back</source>
-        <target>Back</target>
+        <target>Regresar</target>
         <note>Back</note>
       </trans-unit>
       <trans-unit id="BreadcrumbCheckIn" xml:space="preserve">
         <source>Check in</source>
-        <target>Check in</target>
+        <target>Entrar</target>
         <note>Check In Breadcrumb</note>
       </trans-unit>
       <trans-unit id="BreadcrumbCheckOut" xml:space="preserve">
         <source>Check out</source>
-        <target>Check out</target>
+        <target>Salir</target>
         <note>Check out
    Checkout
    Checkout Breadcrumb</note>
       </trans-unit>
       <trans-unit id="BreadcrumbClockBreak" xml:space="preserve">
         <source>Clock break</source>
-        <target>Clock break</target>
+        <target>Pausar</target>
         <note>Clock break breadcrumb</note>
       </trans-unit>
       <trans-unit id="BreadcrumbClockIn" xml:space="preserve">
         <source>Clock in</source>
-        <target>Clock in</target>
+        <target>Checar entrada</target>
         <note>Clock In Breadcrumb</note>
       </trans-unit>
       <trans-unit id="BreadcrumbClockOut" xml:space="preserve">
         <source>Clock out</source>
-        <target>Clock out</target>
+        <target>Checar salida</target>
         <note>Clock In Breadcrumb</note>
       </trans-unit>
       <trans-unit id="BreadcrumbClockResume" xml:space="preserve">
         <source>Clock resume</source>
-        <target>Clock resume</target>
+        <target>Reanudar</target>
         <note>Clock resume breadcrumb</note>
       </trans-unit>
       <trans-unit id="BreadcrumbClose" xml:space="preserve">
         <source>Closed</source>
-        <target>Closed</target>
+        <target>Cerrado</target>
         <note>Close site breadcrumb</note>
       </trans-unit>
       <trans-unit id="BreadcrumbCrewSelection" xml:space="preserve">
         <source>Crew selection</source>
-        <target>Crew selection</target>
+        <target>Selección de equipo</target>
         <note>Crew selection breadcrumb</note>
       </trans-unit>
       <trans-unit id="BreadcrumbLocationUpdate" xml:space="preserve">
         <source>Location update</source>
-        <target>Location update</target>
+        <target>Actualización de ubicación</target>
         <note>Location breadcrumb</note>
       </trans-unit>
       <trans-unit id="BreadcrumbOpen" xml:space="preserve">
         <source>Opened</source>
-        <target>Opened</target>
+        <target>Abierto</target>
         <note>Open site breadcrumb</note>
       </trans-unit>
       <trans-unit id="BreadcrumbStartService" xml:space="preserve">
         <source>Start service</source>
-        <target>Start service</target>
+        <target>Iniciar servicio</target>
         <note>Start service breadcrumb</note>
       </trans-unit>
       <trans-unit id="BreadcrumbStopService" xml:space="preserve">
         <source>Stop service</source>
-        <target>Stop service</target>
+        <target>Detener servicio</target>
         <note>Stop service breadcrumb</note>
       </trans-unit>
       <trans-unit id="BreadcrumbSubmit" xml:space="preserve">
         <source>Submit</source>
-        <target>Submit</target>
+        <target>Enviar</target>
         <note>Submit site breadcrumb</note>
       </trans-unit>
       <trans-unit id="BreadcrumbTitle" xml:space="preserve">
         <source>Breadcrumb - %@</source>
-        <target>Breadcrumb - %@</target>
+        <target>Mapa del sitio - %@</target>
         <note>Breadcrumb upload title with title</note>
       </trans-unit>
       <trans-unit id="BreadcrumbTitleAndSubTitle" xml:space="preserve">
         <source>Breadcrumb - %@ %@</source>
-        <target>Breadcrumb - %@ %@</target>
+        <target>Mapa del sitio - %@ %@</target>
         <note>Breadcrumb upload title with type and title</note>
       </trans-unit>
       <trans-unit id="Break" xml:space="preserve">
         <source>Break</source>
-        <target>Break</target>
+        <target>Pausar</target>
         <note>Break clock button</note>
       </trans-unit>
       <trans-unit id="CAMERASection" xml:space="preserve">
         <source>CAMERA</source>
-        <target>CAMERA</target>
+        <target>CÁMARA</target>
         <note>Capture detail section</note>
       </trans-unit>
       <trans-unit id="Camera" xml:space="preserve">
         <source>Camera</source>
-        <target>Camera</target>
+        <target>Cámara</target>
         <note>Camera screen title</note>
       </trans-unit>
       <trans-unit id="CameraInterruptionReasonMultiForegroundApps" xml:space="preserve">
         <source>The camera is not available while multiple applications running in the foreground.</source>
-        <target>The camera is not available while multiple applications running in the foreground.</target>
+        <target>La cámara no está disponible mientras se ejecutan varias aplicaciones en primer plano.</target>
         <note>Camera interruption error due multiple apps running in foreground</note>
       </trans-unit>
       <trans-unit id="CameraInterruptionReasonSystemPressure" xml:space="preserve">
         <source>The camera is not available due to system pressure.</source>
-        <target>The camera is not available due to system pressure.</target>
+        <target>La cámara no está disponible debido a la presión del sistema.</target>
         <note>Camera interruption error due to system pressure</note>
       </trans-unit>
       <trans-unit id="CameraInterruptionReasonUsedByOther" xml:space="preserve">
         <source>The iPhone camera is being used by another application. Sitefotos will resume camera when it has access to it.</source>
-        <target>The iPhone camera is being used by another application. Sitefotos will resume camera when it has access to it.</target>
+        <target>La cámara del iPhone está siendo utilizada por otra aplicación. Sitefotos reanudará la cámara cuando tenga acceso a ella.</target>
         <note>Camera interruption error due to used by other apps</note>
       </trans-unit>
       <trans-unit id="CameraPermissionDeniedAlertMessage" xml:space="preserve">
         <source>To take photo, Sitefotos needs permission to access the camera on your device. Click the Settings button on your device, then toggle on the permissions switch for Camera.</source>
-        <target>To take photo, Sitefotos needs permission to access the camera on your device. Click the Settings button on your device, then toggle on the permissions switch for Camera.</target>
+        <target>Para tomar una foto, Sitefotos necesita permiso para acceder a la cámara de su dispositivo. Vaya a Configuración en su dispositivo, luego habilite el permiso para la cámara.</target>
         <note>Camera permission denied message</note>
       </trans-unit>
       <trans-unit id="CameraPermissionDeniedDisplayMessage" xml:space="preserve">
         <source>Sitefotos is not allowed to access your camera. Please allow it from Settings -&gt; Sitefotos -&gt; Camera</source>
-        <target>Sitefotos is not allowed to access your camera. Please allow it from Settings -&gt; Sitefotos -&gt; Camera</target>
+        <target>Sitefotos no tiene permiso para acceder a la cámara. Por favor permítalo desde Configuración -&gt; Sitefotos -&gt; Cámara</target>
         <note>Camera permission denied message</note>
       </trans-unit>
       <trans-unit id="CameraPhotoCaptureError" xml:space="preserve">
         <source>Unable to Capture image. Please try again.</source>
-        <target>Unable to Capture image. Please try again.</target>
+        <target>No se pudo capturar la imagen. Inténtelo de nuevo.</target>
         <note>Photo capture error</note>
       </trans-unit>
       <trans-unit id="CameraRuntimeError" xml:space="preserve">
         <source>The camera capture session is not available due to a runtime error.</source>
-        <target>The camera capture session is not available due to a runtime error.</target>
+        <target>La sesión de captura de la cámara no está disponible debido a un error en tiempo de ejecución.</target>
         <note>The camera capture session is not available due to a runtime error.</note>
       </trans-unit>
       <trans-unit id="CamereInterruptedReasonUnknown" xml:space="preserve">
         <source>The camera session is interrupted due to unknown reason.</source>
-        <target>The camera session is interrupted due to unknown reason.</target>
+        <target>La sesión de la cámara fue interrumpida debido a una razón desconocida.</target>
         <note>Camera iterruption error message for unknown reason</note>
       </trans-unit>
       <trans-unit id="Cancel" xml:space="preserve">
         <source>Cancel</source>
-        <target>Cancel</target>
+        <target>Cancelar</target>
         <note>Cancel</note>
       </trans-unit>
       <trans-unit id="Change" xml:space="preserve">
         <source>Change</source>
-        <target>Change</target>
+        <target>Modificar</target>
         <note>Alert button title
    Change
    Change alert message</note>
       </trans-unit>
       <trans-unit id="CheckInLoadingMessage" xml:space="preserve">
         <source>Checking in..</source>
-        <target>Checking in..</target>
+        <target>Checando entrada..</target>
         <note>Checkin loading message</note>
       </trans-unit>
       <trans-unit id="CheckOutLoadingMessage" xml:space="preserve">
         <source>Checking out..</source>
-        <target>Checking out..</target>
+        <target>Checando salida..</target>
         <note>Checkout loading message</note>
       </trans-unit>
       <trans-unit id="CheckoutAndCheckin" xml:space="preserve">
         <source>Checkout and Checkin</source>
-        <target>Checkout and Checkin</target>
+        <target>Salida y Entrada</target>
         <note>Checkout and Checkin</note>
       </trans-unit>
       <trans-unit id="ChooseCrew" xml:space="preserve">
         <source>Choose Crew Members</source>
-        <target>Choose Crew Members</target>
+        <target>Elegir miembros del equipo</target>
         <note>Crew selection message</note>
       </trans-unit>
       <trans-unit id="City" xml:space="preserve">
         <source>City</source>
-        <target>City</target>
+        <target>Ciudad</target>
         <note>City</note>
       </trans-unit>
       <trans-unit id="Clear" xml:space="preserve">
         <source>Clear</source>
-        <target>Clear</target>
+        <target>Limpiar</target>
         <note>Clear
    Clear button title</note>
       </trans-unit>
       <trans-unit id="ClockedIn" xml:space="preserve">
         <source>Clocked In</source>
-        <target>Clocked In</target>
+        <target>Registrado</target>
         <note>Clocked in crew section title</note>
       </trans-unit>
       <trans-unit id="Confirm" xml:space="preserve">
         <source>Confirm</source>
-        <target>Confirm</target>
+        <target>Confirmar</target>
         <note>Alert button title</note>
       </trans-unit>
       <trans-unit id="ConfirmMessage" xml:space="preserve">
         <source>Are you at: %@?</source>
-        <target>Are you at: %@?</target>
+        <target>¿Se encuentra en: %@?</target>
         <note>Confirm message</note>
       </trans-unit>
       <trans-unit id="DataUploads" xml:space="preserve">
         <source>Data uploads</source>
-        <target>Data uploads</target>
+        <target>Subida de datos</target>
         <note>Data uploads</note>
       </trans-unit>
       <trans-unit id="Delete" xml:space="preserve">
         <source>Delete</source>
-        <target>Delete</target>
+        <target>Eliminar</target>
         <note>Delete</note>
       </trans-unit>
       <trans-unit id="DeleteConfirmationMessage" xml:space="preserve">
         <source>Are you sure you want to delete this form?</source>
-        <target>Are you sure you want to delete this form?</target>
+        <target>¿Está seguro que quiere eliminar este formulario?</target>
         <note>Delete confirmation message</note>
       </trans-unit>
       <trans-unit id="Done" xml:space="preserve">
         <source>Done</source>
-        <target>Done</target>
+        <target>Hecho</target>
         <note>Done
    Done button title</note>
       </trans-unit>
       <trans-unit id="DuePayment" xml:space="preserve">
         <source>Your account is past due. Please update your payment information to add properties.</source>
-        <target>Your account is past due. Please update your payment information to add properties.</target>
+        <target>Su cuenta está vencida. Por favor actualice su información de pago para agregar propiedades.</target>
         <note>Payment due</note>
       </trans-unit>
       <trans-unit id="Email" xml:space="preserve">
         <source>Email</source>
-        <target>Email</target>
+        <target>Correo</target>
         <note>Email</note>
       </trans-unit>
       <trans-unit id="EmptyCompanyID" xml:space="preserve">
         <source>Please enter your Company ID to login.</source>
-        <target>Please enter your Company ID to login.</target>
+        <target>Ingrese el ID de su empresa para iniciar sesión.</target>
         <note>Empty company id message</note>
       </trans-unit>
       <trans-unit id="EmptyEmailMessage" xml:space="preserve">
         <source>Please enter your Email address.</source>
-        <target>Please enter your Email address.</target>
+        <target>Ingrese su correo electrónico.</target>
         <note>Empty email field</note>
       </trans-unit>
       <trans-unit id="EmptyForm" xml:space="preserve">
         <source>Choose a form</source>
-        <target>Choose a form</target>
+        <target>Seleccione un formulario</target>
         <note>Form Section title for empty form</note>
       </trans-unit>
       <trans-unit id="EmptyIssueAlertMessage" xml:space="preserve">
         <source>Please enter issue details.</source>
-        <target>Please enter issue details.</target>
+        <target>Ingrese los detalles del problema.</target>
         <note>Empty issue alert message</note>
       </trans-unit>
       <trans-unit id="EmptyJSONUpload" xml:space="preserve">
         <source>No Data items are pending to upload.</source>
-        <target>No Data items are pending to upload.</target>
+        <target>No hay elementos pendientes de cargar.</target>
         <note>Empty JSON Uploads</note>
       </trans-unit>
       <trans-unit id="EmptyPendingImageUpload" xml:space="preserve">
         <source>Please capture image of properties and upload it. 
  No images are pending to upload.</source>
-        <target>Please capture image of properties and upload it. 
- No images are pending to upload.</target>
+        <target>Capture una imagen de las propiedades y cárguela. 
+ No hay imágenes pendientes de cargar.</target>
         <note>Empty pending images to upload</note>
       </trans-unit>
       <trans-unit id="EmptyPhotoSelection" xml:space="preserve">
         <source>Select photos of property</source>
-        <target>Select photos of property</target>
+        <target>Seleccione fotos de la propiedad</target>
         <note>Select photos of property</note>
       </trans-unit>
       <trans-unit id="EmptySiteListForDistance" xml:space="preserve">
         <source>There are no site assignments with %@ miles of your location.</source>
-        <target>There are no site assignments with %@ miles of your location.</target>
+        <target>No hay asignaciones de sitios a %@ millas de su ubicación.</target>
         <note>Empty site list for distance</note>
       </trans-unit>
       <trans-unit id="EmptySitelist" xml:space="preserve">
         <source>No site assignments.</source>
-        <target>No site assignments.</target>
+        <target>No hay asignaciones de sitio.</target>
         <note>Empty site list message for no sites</note>
       </trans-unit>
       <trans-unit id="Failed" xml:space="preserve">
         <source>Failed</source>
-        <target>Failed</target>
+        <target>Fallido</target>
         <note>Failed</note>
       </trans-unit>
       <trans-unit id="FormJSONItemTitle" xml:space="preserve">
         <source>Form - %@</source>
-        <target>Form - %@</target>
+        <target>Formulario - %@</target>
         <note>Form JSON upload item title</note>
       </trans-unit>
       <trans-unit id="Forms" xml:space="preserve">
         <source>Forms</source>
-        <target>Forms</target>
+        <target>Formularios</target>
         <note>Forms</note>
       </trans-unit>
       <trans-unit id="GENERALSection" xml:space="preserve">
@@ -372,152 +372,152 @@
       </trans-unit>
       <trans-unit id="Hour" xml:space="preserve">
         <source>Hour</source>
-        <target>Hour</target>
+        <target>Hora</target>
         <note>Hour</note>
       </trans-unit>
       <trans-unit id="Ignore" xml:space="preserve">
         <source>Ignore</source>
-        <target>Ignore</target>
+        <target>Ignorar</target>
         <note>Ignore</note>
       </trans-unit>
       <trans-unit id="ImageUploads" xml:space="preserve">
         <source>Image uploads</source>
-        <target>Image uploads</target>
+        <target>Subida de imágenes</target>
         <note>Image uploads</note>
       </trans-unit>
       <trans-unit id="InvalidAdress" xml:space="preserve">
         <source>Please select any valid address.</source>
-        <target>Please select any valid address.</target>
+        <target>Por favor seleccione cualquier dirección válida.</target>
         <note>Invalid address message</note>
       </trans-unit>
       <trans-unit id="InvalidCompanyID" xml:space="preserve">
         <source>Company ID must be greater than 8 characters and less than 32.</source>
-        <target>Company ID must be greater than 8 characters and less than 32.</target>
+        <target>El ID de la empresa debe tener más de 8 caracteres y menos de 32.</target>
         <note>INvalid company id message</note>
       </trans-unit>
       <trans-unit id="InvalidCompanyIDForAlphaValue" xml:space="preserve">
         <source>Company ID must have only alpha numeric values.</source>
-        <target>Company ID must have only alpha numeric values.</target>
+        <target>El ID de la empresa debe tener solo caracteres alfanuméricos.</target>
         <note>Invalid company id for invalid values</note>
       </trans-unit>
       <trans-unit id="InvalidEmail" xml:space="preserve">
         <source>Please enter a valid Email address.</source>
-        <target>Please enter a valid Email address.</target>
+        <target>Por favor ingrese un correo electrónico válido.</target>
         <note>Invalid email</note>
       </trans-unit>
       <trans-unit id="InvalidEmailFormField" xml:space="preserve">
         <source>Invalid email at: @</source>
-        <target>Invalid email at: @</target>
+        <target>Correo electrónico no válido en: @</target>
         <note>Invalid email form error message</note>
       </trans-unit>
       <trans-unit id="IssueDetail" xml:space="preserve">
         <source>Issue details</source>
-        <target>Issue details</target>
+        <target>Detalles del problema</target>
         <note>Issue title placeholder</note>
       </trans-unit>
       <trans-unit id="IssueRemoveAlert" xml:space="preserve">
         <source>Are you sure you want to remove issue?</source>
-        <target>Are you sure you want to remove issue?</target>
+        <target>¿Está seguro que desea eliminar este problema?</target>
         <note>Issue remove alert message</note>
       </trans-unit>
       <trans-unit id="IssueUploadItemTitle" xml:space="preserve">
         <source>Issue - %@</source>
-        <target>Issue - %@</target>
+        <target>Problema - %@</target>
         <note>issue upload item title.</note>
       </trans-unit>
       <trans-unit id="JoinPaid" xml:space="preserve">
         <source>Your trial period has expired and you have not signed up for a paid membership. Please sign up for a paid membership to add properties.</source>
-        <target>Your trial period has expired and you have not signed up for a paid membership. Please sign up for a paid membership to add properties.</target>
+        <target>Su periodo de prueba ha expirado y no se ha registrado para obtener una membresía de paga. Por favor regístrese para obtener una membresía y agregar propiedades.</target>
         <note>Joine</note>
       </trans-unit>
       <trans-unit id="LastUpdated" xml:space="preserve">
         <source>Last updated %@</source>
-        <target>Last updated %@</target>
+        <target>Última actualización %@</target>
         <note>Last updated date time</note>
       </trans-unit>
       <trans-unit id="LocationDeniedAlertMessage" xml:space="preserve">
         <source>To determine position, Sitefotos requires access to your location. Click the Settings button on your device, then toggle on the permissions switch for Location Service.</source>
-        <target>To determine position, Sitefotos requires access to your location. Click the Settings button on your device, then toggle on the permissions switch for Location Service.</target>
+        <target>Para determinar la posición, Sitefotos requiere acceso a su ubicación. Vaya a Configuración en su dispositivo, luego habilite el permiso para el servicio de ubicación.</target>
         <note>Location permission denied alert message</note>
       </trans-unit>
       <trans-unit id="Logout" xml:space="preserve">
         <source>Log Out</source>
-        <target>Log Out</target>
+        <target>Cerrar sesión</target>
         <note>Logout</note>
       </trans-unit>
       <trans-unit id="LogoutMessage" xml:space="preserve">
         <source>Are you sure you want to logout?</source>
-        <target>Are you sure you want to logout?</target>
+        <target>¿Está seguro que quiere cerrar sesión?</target>
         <note>Logout confirmation message</note>
       </trans-unit>
       <trans-unit id="MailServicesNotAvailable" xml:space="preserve">
         <source>Mail services are not available.</source>
-        <target>Mail services are not available.</target>
+        <target>Los servicios de correo no están disponibles.</target>
         <note>Mail services not available error message</note>
       </trans-unit>
       <trans-unit id="Map" xml:space="preserve">
         <source>Map</source>
-        <target>Map</target>
+        <target>Mapa</target>
         <note>Maps view in site list</note>
       </trans-unit>
       <trans-unit id="MaxBuilding" xml:space="preserve">
         <source>You have reached the maximum number of buildings allowed per account during the trial period. Please sign up for a paid membership to add more properties.</source>
-        <target>You have reached the maximum number of buildings allowed per account during the trial period. Please sign up for a paid membership to add more properties.</target>
+        <target>Ha alcanzado la cantidad máxima de edificios permitidos por cuenta durante el periodo de prueba. Por favor regístrese para obtener una membresía de paga y agregar más propiedades.</target>
         <note>Max building</note>
       </trans-unit>
       <trans-unit id="MessageServicesNotAvailable" xml:space="preserve">
         <source>Message services are not available.</source>
-        <target>Message services are not available.</target>
+        <target>Los servicios de mensajería no están disponibles.</target>
         <note>Message services are not available.</note>
       </trans-unit>
       <trans-unit id="MoistureTest" xml:space="preserve">
         <source>Moisture Test</source>
-        <target>Moisture Test</target>
+        <target>Prueba de humedad</target>
         <note>Moisture Test</note>
       </trans-unit>
       <trans-unit id="MoistureTitle" xml:space="preserve">
         <source>Concrete Moisture Test</source>
-        <target>Concrete Moisture Test</target>
+        <target>Prueba de humedad en concreto</target>
         <note>Concrete Moisture Test</note>
       </trans-unit>
       <trans-unit id="MovePinMessage" xml:space="preserve">
         <source>Tap and hold pin to drag around to locate your property and get the address. You can also locate your property by entering your property address in search field.</source>
-        <target>Tap and hold pin to drag around to locate your property and get the address. You can also locate your property by entering your property address in search field.</target>
+        <target>Toque y arrastre el marcador para localizar su propiedad y obtener la dirección. También puede localizar su propiedad ingresando la dirección en el cuadro de búsqueda.</target>
         <note>Displayed on first lanuch of add property screen</note>
       </trans-unit>
       <trans-unit id="MultipleIssueUploadItemTitle" xml:space="preserve">
         <source>Multiple Issues</source>
-        <target>Multiple Issues</target>
+        <target>Múltiples problemas</target>
         <note>Multiple issue upload item title.</note>
       </trans-unit>
       <trans-unit id="MultiplePhotosSelected" xml:space="preserve">
         <source>%d photos selected</source>
-        <target>%d photos selected</target>
+        <target>%d fotos seleccionadas</target>
         <note>Multiple photos selection indicator</note>
       </trans-unit>
       <trans-unit id="MustCheckInMessage" xml:space="preserve">
         <source>You must Clock In before you can Check In to this form. do you want to open Time screen to Clock In?</source>
-        <target>You must Clock In before you can Check In to this form. do you want to open Time screen to Clock In?</target>
+        <target>Debe checar la entrada antes de registrarse a este formulario. ¿Desea ir a la ventana para checar?</target>
         <note>Check in message if not clocked in</note>
       </trans-unit>
       <trans-unit id="MustResumeMessage" xml:space="preserve">
         <source>You must Resume before you can Check In to this form. do you want to open Time screen to Resume?</source>
-        <target>You must Resume before you can Check In to this form. do you want to open Time screen to Resume?</target>
+        <target>Debe reanudar antes de registrarse a este formulario. ¿Desea ir a la ventana para reanudar?</target>
         <note>Check in message if not resumed</note>
       </trans-unit>
       <trans-unit id="NewProperty" xml:space="preserve">
         <source>New Property</source>
-        <target>New Property</target>
+        <target>Nueva propiedad</target>
         <note>New property option in geo detect</note>
       </trans-unit>
       <trans-unit id="NewPropertyRequiresLocationErrorMessage" xml:space="preserve">
         <source>To add a new property, Sitefotos requires access to your location. Click the Settings button on your device, then toggle on the permissions switch for Location Service.</source>
-        <target>To add a new property, Sitefotos requires access to your location. Click the Settings button on your device, then toggle on the permissions switch for Location Service.</target>
+        <target>Para agregar una nueva propiedad, Sitefotos requiere acceso a su ubicación. Vaya a Configuración en su dispositivo, luego habilite el permiso para el servicio de ubicación.</target>
         <note>To add New Property sitfotos requires Location permissin error message</note>
       </trans-unit>
       <trans-unit id="Next" xml:space="preserve">
         <source>Next</source>
-        <target>Next</target>
+        <target>Siguiente</target>
         <note>Next</note>
       </trans-unit>
       <trans-unit id="No" xml:space="preserve">
@@ -527,27 +527,27 @@
       </trans-unit>
       <trans-unit id="NoAddressMessage" xml:space="preserve">
         <source>No address found. Drag pin to other location to refresh.</source>
-        <target>No address found. Drag pin to other location to refresh.</target>
+        <target>No se encontró la dirección. Arrastre el marcador a otra ubicación para recargar.</target>
         <note>No address found for pin location</note>
       </trans-unit>
       <trans-unit id="NoLocationMessage" xml:space="preserve">
         <source>No Location found for this address. Please enter new address to serach again.</source>
-        <target>No Location found for this address. Please enter new address to serach again.</target>
+        <target>No se ha encontrado ninguna ubicación. Ingrese otra dirección para buscar nuevamente.</target>
         <note>No Location found for address</note>
       </trans-unit>
       <trans-unit id="NoneOfAbove" xml:space="preserve">
         <source>None of the Above</source>
-        <target>None of the Above</target>
+        <target>Ninguna de las anteriores</target>
         <note>No property selection option</note>
       </trans-unit>
       <trans-unit id="NotificationDescription" xml:space="preserve">
         <source>You have been clocked in for more than 8 hours. Did you forget to clock out?</source>
-        <target>You have been clocked in for more than 8 hours. Did you forget to clock out?</target>
+        <target>Ha estado logueado por más de 8 horas. ¿Ha olvidado checar la salida?</target>
         <note>Time update notification description</note>
       </trans-unit>
       <trans-unit id="NotificationTitle" xml:space="preserve">
         <source>Time Clock Update</source>
-        <target>Time Clock Update</target>
+        <target>Actualización del reloj checador</target>
         <note>Time update notification title</note>
       </trans-unit>
       <trans-unit id="Ok" xml:space="preserve">
@@ -557,206 +557,206 @@
       </trans-unit>
       <trans-unit id="OnBreak" xml:space="preserve">
         <source>On Break</source>
-        <target>On Break</target>
+        <target>En descanso</target>
         <note>On break crew section title</note>
       </trans-unit>
       <trans-unit id="Open" xml:space="preserve">
         <source>Open</source>
-        <target>Open</target>
+        <target>Abierto</target>
         <note>Open</note>
       </trans-unit>
       <trans-unit id="PendingUploadAlert" xml:space="preserve">
         <source>You have some images or data still in your upload queue. Click 'Uploads' to review.</source>
-        <target>You have some images or data still in your upload queue. Click 'Uploads' to review.</target>
+        <target>Todavía existen algunas imágenes o datos en la cola de subida. Vaya a 'Subidas' para revisar.</target>
         <note>Pending uploads alert message</note>
       </trans-unit>
       <trans-unit id="PendingUploads" xml:space="preserve">
         <source>Uploads</source>
-        <target>Uploads</target>
+        <target>Subidas</target>
         <note>Pending Uploads screen title
    Uploads</note>
       </trans-unit>
       <trans-unit id="People" xml:space="preserve">
         <source>People</source>
-        <target>People</target>
+        <target>Personas</target>
         <note>People</note>
       </trans-unit>
       <trans-unit id="PhotSaveErrorMessage" xml:space="preserve">
         <source>A problem occurred with the image. Please retake the photo.</source>
-        <target>A problem occurred with the image. Please retake the photo.</target>
+        <target>Se produjo un problema con la imagen. Por favor vuelva a tomar la foto.</target>
         <note>Photo saving error</note>
       </trans-unit>
       <trans-unit id="Photo" xml:space="preserve">
         <source>%d Photo</source>
-        <target>%d Photo</target>
+        <target>%d foto</target>
         <note>Single Photo</note>
       </trans-unit>
       <trans-unit id="PhotoLibraryAccessDeniedAlert" xml:space="preserve">
         <source>To choose photo, Sitefotos needs permission to access the Photos on your device. Click the Settings button on your device, then toggle on the permissions switch for Photos.</source>
-        <target>To choose photo, Sitefotos needs permission to access the Photos on your device. Click the Settings button on your device, then toggle on the permissions switch for Photos.</target>
+        <target>Para elegir una foto, Sitefotos necesita permiso para acceder a las fotos en su dispositivo. Vaya a Configuración en su dispositivo, luego habilite el permiso para Fotos.</target>
         <note>Alert message for access deniet to photos lib
    Photos Library access denied alert</note>
       </trans-unit>
       <trans-unit id="PhotoLibraryAccessRescrictedAlertMessage" xml:space="preserve">
-        <source>Sitefotos is resrticted from accessing your Photos. You can not select from Photos.</source>
-        <target>Sitefotos is resrticted from accessing your Photos. You can not select from Photos.</target>
+        <source>Sitefotos is restricted from accessing your Photos. You can not select from Photos.</source>
+        <target>Sitefotos no tiene permiso para acceder a su galería de fotos. No puede seleccionar de Fotos.</target>
         <note>Gallery permission denied alert message</note>
       </trans-unit>
       <trans-unit id="Photos" xml:space="preserve">
         <source>%d Photos</source>
-        <target>%d Photos</target>
+        <target>%d fotos</target>
         <note>Multiple Photos</note>
       </trans-unit>
       <trans-unit id="Previous" xml:space="preserve">
         <source>Previous</source>
-        <target>Previous</target>
+        <target>Anterior</target>
         <note>Previous</note>
       </trans-unit>
       <trans-unit id="PrivacyPolicySetting" xml:space="preserve">
         <source>Privacy Policy</source>
-        <target>Privacy Policy</target>
+        <target>Política de privacidad</target>
         <note>Privacy settings</note>
       </trans-unit>
       <trans-unit id="PropertyListFetchErorr" xml:space="preserve">
         <source>Get Property List: %@</source>
-        <target>Get Property List: %@</target>
+        <target>Obtener lista de propiedades: %@</target>
         <note>Property list fetch error</note>
       </trans-unit>
       <trans-unit id="PropertyListFetchErorrMessage" xml:space="preserve">
         <source>Unable to get property list.</source>
-        <target>Unable to get property list.</target>
+        <target>No se pudo obtener la lista de propiedades.</target>
         <note>Property list fetch error message</note>
       </trans-unit>
       <trans-unit id="PropertyName" xml:space="preserve">
         <source>Enter property name.</source>
-        <target>Enter property name.</target>
+        <target>Ingrese el nombre de la propiedad.</target>
         <note>Property name</note>
       </trans-unit>
       <trans-unit id="PropertySavingFailed" xml:space="preserve">
         <source>Unable to save building, please try again.</source>
-        <target>Unable to save building, please try again.</target>
+        <target>No se pudo guardar el edificio. Inténtelo de nuevo.</target>
         <note>Property saving error</note>
       </trans-unit>
       <trans-unit id="Refresh" xml:space="preserve">
         <source>Refresh</source>
-        <target>Refresh</target>
+        <target>Recargar</target>
         <note>Refresh</note>
       </trans-unit>
       <trans-unit id="Remove" xml:space="preserve">
         <source>Remove</source>
-        <target>Remove</target>
+        <target>Eliminar</target>
         <note>Remove</note>
       </trans-unit>
       <trans-unit id="RemoveFormGroupMessage" xml:space="preserve">
         <source>Are you sure you want to remove this group?</source>
-        <target>Are you sure you want to remove this group?</target>
+        <target>¿Está seguro que quiere eliminar este grupo?</target>
         <note>Remove form group message</note>
       </trans-unit>
       <trans-unit id="RemovePhotoFromForm" xml:space="preserve">
         <source>Are you sure you want to remove image attached to form?</source>
-        <target>Are you sure you want to remove image attached to form?</target>
+        <target>¿Está seguro que quiere eliminar la imagen adjunta al formulario?</target>
         <note>Remove photo alert message</note>
       </trans-unit>
       <trans-unit id="Removing" xml:space="preserve">
         <source>Removing..</source>
-        <target>Removing..</target>
+        <target>Eliminando..</target>
         <note>Removing</note>
       </trans-unit>
       <trans-unit id="RequiredFormField" xml:space="preserve">
         <source>Required field: </source>
-        <target>Required field: </target>
+        <target>Campo requerido: </target>
         <note>Invalid email form error message
    Required field validation error message</note>
       </trans-unit>
       <trans-unit id="Resume" xml:space="preserve">
         <source>Resume</source>
-        <target>Resume</target>
+        <target>Reanudar</target>
         <note>Resume clock button</note>
       </trans-unit>
       <trans-unit id="SaveCopySettings" xml:space="preserve">
         <source>Save copy to device</source>
-        <target>Save copy to device</target>
+        <target>Guardar copia en el dispositivo</target>
         <note>Save copy to device</note>
       </trans-unit>
       <trans-unit id="Saved" xml:space="preserve">
         <source>Saved.</source>
-        <target>Saved.</target>
+        <target>Guardado.</target>
         <note>Loading message for saved</note>
       </trans-unit>
       <trans-unit id="Saving" xml:space="preserve">
         <source>Saving..</source>
-        <target>Saving..</target>
+        <target>Guardando..</target>
         <note>Loading message for save operation</note>
       </trans-unit>
       <trans-unit id="SelectAll" xml:space="preserve">
         <source>Select All</source>
-        <target>Select All</target>
+        <target>Seleccionar todo</target>
         <note>Select All</note>
       </trans-unit>
       <trans-unit id="SettingsScreenTitle" xml:space="preserve">
         <source>Settings</source>
-        <target>Settings</target>
+        <target>Configuración</target>
         <note>Settings</note>
       </trans-unit>
       <trans-unit id="ShareImage" xml:space="preserve">
         <source>Share image using</source>
-        <target>Share image using</target>
+        <target>Compartir imagen</target>
         <note>Share alert info</note>
       </trans-unit>
       <trans-unit id="SignHere" xml:space="preserve">
         <source>Sign here</source>
-        <target>Sign here</target>
+        <target>Firme aquí</target>
         <note>Sign screen title</note>
       </trans-unit>
       <trans-unit id="SinglePhotosSelected" xml:space="preserve">
         <source>%d photo selected</source>
-        <target>%d photo selected</target>
+        <target>%d foto seleccionada</target>
         <note>Single photo selection indicator</note>
       </trans-unit>
       <trans-unit id="SiteDirections" xml:space="preserve">
         <source>Directions</source>
-        <target>Directions</target>
+        <target>Señas</target>
         <note>Directions for site</note>
       </trans-unit>
       <trans-unit id="Sites" xml:space="preserve">
         <source>Sites</source>
-        <target>Sites</target>
+        <target>Sitios</target>
         <note>Site list title
    Site view site list</note>
       </trans-unit>
       <trans-unit id="State" xml:space="preserve">
         <source>State</source>
-        <target>State</target>
+        <target>Estado</target>
         <note>State</note>
       </trans-unit>
       <trans-unit id="StreetAddress" xml:space="preserve">
         <source>Street address</source>
-        <target>Street address</target>
+        <target>Calle</target>
         <note>Street address</note>
       </trans-unit>
       <trans-unit id="Submit" xml:space="preserve">
         <source>Submit</source>
-        <target>Submit</target>
+        <target>Enviar</target>
         <note>Submit</note>
       </trans-unit>
       <trans-unit id="Submitted" xml:space="preserve">
         <source>Submitted</source>
-        <target>Submitted</target>
+        <target>Enviado</target>
         <note>Submitted</note>
       </trans-unit>
       <trans-unit id="SubmittedForm" xml:space="preserve">
         <source>Submitted forms</source>
-        <target>Submitted forms</target>
+        <target>Formularios enviados</target>
         <note>Form section title for submitted form</note>
       </trans-unit>
       <trans-unit id="Submitting" xml:space="preserve">
         <source>Submitting</source>
-        <target>Submitting</target>
+        <target>Enviando</target>
         <note>Submitting</note>
       </trans-unit>
       <trans-unit id="Success" xml:space="preserve">
         <source>Success</source>
-        <target>Success</target>
+        <target>Éxito</target>
         <note>Success</note>
       </trans-unit>
       <trans-unit id="TMUploadTitle" xml:space="preserve">
@@ -766,82 +766,82 @@
       </trans-unit>
       <trans-unit id="TargetLocatorSettings" xml:space="preserve">
         <source>Target locator</source>
-        <target>Target locator</target>
+        <target>Localizar destino</target>
         <note>Target locator</note>
       </trans-unit>
       <trans-unit id="TermOfService" xml:space="preserve">
         <source>Terms of Service</source>
-        <target>Terms of Service</target>
+        <target>Términos de Servicio</target>
         <note>Terms of service setting</note>
       </trans-unit>
       <trans-unit id="Text" xml:space="preserve">
         <source>Text</source>
-        <target>Text</target>
+        <target>Texto</target>
         <note>Text sharing option</note>
       </trans-unit>
       <trans-unit id="TimeTracking" xml:space="preserve">
         <source>Time Tracking</source>
-        <target>Time Tracking</target>
+        <target>Rastreo del tiempo</target>
         <note>Time Tracking screen title</note>
       </trans-unit>
       <trans-unit id="USERSection" xml:space="preserve">
         <source>USER</source>
-        <target>USER</target>
+        <target>USUARIO</target>
         <note>user detail section</note>
       </trans-unit>
       <trans-unit id="UnTaggedSitePhotoUploadAlertMessage" xml:space="preserve">
         <source>Photo is untagged to a site.  Click to refresh location.</source>
-        <target>Photo is untagged to a site.  Click to refresh location.</target>
+        <target>La foto no está etiquetada con un sitio. Haga clic para actualizar la ubicación.</target>
         <note>UnTagged site photo upload alert message</note>
       </trans-unit>
       <trans-unit id="UnableToVerifyCompanyID" xml:space="preserve">
         <source>Unable to verify Company ID. Please try again.</source>
-        <target>Unable to verify Company ID. Please try again.</target>
+        <target>No se pudo verificar el ID de la empresa. Inténtelo de nuevo.</target>
         <note>Unable to verify company id</note>
       </trans-unit>
       <trans-unit id="UploadOriginalSetting" xml:space="preserve">
         <source>Upload original size</source>
-        <target>Upload original size</target>
+        <target>Subir tamaño original</target>
         <note>Upload original setting</note>
       </trans-unit>
       <trans-unit id="UploadSettings" xml:space="preserve">
         <source>Upload using cellular data</source>
-        <target>Upload using cellular data</target>
+        <target>Subir usando los datos del teléfono</target>
         <note>upload settings</note>
       </trans-unit>
       <trans-unit id="VersionFooter" xml:space="preserve">
         <source>Version %@</source>
-        <target>Version %@</target>
+        <target>Versión %@</target>
         <note>Version info footer</note>
       </trans-unit>
       <trans-unit id="View" xml:space="preserve">
         <source>View</source>
-        <target>View</target>
+        <target>Visualizar</target>
         <note>View</note>
       </trans-unit>
       <trans-unit id="WhichProperty" xml:space="preserve">
         <source>Which Property?</source>
-        <target>Which Property?</target>
+        <target>¿Cuál propiedad?</target>
         <note>Used to notify user of property selection in geo detect</note>
       </trans-unit>
       <trans-unit id="WorklogProfile" xml:space="preserve">
         <source>Worklog profile</source>
-        <target>Worklog profile</target>
+        <target>Perfil de trabajo</target>
         <note>JSON Upload queue item title for worklog profile</note>
       </trans-unit>
       <trans-unit id="Yes" xml:space="preserve">
         <source>Yes</source>
-        <target>Yes</target>
+        <target>Sí</target>
         <note>Yes</note>
       </trans-unit>
       <trans-unit id="ZipCode" xml:space="preserve">
         <source>Zip code</source>
-        <target>Zip code</target>
+        <target>Código postal</target>
         <note>Zip code</note>
       </trans-unit>
       <trans-unit id="settings" xml:space="preserve">
         <source>Settings</source>
-        <target>Settings</target>
+        <target>Configuración</target>
         <note>Settings</note>
       </trans-unit>
     </body>
@@ -853,27 +853,27 @@
     <body>
       <trans-unit id="Camera" xml:space="preserve">
         <source>Camera</source>
-        <target>Camera</target>
+        <target>Cámara</target>
         <note>A single strings file, whose title is specified in your preferences schema. The strings files provide the localized content to display to the user for each of your preferences.</note>
       </trans-unit>
       <trans-unit id="Save" xml:space="preserve">
         <source>Save copy to device</source>
-        <target>Save copy to device</target>
+        <target>Guardar copia en el dispositivo</target>
         <note/>
       </trans-unit>
       <trans-unit id="TargetLocator" xml:space="preserve">
         <source>Target Locator</source>
-        <target>Target Locator</target>
+        <target>Localizar destino</target>
         <note/>
       </trans-unit>
       <trans-unit id="Upload" xml:space="preserve">
         <source>Upload using cellular data</source>
-        <target>Upload using cellular data</target>
+        <target>Subir usando los datos del teléfono</target>
         <note/>
       </trans-unit>
       <trans-unit id="UploadSize" xml:space="preserve">
         <source>Upload original size</source>
-        <target>Upload original size</target>
+        <target>Subir tamaño original</target>
         <note/>
       </trans-unit>
     </body>
@@ -885,47 +885,47 @@
     <body>
       <trans-unit id="1PH-ZZ-vz7.text" xml:space="preserve">
         <source>Notes:</source>
-        <target>Notes:</target>
+        <target>Notas:</target>
         <note>Class = "UILabel"; text = "Notes:"; ObjectID = "1PH-ZZ-vz7";</note>
       </trans-unit>
       <trans-unit id="1W8-Ca-e7F.text" xml:space="preserve">
         <source>Ambient TEMP:</source>
-        <target>Ambient TEMP:</target>
+        <target>Temperatura ambiente:</target>
         <note>Class = "UILabel"; text = "Ambient TEMP:"; ObjectID = "1W8-Ca-e7F";</note>
       </trans-unit>
       <trans-unit id="1Wa-B9-Jiq.title" xml:space="preserve">
         <source>Save</source>
-        <target>Save</target>
+        <target>Guardar</target>
         <note>Class = "UIBarButtonItem"; title = "Save"; ObjectID = "1Wa-B9-Jiq";</note>
       </trans-unit>
       <trans-unit id="4Et-eu-N97.text" xml:space="preserve">
         <source>No form assignments.</source>
-        <target>No form assignments.</target>
+        <target>No hay asignaciones de formularios.</target>
         <note>Class = "UILabel"; text = "No form assignments."; ObjectID = "4Et-eu-N97";</note>
       </trans-unit>
       <trans-unit id="4Tz-4e-BAQ.text" xml:space="preserve">
         <source>Title</source>
-        <target>Title</target>
+        <target>Título</target>
         <note>Class = "UILabel"; text = "Title"; ObjectID = "4Tz-4e-BAQ";</note>
       </trans-unit>
       <trans-unit id="4wD-pO-62s.text" xml:space="preserve">
         <source>Target RH%:</source>
-        <target>Target RH%:</target>
+        <target>% RH objetiva:</target>
         <note>Class = "UILabel"; text = "Target RH%:"; ObjectID = "4wD-pO-62s";</note>
       </trans-unit>
       <trans-unit id="5y5-Z0-HZR.title" xml:space="preserve">
         <source>Time</source>
-        <target>Time</target>
+        <target>Tiempo</target>
         <note>Class = "UITabBarItem"; title = "Time"; ObjectID = "5y5-Z0-HZR";</note>
       </trans-unit>
       <trans-unit id="6jL-Z5-cTt.title" xml:space="preserve">
         <source>Done</source>
-        <target>Done</target>
+        <target>Hecho</target>
         <note>Class = "UIBarButtonItem"; title = "Done"; ObjectID = "6jL-Z5-cTt";</note>
       </trans-unit>
       <trans-unit id="7xB-4Q-UNn.title" xml:space="preserve">
         <source>Time Tracking</source>
-        <target>Time Tracking</target>
+        <target>Rastreo del tiempo</target>
         <note>Class = "UIViewController"; title = "Time Tracking"; ObjectID = "7xB-4Q-UNn";</note>
       </trans-unit>
       <trans-unit id="9Pe-us-gzL.text" xml:space="preserve">
@@ -935,42 +935,42 @@
       </trans-unit>
       <trans-unit id="AUf-WB-grI.text" xml:space="preserve">
         <source>You can sync photos onto your device using iTunes.</source>
-        <target>You can sync photos onto your device using iTunes.</target>
+        <target>Puede sincronizar fotos en su dispositivo usando iTunes.</target>
         <note>Class = "UILabel"; text = "You can sync photos onto your device using iTunes."; ObjectID = "AUf-WB-grI";</note>
       </trans-unit>
       <trans-unit id="AgP-UE-T0n.title" xml:space="preserve">
         <source>Camera</source>
-        <target>Camera</target>
+        <target>Cámara</target>
         <note>Class = "UITabBarItem"; title = "Camera"; ObjectID = "AgP-UE-T0n";</note>
       </trans-unit>
       <trans-unit id="BTW-p2-huk.text" xml:space="preserve">
         <source>Press Clock In button to start tracking time.</source>
-        <target>Press Clock In button to start tracking time.</target>
+        <target>Pulse el botón Checar entrada para iniciar a rastrear el tiempo.</target>
         <note>Class = "UILabel"; text = "Press Clock In button to start tracking time."; ObjectID = "BTW-p2-huk";</note>
       </trans-unit>
       <trans-unit id="Evp-qA-3jr.normalTitle" xml:space="preserve">
         <source>Clock In</source>
-        <target>Clock In</target>
+        <target>Checar entrada</target>
         <note>Class = "UIButton"; normalTitle = "Clock In"; ObjectID = "Evp-qA-3jr";</note>
       </trans-unit>
       <trans-unit id="GGq-Bt-aRq.text" xml:space="preserve">
         <source>Ambient RH:</source>
-        <target>Ambient RH:</target>
+        <target>RH ambiental:</target>
         <note>Class = "UILabel"; text = "Ambient RH:"; ObjectID = "GGq-Bt-aRq";</note>
       </trans-unit>
       <trans-unit id="HoP-ok-TPB.normalTitle" xml:space="preserve">
         <source>Terms of Service</source>
-        <target>Terms of Service</target>
+        <target>Términos de Servicio</target>
         <note>Class = "UIButton"; normalTitle = "Terms of Service"; ObjectID = "HoP-ok-TPB";</note>
       </trans-unit>
       <trans-unit id="JGl-gi-Jes.text" xml:space="preserve">
         <source>No Photos</source>
-        <target>No Photos</target>
+        <target>Sin fotos</target>
         <note>Class = "UILabel"; text = "No Photos"; ObjectID = "JGl-gi-Jes";</note>
       </trans-unit>
       <trans-unit id="JUE-PO-hv4.text" xml:space="preserve">
         <source>Label</source>
-        <target>Label</target>
+        <target>Etiquetar</target>
         <note>Class = "UILabel"; text = "Label"; ObjectID = "JUE-PO-hv4";</note>
       </trans-unit>
       <trans-unit id="KGd-pw-pEj.placeholder" xml:space="preserve">
@@ -980,32 +980,32 @@
       </trans-unit>
       <trans-unit id="Khg-fc-pZi.title" xml:space="preserve">
         <source>Done</source>
-        <target>Done</target>
+        <target>Hecho</target>
         <note>Class = "UIBarButtonItem"; title = "Done"; ObjectID = "Khg-fc-pZi";</note>
       </trans-unit>
       <trans-unit id="Kpi-Bj-KKS.text" xml:space="preserve">
         <source>Sitefotos does not have access to your photos.</source>
-        <target>Sitefotos does not have access to your photos.</target>
+        <target>Sitefotos no puede acceder a su galería de fotos.</target>
         <note>Class = "UILabel"; text = "Sitefotos does not have access to your photos."; ObjectID = "Kpi-Bj-KKS";</note>
       </trans-unit>
       <trans-unit id="L0L-sL-tZs.text" xml:space="preserve">
         <source>Loading..</source>
-        <target>Loading..</target>
+        <target>Cargando..</target>
         <note>Class = "UILabel"; text = "Loading.."; ObjectID = "L0L-sL-tZs";</note>
       </trans-unit>
       <trans-unit id="Pj1-TQ-vYW.text" xml:space="preserve">
         <source>Name: *</source>
-        <target>Name: *</target>
+        <target>Nombre: *</target>
         <note>Class = "UILabel"; text = "Name: *"; ObjectID = "Pj1-TQ-vYW";</note>
       </trans-unit>
       <trans-unit id="QPZ-Nq-w34.text" xml:space="preserve">
         <source>Label</source>
-        <target>Label</target>
+        <target>Etiquetar</target>
         <note>Class = "UILabel"; text = "Label"; ObjectID = "QPZ-Nq-w34";</note>
       </trans-unit>
       <trans-unit id="Sqo-Mk-Ipq.text" xml:space="preserve">
         <source>You can enable access in Privacy Settings.</source>
-        <target>You can enable access in Privacy Settings.</target>
+        <target>Puede permitir el acceso en la Configuración de privacidad.</target>
         <note>Class = "UILabel"; text = "You can enable access in Privacy Settings."; ObjectID = "Sqo-Mk-Ipq";</note>
       </trans-unit>
       <trans-unit id="TWC-AR-tZf.text" xml:space="preserve">
@@ -1015,27 +1015,27 @@
       </trans-unit>
       <trans-unit id="U88-0B-ztQ.normalTitle" xml:space="preserve">
         <source>Clock Out</source>
-        <target>Clock Out</target>
+        <target>Checar salida</target>
         <note>Class = "UIButton"; normalTitle = "Clock Out"; ObjectID = "U88-0B-ztQ";</note>
       </trans-unit>
       <trans-unit id="V8i-qH-7Sc.placeholder" xml:space="preserve">
         <source>Enter property address to search.</source>
-        <target>Enter property address to search.</target>
+        <target>Ingrese el nombre de la propiedad a buscar.</target>
         <note>Class = "UITextField"; placeholder = "Enter property address to search."; ObjectID = "V8i-qH-7Sc";</note>
       </trans-unit>
       <trans-unit id="VZT-HL-MSm.text" xml:space="preserve">
         <source>Title</source>
-        <target>Title</target>
+        <target>Título</target>
         <note>Class = "UILabel"; text = "Title"; ObjectID = "VZT-HL-MSm";</note>
       </trans-unit>
       <trans-unit id="WQk-Gk-ngv.title" xml:space="preserve">
         <source>Done</source>
-        <target>Done</target>
+        <target>Hecho</target>
         <note>Class = "UIBarButtonItem"; title = "Done"; ObjectID = "WQk-Gk-ngv";</note>
       </trans-unit>
       <trans-unit id="XcV-sA-mjI.placeholder" xml:space="preserve">
         <source>Company ID</source>
-        <target>Company ID</target>
+        <target>ID de la empresa</target>
         <note>Class = "UITextField"; placeholder = "Company ID"; ObjectID = "XcV-sA-mjI";</note>
       </trans-unit>
       <trans-unit id="Xpi-Eq-K58.text" xml:space="preserve">
@@ -1045,17 +1045,17 @@
       </trans-unit>
       <trans-unit id="Ycl-Gj-T6x.title" xml:space="preserve">
         <source>Forms</source>
-        <target>Forms</target>
+        <target>Formularios</target>
         <note>Class = "UITabBarItem"; title = "Forms"; ObjectID = "Ycl-Gj-T6x";</note>
       </trans-unit>
       <trans-unit id="a6B-P0-cGZ.text" xml:space="preserve">
         <source>Title</source>
-        <target>Title</target>
+        <target>Título</target>
         <note>Class = "UILabel"; text = "Title"; ObjectID = "a6B-P0-cGZ";</note>
       </trans-unit>
       <trans-unit id="alm-l1-3Sv.text" xml:space="preserve">
         <source>Loading..</source>
-        <target>Loading..</target>
+        <target>Cargando..</target>
         <note>Class = "UILabel"; text = "Loading.."; ObjectID = "alm-l1-3Sv";</note>
       </trans-unit>
       <trans-unit id="bHu-No-0id.text" xml:space="preserve">
@@ -1070,37 +1070,37 @@
       </trans-unit>
       <trans-unit id="dca-m2-Jbr.placeholder" xml:space="preserve">
         <source>Email address</source>
-        <target>Email address</target>
+        <target>Correo electrónico</target>
         <note>Class = "UITextField"; placeholder = "Email address"; ObjectID = "dca-m2-Jbr";</note>
       </trans-unit>
       <trans-unit id="eMJ-hY-ggA.text" xml:space="preserve">
         <source>Enter property name.</source>
-        <target>Enter property name.</target>
+        <target>Ingrese el nombre de la propiedad.</target>
         <note>Class = "UITextView"; text = "Enter property name."; ObjectID = "eMJ-hY-ggA";</note>
       </trans-unit>
       <trans-unit id="hZp-P3-wLi.text" xml:space="preserve">
         <source>Surface TEMP:</source>
-        <target>Surface TEMP:</target>
+        <target>Temperatura de la superficie:</target>
         <note>Class = "UILabel"; text = "Surface TEMP:"; ObjectID = "hZp-P3-wLi";</note>
       </trans-unit>
       <trans-unit id="hpK-t6-khD.normalTitle" xml:space="preserve">
         <source>Privacy Policy</source>
-        <target>Privacy Policy</target>
+        <target>Política de privacidad</target>
         <note>Class = "UIButton"; normalTitle = "Privacy Policy"; ObjectID = "hpK-t6-khD";</note>
       </trans-unit>
       <trans-unit id="hw2-E8-Cgn.placeholder" xml:space="preserve">
         <source>Enter target RH</source>
-        <target>Enter target RH</target>
+        <target>Ingrese RH objetiva</target>
         <note>Class = "UITextField"; placeholder = "Enter target RH"; ObjectID = "hw2-E8-Cgn";</note>
       </trans-unit>
       <trans-unit id="hyA-kP-DIK.text" xml:space="preserve">
-        <source>Searching...</source>
-        <target>Searching...</target>
-        <note>Class = "UILabel"; text = "Searching..."; ObjectID = "hyA-kP-DIK";</note>
+        <source>Searching..</source>
+        <target>Buscando..</target>
+        <note>Class = "UILabel"; text = "Searching.."; ObjectID = "hyA-kP-DIK";</note>
       </trans-unit>
       <trans-unit id="ikH-Jm-0qk.title" xml:space="preserve">
         <source>Sites</source>
-        <target>Sites</target>
+        <target>Sitios</target>
         <note>Class = "UITabBarItem"; title = "Sites"; ObjectID = "ikH-Jm-0qk";</note>
       </trans-unit>
       <trans-unit id="jS3-fB-5bc.text" xml:space="preserve">
@@ -1115,7 +1115,7 @@
       </trans-unit>
       <trans-unit id="kx9-O8-FKI.placeholder" xml:space="preserve">
         <source>Name</source>
-        <target>Name</target>
+        <target>Nombre</target>
         <note>Class = "UITextField"; placeholder = "Name"; ObjectID = "kx9-O8-FKI";</note>
       </trans-unit>
       <trans-unit id="l5V-Ea-45F.text" xml:space="preserve">
@@ -1125,12 +1125,12 @@
       </trans-unit>
       <trans-unit id="n7v-1U-4UB.title" xml:space="preserve">
         <source>Done</source>
-        <target>Done</target>
+        <target>Hecho</target>
         <note>Class = "UIBarButtonItem"; title = "Done"; ObjectID = "n7v-1U-4UB";</note>
       </trans-unit>
       <trans-unit id="nJM-JD-KY0.text" xml:space="preserve">
         <source>TEMP:</source>
-        <target>TEMP:</target>
+        <target>Temperatura:</target>
         <note>Class = "UILabel"; text = "TEMP:"; ObjectID = "nJM-JD-KY0";</note>
       </trans-unit>
       <trans-unit id="nzk-Zq-0im.text" xml:space="preserve">
@@ -1140,17 +1140,17 @@
       </trans-unit>
       <trans-unit id="oRj-3j-xqI.title" xml:space="preserve">
         <source>Settings</source>
-        <target>Settings</target>
+        <target>Configuración</target>
         <note>Class = "UITabBarItem"; title = "Settings"; ObjectID = "oRj-3j-xqI";</note>
       </trans-unit>
       <trans-unit id="oiN-P9-O8g.normalTitle" xml:space="preserve">
         <source>Setup SiteFotos</source>
-        <target>Setup SiteFotos</target>
+        <target>Configuración de SiteFotos</target>
         <note>Class = "UIButton"; normalTitle = "Setup SiteFotos"; ObjectID = "oiN-P9-O8g";</note>
       </trans-unit>
       <trans-unit id="or5-ZJ-6oW.text" xml:space="preserve">
         <source>Hole Depth(in):</source>
-        <target>Hole Depth(in):</target>
+        <target>Profundidad del agujero(in):</target>
         <note>Class = "UILabel"; text = "Hole Depth(in):"; ObjectID = "or5-ZJ-6oW";</note>
       </trans-unit>
       <trans-unit id="pnY-T6-Fev.text" xml:space="preserve">
@@ -1160,12 +1160,12 @@
       </trans-unit>
       <trans-unit id="qrT-no-XEs.text" xml:space="preserve">
         <source>Location:</source>
-        <target>Location:</target>
+        <target>Ubicación:</target>
         <note>Class = "UILabel"; text = "Location:"; ObjectID = "qrT-no-XEs";</note>
       </trans-unit>
       <trans-unit id="v8l-xr-EgN.placeholder" xml:space="preserve">
         <source>Enter hole depth</source>
-        <target>Enter hole depth</target>
+        <target>Ingrese la profundidad del agujero</target>
         <note>Class = "UITextField"; placeholder = "Enter hole depth"; ObjectID = "v8l-xr-EgN";</note>
       </trans-unit>
       <trans-unit id="xKb-RO-B3L.text" xml:space="preserve">
