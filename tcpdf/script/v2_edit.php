@@ -1,4 +1,7 @@
 <?php
+// This script is based on: https://tcpdf.org/examples/example_014
+// Note: Sample_Form.json is deprecated. Please check Final Output Sample.zip
+
 $json = file_get_contents('../../Sample_Form.json');
 $data = json_decode($json);
 
