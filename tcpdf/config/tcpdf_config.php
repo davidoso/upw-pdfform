@@ -107,9 +107,19 @@ define ('PDF_CREATOR', 'Your company creator here');
 define ('PDF_AUTHOR', 'Your company author here');
 
 /**
+ * Document title.
+ */
+define ('PDF_TITLE', 'Your PDF title here');
+
+/**
+ * Form title.
+ */
+define ('PDF_FORM_TITLE', 'Your form title here');
+
+/**
  * Header title.
  */
-define ('PDF_HEADER_TITLE', 'Sample PDF');
+define ('PDF_HEADER_TITLE', 'Your PDF name here');
 
 /**
  * Header description string.

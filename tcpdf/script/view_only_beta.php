@@ -41,9 +41,6 @@ $pdf->setImageScale(PDF_IMAGE_SCALE_RATIO);
 // IMPORTANT: disable font subsetting to allow users editing the document
 $pdf->setFontSubsetting(false);
 
-// Set font
-$pdf->SetFont('helvetica', '', 10, '', false);
-
 // Add a page
 $pdf->AddPage();
 
@@ -55,11 +52,9 @@ This name allows to manipulate them via JavaScript in order to perform some vali
 
 // Set default form properties
 $pdf->setFormDefaultProp(array('lineWidth'=>1, 'borderStyle'=>'solid', 'fillColor'=>array(255, 255, 200), 'strokeColor'=>array(255, 128, 128)));
-
 $pdf->SetFont('helvetica', 'BI', 20);
 $pdf->Cell(0, 5, 'Your form title here', 0, 1, 'C');
 $pdf->Ln(10);
-
 $pdf->SetFont('helvetica', '', 12);
 
 
@@ -141,9 +136,6 @@ $pdf->Button('print', 30, 10, 'Print', 'print()', array('lineWidth'=>2, 'borderS
 
 // Reset button
 $pdf->Button('reset', 30, 10, 'Reset', array('S'=>'ResetForm'), array('lineWidth'=>2, 'borderStyle'=>'beveled', 'fillColor'=>array(128, 196, 255), 'strokeColor'=>array(64, 64, 64)));
-
-// Submit button
-$pdf->Button('submit', 30, 10, 'Submit', array('S'=>'SubmitForm', 'F'=>'http://localhost/printvars.php', 'Flags'=>array('ExportFormat')), array('lineWidth'=>2, 'borderStyle'=>'beveled', 'fillColor'=>array(128, 196, 255), 'strokeColor'=>array(64, 64, 64)));
 
 // Form validation functions
 $js = <<<EOD
