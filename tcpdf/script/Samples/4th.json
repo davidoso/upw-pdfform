@@ -1,0 +1,1077 @@
+{
+    "pages": [
+       {
+          "name": "Page 1",
+          "title": "Basic Info",
+          "elements": [
+             {
+                "type": "textdisplay",
+                "name": "Q0",
+                "text": "Quality Assurance Inspection Form",
+                "id": 0,
+                "value": "Quality Assurance Inspection Form"
+             },
+             {
+                "title": "Date/Time",
+                "type": "text",
+                "name": "Q1",
+                "isRequired": "false",
+                "visible": true,
+                "inputType": "datetime-local",
+                "auto": true,
+                "id": 1,
+                "value": "Oct 30, 2019 02:30 PM"
+             },
+             {
+                "title": "Geo Location",
+                "type": "geo",
+                "name": "Q2",
+                "visible": true,
+                "id": 2,
+                "lat": 39.7678781,
+                "lng": -104.8262177,
+                "siteID": "-2",
+                "buildingID": "108150",
+                "buildingName": "Upland Park"
+             },
+             {
+                "title": "Manager Name",
+                "name": "Q3",
+                "type": "dropdown",
+                "isRequired": true,
+                "choices": [
+                   {
+                      "choiceValue": "Ramel",
+                      "elements": []
+                   },
+                   {
+                      "choiceValue": " Nick",
+                      "elements": []
+                   },
+                   {
+                      "choiceValue": " Keith",
+                      "elements": []
+                   },
+                   {
+                      "choiceValue": " Dan",
+                      "elements": []
+                   },
+                   {
+                      "choiceValue": " Jim",
+                      "elements": []
+                   },
+                   {
+                      "choiceValue": " Tony",
+                      "elements": []
+                   },
+                   {
+                      "choiceValue": " Rob",
+                      "elements": []
+                   },
+                   {
+                      "choiceValue": " Mark",
+                      "elements": []
+                   },
+                   {
+                      "choiceValue": " Colin",
+                      "elements": []
+                   },
+                   {
+                      "choiceValue": " Joseph",
+                      "elements": []
+                   },
+                   {
+                      "choiceValue": " Riley",
+                      "elements": []
+                   },
+                   {
+                      "choiceValue": " Matt",
+                      "elements": []
+                   },
+                   {
+                      "choiceValue": " Dale",
+                      "elements": []
+                   },
+                   {
+                      "choiceValue": " Larry",
+                      "elements": [
+                         {
+                            "title": "Name",
+                            "type": "text",
+                            "name": "Q5",
+                            "placeHolder": "Text Input",
+                            "isRequired": true,
+                            "inputType": "text",
+                            "id": 4,
+                            "value": ""
+                         }
+                      ]
+                   },
+                   {
+                      "choiceValue": " Virgil",
+                      "elements": []
+                   },
+                   {
+                      "choiceValue": " Tyler",
+                      "elements": []
+                   },
+                   {
+                      "choiceValue": " Luis",
+                      "elements": []
+                   },
+                   {
+                      "choiceValue": " Other",
+                      "elements": []
+                   }
+                ],
+                "id": 3,
+                "value": " Other"
+             },
+             {
+                "title": "Weather Conditions",
+                "type": "checkbox",
+                "name": "Q6",
+                "isRequired": true,
+                "choices": [
+                   "Sunny",
+                   " Calm",
+                   " Cloudy",
+                   " Windy"
+                ],
+                "id": 5,
+                "value": [
+                   "Sunny"
+                ]
+             },
+             {
+                "title": "Tempature",
+                "type": "text",
+                "name": "Q8",
+                "placeHolder": "",
+                "isRequired": true,
+                "inputType": "number",
+                "scroller": true,
+                "id": 6,
+                "value": "22"
+             },
+             {
+                "title": "Precipitation",
+                "type": "dropdown",
+                "name": "Q9",
+                "isRequired": true,
+                "choices": [
+                   "None",
+                   " Drizzle",
+                   " Rain",
+                   " Flurries",
+                   " Snow",
+                   " Blizzard",
+                   " Hail",
+                   " Freezing Rain",
+                   " Fog"
+                ],
+                "id": 7,
+                "value": "None"
+             }
+          ]
+       },
+       {
+          "name": "Page 3",
+          "title": "Inspection Information",
+          "elements": [
+             {
+                "title": "IS THE SITE CLEAR OF ALL EXCESS ICE MELT?",
+                "name": "Q10",
+                "type": "radiogroup",
+                "isRequired": true,
+                "segment": true,
+                "choices": [
+                   {
+                      "choiceValue": "Yes",
+                      "elements": [
+                         {
+                            "title": "Photo Upload Required",
+                            "type": "file",
+                            "name": "Q12",
+                            "isRequired": true,
+                            "id": 9,
+                            "value": [
+                               {
+                                  "localHighImagePath": "",
+                                  "localLowImagePath": "/storage/emulated/0/Sitefotos/.temp/sitefotos_low_1572467485356.jpg",
+                                  "imageId": 1,
+                                  "lrImageURL": "https://19b5bf454221a3009503-837ce6cc4941d82f7e9704a4735379b2.ssl.cf1.rackcdn.com/15294c87f0f4.jpg",
+                                  "hrImageURL": ""
+                               }
+                            ]
+                         },
+                         {
+                            "title": "Photo Upload Required",
+                            "type": "file",
+                            "name": "Q25",
+                            "isRequired": true,
+                            "id": 10,
+                            "value": [
+                               {
+                                  "localHighImagePath": "",
+                                  "localLowImagePath": "/storage/emulated/0/Sitefotos/.temp/sitefotos_low_1572467702932.jpg",
+                                  "imageId": 12,
+                                  "lrImageURL": "https://19b5bf454221a3009503-837ce6cc4941d82f7e9704a4735379b2.ssl.cf1.rackcdn.com/d6c3b53779da.jpg",
+                                  "hrImageURL": ""
+                               }
+                            ]
+                         },
+                         {
+                            "title": "Photo Upload Required",
+                            "type": "file",
+                            "name": "Q13",
+                            "isRequired": true,
+                            "id": 11,
+                            "value": [
+                               {
+                                  "localHighImagePath": "",
+                                  "localLowImagePath": "/storage/emulated/0/Sitefotos/.temp/sitefotos_low_1572467716368.jpg",
+                                  "imageId": 13,
+                                  "lrImageURL": "https://19b5bf454221a3009503-837ce6cc4941d82f7e9704a4735379b2.ssl.cf1.rackcdn.com/083fc7f978a3.jpg",
+                                  "hrImageURL": ""
+                               }
+                            ]
+                         },
+                         {
+                            "title": "Photo Upload",
+                            "type": "file",
+                            "name": "Q87",
+                            "isRequired": false,
+                            "id": 12,
+                            "value": [
+                               {
+                                  "localHighImagePath": "",
+                                  "localLowImagePath": "/storage/emulated/0/Sitefotos/.temp/sitefotos_low_1572467555501.jpg",
+                                  "imageId": 4,
+                                  "lrImageURL": "https://19b5bf454221a3009503-837ce6cc4941d82f7e9704a4735379b2.ssl.cf1.rackcdn.com/80243e0521a4.jpg",
+                                  "hrImageURL": ""
+                               }
+                            ]
+                         },
+                         {
+                            "title": "Photo Upload",
+                            "type": "file",
+                            "name": "Q84",
+                            "isRequired": false,
+                            "id": 13,
+                            "value": [
+                               {
+                                  "localHighImagePath": "",
+                                  "localLowImagePath": "/storage/emulated/0/Sitefotos/.temp/sitefotos_low_1572467541077.jpg",
+                                  "imageId": 3,
+                                  "lrImageURL": "https://19b5bf454221a3009503-837ce6cc4941d82f7e9704a4735379b2.ssl.cf1.rackcdn.com/fc3e40ae0ac5.jpg",
+                                  "hrImageURL": ""
+                               }
+                            ]
+                         },
+                         {
+                            "title": "Photo Upload",
+                            "type": "file",
+                            "name": "Q88",
+                            "isRequired": false,
+                            "id": 14,
+                            "value": [
+                               {
+                                  "localHighImagePath": "",
+                                  "localLowImagePath": "/storage/emulated/0/Sitefotos/.temp/sitefotos_low_1572467582976.jpg",
+                                  "imageId": 6,
+                                  "lrImageURL": "https://19b5bf454221a3009503-837ce6cc4941d82f7e9704a4735379b2.ssl.cf1.rackcdn.com/d30a29dbd774.jpg",
+                                  "hrImageURL": ""
+                               },
+                               {
+                                  "localHighImagePath": "",
+                                  "localLowImagePath": "/storage/emulated/0/Sitefotos/.temp/sitefotos_low_1572467600720.jpg",
+                                  "imageId": 7,
+                                  "lrImageURL": "https://19b5bf454221a3009503-837ce6cc4941d82f7e9704a4735379b2.ssl.cf1.rackcdn.com/807fc614d8a0.jpg",
+                                  "hrImageURL": ""
+                               }
+                            ]
+                         },
+                         {
+                            "title": "Photo Upload",
+                            "type": "file",
+                            "name": "Q86",
+                            "isRequired": false,
+                            "id": 15,
+                            "value": [
+                               {
+                                  "localHighImagePath": "",
+                                  "localLowImagePath": "/storage/emulated/0/Sitefotos/.temp/sitefotos_low_1572467637184.jpg",
+                                  "imageId": 8,
+                                  "lrImageURL": "https://19b5bf454221a3009503-837ce6cc4941d82f7e9704a4735379b2.ssl.cf1.rackcdn.com/4e5f44f10db1.jpg",
+                                  "hrImageURL": ""
+                               },
+                               {
+                                  "localHighImagePath": "",
+                                  "localLowImagePath": "/storage/emulated/0/Sitefotos/.temp/sitefotos_low_1572467671671.jpg",
+                                  "imageId": 10,
+                                  "lrImageURL": "https://19b5bf454221a3009503-837ce6cc4941d82f7e9704a4735379b2.ssl.cf1.rackcdn.com/c4bab87b853b.jpg",
+                                  "hrImageURL": ""
+                               }
+                            ]
+                         },
+                         {
+                            "title": "Photo Upload",
+                            "type": "file",
+                            "name": "Q83",
+                            "isRequired": false,
+                            "id": 16,
+                            "value": [
+                               {
+                                  "localHighImagePath": "",
+                                  "localLowImagePath": "/storage/emulated/0/Sitefotos/.temp/sitefotos_low_1572467657705.jpg",
+                                  "imageId": 9,
+                                  "lrImageURL": "https://19b5bf454221a3009503-837ce6cc4941d82f7e9704a4735379b2.ssl.cf1.rackcdn.com/629cb25b8142.jpg",
+                                  "hrImageURL": ""
+                               }
+                            ]
+                         }
+                      ]
+                   },
+                   {
+                      "choiceValue": "No",
+                      "elements": [
+                         {
+                            "title": "Can you address the problem right now?",
+                            "name": "Q16",
+                            "type": "radiogroup",
+                            "isRequired": true,
+                            "segment": true,
+                            "choices": [
+                               {
+                                  "choiceValue": "Yes",
+                                  "elements": [
+                                     {
+                                        "type": "textdisplay",
+                                        "name": "Q83",
+                                        "text": "Please upload before and after pictures",
+                                        "id": 18,
+                                        "value": "Please upload before and after pictures"
+                                     },
+                                     {
+                                        "title": "Photo Upload",
+                                        "type": "file",
+                                        "name": "Q85",
+                                        "isRequired": true,
+                                        "id": 19,
+                                        "value": []
+                                     },
+                                     {
+                                        "title": "Photo Upload",
+                                        "type": "file",
+                                        "name": "Q84",
+                                        "isRequired": true,
+                                        "id": 20,
+                                        "value": []
+                                     }
+                                  ]
+                               },
+                               {
+                                  "choiceValue": "No",
+                                  "elements": [
+                                     {
+                                        "title": "What is your action plan to have this addressed immediately? ",
+                                        "type": "text",
+                                        "name": "Q22",
+                                        "placeHolder": "Text Input",
+                                        "isRequired": true,
+                                        "inputType": "text",
+                                        "id": 21,
+                                        "value": ""
+                                     },
+                                     {
+                                        "title": "Signature that action plan will be initiated after QA completion",
+                                        "type": "signaturepad",
+                                        "name": "Q23",
+                                        "isRequired": true,
+                                        "value": [],
+                                        "id": 22
+                                     }
+                                  ]
+                               }
+                            ],
+                            "id": 17,
+                            "value": ""
+                         }
+                      ]
+                   }
+                ],
+                "id": 8,
+                "value": "Yes"
+             },
+             {
+                "title": "Are all sidewalks in front of building cleared?",
+                "name": "Q20",
+                "type": "radiogroup",
+                "isRequired": true,
+                "segment": true,
+                "choices": [
+                   {
+                      "choiceValue": "Yes",
+                      "elements": []
+                   },
+                   {
+                      "choiceValue": "No",
+                      "elements": [
+                         {
+                            "title": "Do you have an action plan to address this problem?",
+                            "name": "Q23",
+                            "type": "radiogroup",
+                            "isRequired": true,
+                            "segment": true,
+                            "choices": [
+                               {
+                                  "choiceValue": "Yes",
+                                  "elements": []
+                               },
+                               {
+                                  "choiceValue": "No",
+                                  "elements": [
+                                     {
+                                        "title": "Create one now and describe below",
+                                        "type": "text",
+                                        "name": "Q25",
+                                        "placeHolder": "Text Input",
+                                        "isRequired": true,
+                                        "inputType": "text",
+                                        "id": 25,
+                                        "value": ""
+                                     }
+                                  ]
+                               }
+                            ],
+                            "id": 24,
+                            "value": ""
+                         }
+                      ]
+                   }
+                ],
+                "id": 23,
+                "value": "Yes"
+             },
+             {
+                "title": "Are all drive lanes in front of building cleared?",
+                "name": "Q26",
+                "type": "radiogroup",
+                "isRequired": true,
+                "segment": true,
+                "choices": [
+                   {
+                      "choiceValue": "Yes",
+                      "elements": []
+                   },
+                   {
+                      "choiceValue": "No",
+                      "elements": [
+                         {
+                            "title": "Do you have an action plan to address this problem?",
+                            "name": "Q28",
+                            "type": "radiogroup",
+                            "isRequired": true,
+                            "segment": true,
+                            "choices": [
+                               {
+                                  "choiceValue": "Yes",
+                                  "elements": []
+                               },
+                               {
+                                  "choiceValue": "No",
+                                  "elements": [
+                                     {
+                                        "title": "Create one now and describe below",
+                                        "type": "text",
+                                        "name": "Q30",
+                                        "placeHolder": "Text Input",
+                                        "isRequired": true,
+                                        "inputType": "text",
+                                        "id": 28,
+                                        "value": ""
+                                     }
+                                  ]
+                               }
+                            ],
+                            "id": 27,
+                            "value": ""
+                         }
+                      ]
+                   }
+                ],
+                "id": 26,
+                "value": "Yes"
+             },
+             {
+                "title": "Are all handicap spots cleared and ice melted?",
+                "name": "Q31",
+                "type": "radiogroup",
+                "isRequired": true,
+                "segment": true,
+                "choices": [
+                   {
+                      "choiceValue": "Yes",
+                      "elements": [
+                         {
+                            "title": "Photo Upload",
+                            "type": "file",
+                            "name": "Q33",
+                            "isRequired": true,
+                            "id": 30,
+                            "value": [
+                               {
+                                  "localHighImagePath": "",
+                                  "localLowImagePath": "/storage/emulated/0/Sitefotos/.temp/sitefotos_low_1572467495971.jpg",
+                                  "imageId": 2,
+                                  "lrImageURL": "https://19b5bf454221a3009503-837ce6cc4941d82f7e9704a4735379b2.ssl.cf1.rackcdn.com/3c3d975af9e1.jpg",
+                                  "hrImageURL": ""
+                               },
+                               {
+                                  "localHighImagePath": "",
+                                  "localLowImagePath": "/storage/emulated/0/Sitefotos/.temp/sitefotos_low_1572467568997.jpg",
+                                  "imageId": 5,
+                                  "lrImageURL": "https://19b5bf454221a3009503-837ce6cc4941d82f7e9704a4735379b2.ssl.cf1.rackcdn.com/bad25aff61cf.jpg",
+                                  "hrImageURL": ""
+                               },
+                               {
+                                  "localHighImagePath": "",
+                                  "localLowImagePath": "/storage/emulated/0/Sitefotos/.temp/sitefotos_low_1572467682066.jpg",
+                                  "imageId": 11,
+                                  "lrImageURL": "https://19b5bf454221a3009503-837ce6cc4941d82f7e9704a4735379b2.ssl.cf1.rackcdn.com/4fb3d82d5910.jpg",
+                                  "hrImageURL": ""
+                               }
+                            ]
+                         }
+                      ]
+                   },
+                   {
+                      "choiceValue": "No",
+                      "elements": [
+                         {
+                            "title": "Do you have an action plan to address this problem?",
+                            "name": "Q35",
+                            "type": "radiogroup",
+                            "isRequired": true,
+                            "segment": true,
+                            "choices": [
+                               {
+                                  "choiceValue": "Yes",
+                                  "elements": []
+                               },
+                               {
+                                  "choiceValue": "No",
+                                  "elements": [
+                                     {
+                                        "title": "Create one now and describe below",
+                                        "type": "text",
+                                        "name": "Q37",
+                                        "placeHolder": "Text Input",
+                                        "isRequired": true,
+                                        "inputType": "text",
+                                        "id": 32,
+                                        "value": ""
+                                     }
+                                  ]
+                               }
+                            ],
+                            "id": 31,
+                            "value": ""
+                         }
+                      ]
+                   }
+                ],
+                "id": 29,
+                "value": "Yes"
+             },
+             {
+                "title": "Are ALL city side walks clear of snow and ice?",
+                "name": "Q89",
+                "type": "radiogroup",
+                "isRequired": true,
+                "segment": true,
+                "choices": [
+                   {
+                      "choiceValue": "Yes",
+                      "elements": []
+                   },
+                   {
+                      "choiceValue": "No",
+                      "elements": [
+                         {
+                            "title": "Do you have an action plan to address this problem?",
+                            "name": "Q91",
+                            "type": "radiogroup",
+                            "isRequired": true,
+                            "segment": true,
+                            "choices": [
+                               {
+                                  "choiceValue": "Yes",
+                                  "elements": []
+                               },
+                               {
+                                  "choiceValue": "No",
+                                  "elements": [
+                                     {
+                                        "title": "Create one now and describe below",
+                                        "type": "comment",
+                                        "name": "Q95",
+                                        "placeHolder": "",
+                                        "isRequired": true,
+                                        "id": 35,
+                                        "isWeatherInput": false,
+                                        "value": ""
+                                     }
+                                  ]
+                               }
+                            ],
+                            "id": 34,
+                            "value": ""
+                         }
+                      ]
+                   }
+                ],
+                "id": 33,
+                "value": "Yes"
+             },
+             {
+                "title": "Are all curb in parking spots cleared to asphalt/concrete? ",
+                "name": "Q38",
+                "type": "radiogroup",
+                "isRequired": true,
+                "segment": true,
+                "choices": [
+                   {
+                      "choiceValue": "Yes",
+                      "elements": []
+                   },
+                   {
+                      "choiceValue": "No",
+                      "elements": [
+                         {
+                            "title": "Do you have an action plan to address this problem?",
+                            "name": "Q40",
+                            "type": "radiogroup",
+                            "isRequired": true,
+                            "segment": true,
+                            "choices": [
+                               {
+                                  "choiceValue": "Yes",
+                                  "elements": []
+                               },
+                               {
+                                  "choiceValue": "No",
+                                  "elements": [
+                                     {
+                                        "title": "Create one now and describe below",
+                                        "type": "text",
+                                        "name": "Q42",
+                                        "placeHolder": "Text Input",
+                                        "isRequired": true,
+                                        "inputType": "text",
+                                        "id": 38,
+                                        "value": ""
+                                     }
+                                  ]
+                               }
+                            ],
+                            "id": 37,
+                            "value": ""
+                         }
+                      ]
+                   }
+                ],
+                "id": 36,
+                "value": "Yes"
+             },
+             {
+                "title": "Are the 1st set of islands cleared to asphalt/concrete?",
+                "name": "Q43",
+                "type": "radiogroup",
+                "isRequired": true,
+                "segment": true,
+                "choices": [
+                   {
+                      "choiceValue": "Yes",
+                      "elements": []
+                   },
+                   {
+                      "choiceValue": "No",
+                      "elements": [
+                         {
+                            "title": "Do you have an action plan to address this problem?",
+                            "name": "Q45",
+                            "type": "radiogroup",
+                            "isRequired": true,
+                            "segment": true,
+                            "choices": [
+                               {
+                                  "choiceValue": "Yes",
+                                  "elements": []
+                               },
+                               {
+                                  "choiceValue": "No",
+                                  "elements": [
+                                     {
+                                        "title": "Create one now and describe below",
+                                        "type": "text",
+                                        "name": "Q47",
+                                        "placeHolder": "Text Input",
+                                        "isRequired": true,
+                                        "inputType": "text",
+                                        "id": 41,
+                                        "value": ""
+                                     }
+                                  ]
+                               }
+                            ],
+                            "id": 40,
+                            "value": ""
+                         }
+                      ]
+                   }
+                ],
+                "id": 39,
+                "value": "Yes"
+             },
+             {
+                "title": "Has all the building drainage been inspected/cleared? ",
+                "name": "Q48",
+                "type": "radiogroup",
+                "isRequired": true,
+                "segment": true,
+                "choices": [
+                   {
+                      "choiceValue": "Yes",
+                      "elements": []
+                   },
+                   {
+                      "choiceValue": "No",
+                      "elements": [
+                         {
+                            "title": "Do you have an action plan to address this problem?",
+                            "name": "Q50",
+                            "type": "radiogroup",
+                            "isRequired": true,
+                            "segment": true,
+                            "choices": [
+                               {
+                                  "choiceValue": "Yes",
+                                  "elements": []
+                               },
+                               {
+                                  "choiceValue": "No",
+                                  "elements": [
+                                     {
+                                        "title": "Create one now and describe below",
+                                        "type": "text",
+                                        "name": "Q52",
+                                        "placeHolder": "Text Input",
+                                        "isRequired": true,
+                                        "inputType": "text",
+                                        "id": 44,
+                                        "value": ""
+                                     }
+                                  ]
+                               }
+                            ],
+                            "id": 43,
+                            "value": ""
+                         }
+                      ]
+                   }
+                ],
+                "id": 42,
+                "value": "Yes"
+             },
+             {
+                "title": "Are all dumpster enclosures cleared of snow and ice?",
+                "name": "Q53",
+                "type": "radiogroup",
+                "isRequired": true,
+                "segment": true,
+                "choices": [
+                   {
+                      "choiceValue": "Yes",
+                      "elements": []
+                   },
+                   {
+                      "choiceValue": "No",
+                      "elements": [
+                         {
+                            "title": "Do you have an action plan to address this problem?",
+                            "name": "Q57",
+                            "type": "radiogroup",
+                            "isRequired": true,
+                            "segment": true,
+                            "choices": [
+                               {
+                                  "choiceValue": "Yes",
+                                  "elements": []
+                               },
+                               {
+                                  "choiceValue": "No",
+                                  "elements": [
+                                     {
+                                        "title": "Create one now and describe below",
+                                        "type": "text",
+                                        "name": "Q59",
+                                        "placeHolder": "Text Input",
+                                        "isRequired": true,
+                                        "inputType": "text",
+                                        "id": 47,
+                                        "value": ""
+                                     }
+                                  ]
+                               }
+                            ],
+                            "id": 46,
+                            "value": ""
+                         }
+                      ]
+                   }
+                ],
+                "id": 45,
+                "value": "Yes"
+             },
+             {
+                "title": "Are all stairs, ramps, and sidewalks clear of ice?",
+                "name": "Q60",
+                "type": "radiogroup",
+                "isRequired": true,
+                "segment": true,
+                "choices": [
+                   {
+                      "choiceValue": "Yes",
+                      "elements": []
+                   },
+                   {
+                      "choiceValue": "No",
+                      "elements": [
+                         {
+                            "title": "Do you have an action plan to address this problem?",
+                            "name": "Q62",
+                            "type": "radiogroup",
+                            "isRequired": true,
+                            "segment": true,
+                            "choices": [
+                               {
+                                  "choiceValue": "Yes",
+                                  "elements": []
+                               },
+                               {
+                                  "choiceValue": "No",
+                                  "elements": [
+                                     {
+                                        "title": "Create one now and describe below",
+                                        "type": "text",
+                                        "name": "Q64",
+                                        "placeHolder": "Text Input",
+                                        "isRequired": true,
+                                        "inputType": "text",
+                                        "id": 50,
+                                        "value": ""
+                                     }
+                                  ]
+                               }
+                            ],
+                            "id": 49,
+                            "value": ""
+                         }
+                      ]
+                   }
+                ],
+                "id": 48,
+                "value": "Yes"
+             },
+             {
+                "title": "Are all snow piles in the proper locations? ",
+                "name": "Q65",
+                "type": "radiogroup",
+                "isRequired": true,
+                "segment": true,
+                "choices": [
+                   {
+                      "choiceValue": "Yes",
+                      "elements": []
+                   },
+                   {
+                      "choiceValue": "No",
+                      "elements": [
+                         {
+                            "title": "Do you have an action plan to address this problem?",
+                            "name": "Q67",
+                            "type": "radiogroup",
+                            "isRequired": true,
+                            "segment": true,
+                            "choices": [
+                               {
+                                  "choiceValue": "Yes",
+                                  "elements": []
+                               },
+                               {
+                                  "choiceValue": "No",
+                                  "elements": [
+                                     {
+                                        "title": "Create one now and describe below",
+                                        "type": "text",
+                                        "name": "Q69",
+                                        "placeHolder": "Text Input",
+                                        "isRequired": true,
+                                        "inputType": "text",
+                                        "id": 53,
+                                        "value": ""
+                                     }
+                                  ]
+                               }
+                            ],
+                            "id": 52,
+                            "value": ""
+                         }
+                      ]
+                   }
+                ],
+                "id": 51,
+                "value": "Yes"
+             },
+             {
+                "title": "Have all your site specific awnings, signage, and hazards been identified and addressed?",
+                "name": "Q70",
+                "type": "radiogroup",
+                "isRequired": true,
+                "segment": true,
+                "choices": [
+                   {
+                      "choiceValue": "Yes",
+                      "elements": []
+                   },
+                   {
+                      "choiceValue": "No",
+                      "elements": [
+                         {
+                            "title": "Do you have an action plan to address this problem?",
+                            "name": "Q72",
+                            "type": "radiogroup",
+                            "isRequired": true,
+                            "segment": true,
+                            "choices": [
+                               {
+                                  "choiceValue": "Yes",
+                                  "elements": []
+                               },
+                               {
+                                  "choiceValue": "No",
+                                  "elements": [
+                                     {
+                                        "title": "Create one now and describe below",
+                                        "type": "text",
+                                        "name": "Q74",
+                                        "placeHolder": "Text Input",
+                                        "isRequired": true,
+                                        "inputType": "text",
+                                        "id": 56,
+                                        "value": ""
+                                     }
+                                  ]
+                               }
+                            ],
+                            "id": 55,
+                            "value": ""
+                         }
+                      ]
+                   }
+                ],
+                "id": 54,
+                "value": "Yes"
+             }
+          ]
+       },
+       {
+          "name": "Page 4",
+          "title": "Conclusion",
+          "elements": [
+             {
+                "title": "Does your site require follow up service?",
+                "name": "Q75",
+                "type": "radiogroup",
+                "isRequired": true,
+                "segment": true,
+                "choices": [
+                   {
+                      "choiceValue": "Yes",
+                      "elements": [
+                         {
+                            "title": "Describe your complete action plan below",
+                            "type": "text",
+                            "name": "Q77",
+                            "placeHolder": "Text Input",
+                            "isRequired": true,
+                            "inputType": "text",
+                            "id": 58,
+                            "value": "need to come back for ice control"
+                         }
+                      ]
+                   },
+                   {
+                      "choiceValue": "No",
+                      "elements": [
+                         {
+                            "type": "textdisplay",
+                            "name": "Q79",
+                            "text": "Thank you for completing this sites QA process",
+                            "id": 59,
+                            "value": "Thank you for completing this sites QA process"
+                         }
+                      ]
+                   }
+                ],
+                "id": 57,
+                "value": "Yes"
+             },
+             {
+                "title": "General Notes",
+                "type": "text",
+                "name": "Q89",
+                "placeHolder": "Ex. Site is clear except awnings that can't be reached.......",
+                "isRequired": false,
+                "inputType": "text",
+                "id": 60,
+                "value": ""
+             },
+             {
+                "title": "Property Conditions Quality Assessment",
+                "type": "radiogroup",
+                "name": "Q80",
+                "isRequired": true,
+                "segment": true,
+                "choices": [
+                   "Excellent",
+                   " Good",
+                   " Satisfactory",
+                   " Unsatisfactory"
+                ],
+                "id": 61,
+                "value": " Good"
+             },
+             {
+                "title": "Signature of Approval that all information provided is accurate",
+                "type": "signaturepad",
+                "name": "Q81",
+                "isRequired": true,
+                "value": [
+                   {
+                      "imageId": 14,
+                      "lrImageURL": "https://19b5bf454221a3009503-837ce6cc4941d82f7e9704a4735379b2.ssl.cf1.rackcdn.com/3f2fec1ab45f.jpg",
+                      "hrImageURL": "",
+                      "localLowImagePath": "/storage/emulated/0/Sitefotos/.temp/sitefotos_low_1572467740907.jpg",
+                      "localHighImagePath": "",
+                      "isSignature": true
+                   }
+                ],
+                "id": 62
+             }
+          ]
+       }
+    ]
+ }

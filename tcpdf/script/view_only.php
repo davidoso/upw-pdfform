@@ -211,24 +211,24 @@ function printField($e) {
 					if($type == 'issues') {
 						$pdf->SetX($startX + $imageWidth + 2);	// If exists, print caption from this X value
 						$pdf->SetFillColor(255, 255, 255);		// White cells are added next to issue images
-						$pdf->Cell(100, $imageHeight, $imageName[$i], 0, 0, 'L', 1);
+						$pdf->Cell(100, $imageHeight, ltrim($imageName[$i]), 0, 0, 'L', 1);
 					}
 					$pdf->SetFillColor($titleColor[0], $titleColor[1], $titleColor[2]);
 					$pdf->SetX(PDF_MARGIN_LEFT);				// Print field title from this X value
-					$pdf->MultiCell($titleWidth, $imageHeight, $title, 0, 'R', 1);
+					$pdf->MultiCell($titleWidth, $imageHeight, ltrim($title), 0, 'R', 1);
 				}
 			}
 			// Add normal field values (string or stringied array)
 			else {
 				$pdf->SetFillColor($titleColor[0], $titleColor[1], $titleColor[2]);
-				$pdf->MultiRow($titleWidth, $title, $value);
+				$pdf->MultiRow($titleWidth, ltrim($title), ltrim($value));
 			}
 		}
 		if($e->type == 'subHeader') {
 			// Set subheader top padding
 			$pdf->setCellPaddings(0, 2, 0, 0);
 			$pdf->SetFillColor($subheaderColor[0], $subheaderColor[1], $subheaderColor[2]);
-			$pdf->MultiCell(186, 8, 'SECTION: ' . strtoupper($e->title), 0, 'C', 1);
+			$pdf->MultiCell(186, 8, 'SECTION: ' . ltrim(strtoupper($e->title)), 0, 'C', 1);
 		}
 	}
 	// Recursion if "elements" are nested
@@ -236,12 +236,16 @@ function printField($e) {
 		foreach($e->elements as $e2)
 			printField($e2);
 	}
-	// Recursion if "elements" are nested in "choices" array and "choiceValue" is neither empty nor negative
-	if(isset($e->choices) && gettype($e->choices) == 'array') {
+	// Recursion if "elements" are nested in "choices" array and "choiceValue" matchs witch selected "value"
+	// When "value" is an array e.g. checkboxes, all "elements" ares printed regardless "choiceValue"
+	if(isset($e->value) && isset($e->choices) && gettype($e->choices) == 'array') {
+		$choiceValue = $e->value;
 		foreach($e->choices as $c) {
-			if(/*gettype($c) == 'object' &&*/ isset($c->elements) && isset($c->choiceValue)) {
-				$choice = strtolower($c->choiceValue);
-				if($choice != '' && $choice != 'no')
+			if(isset($c->choiceValue) && isset($c->elements)) {
+				if(gettype($e->value) == 'array')
+					foreach($c->elements as $e3)
+						printField($e3);
+				elseif($choiceValue == $c->choiceValue)
 					foreach($c->elements as $e3)
 						printField($e3);
 			}

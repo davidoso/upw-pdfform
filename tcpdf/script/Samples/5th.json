@@ -1,0 +1,1048 @@
+{
+  "pages" : [
+    {
+      "name" : "Page 1",
+      "elements" : [
+        {
+          "text" : "Quality Assurance Inspection Form",
+          "title" : "",
+          "name" : "Q0",
+          "type" : "textdisplay"
+        },
+        {
+          "auto" : true,
+          "type" : "text",
+          "validation" : "",
+          "inputType" : "datetime-local",
+          "placeHolder" : "",
+          "isRequired" : false,
+          "title" : "Date\/Time",
+          "value" : "Oct 30, 2019 11:17 AM",
+          "name" : "Q1",
+          "visible" : true
+        },
+        {
+          "title" : "Geo Location",
+          "siteID" : "-2",
+          "buildingName" : "Enterprise Business Center",
+          "lat" : 39.772700062810216,
+          "type" : "geo",
+          "name" : "Q2",
+          "lng" : -104.8693499845504,
+          "buildingID" : "12619"
+        },
+        {
+          "type" : "dropdown",
+          "value" : " Tony",
+          "isRequired" : true,
+          "name" : "Q3",
+          "title" : "Manager Name",
+          "choices" : [
+            {
+              "elements" : [
+
+              ],
+              "choiceValue" : "Ramel"
+            },
+            {
+              "choiceValue" : " Nick",
+              "elements" : [
+
+              ]
+            },
+            {
+              "choiceValue" : " Keith",
+              "elements" : [
+
+              ]
+            },
+            {
+              "choiceValue" : " Dan",
+              "elements" : [
+
+              ]
+            },
+            {
+              "elements" : [
+
+              ],
+              "choiceValue" : " Jim"
+            },
+            {
+              "elements" : [
+
+              ],
+              "choiceValue" : " Tony"
+            },
+            {
+              "elements" : [
+
+              ],
+              "choiceValue" : " Rob"
+            },
+            {
+              "choiceValue" : " Mark",
+              "elements" : [
+
+              ]
+            },
+            {
+              "elements" : [
+
+              ],
+              "choiceValue" : " Colin"
+            },
+            {
+              "elements" : [
+
+              ],
+              "choiceValue" : " Joseph"
+            },
+            {
+              "elements" : [
+
+              ],
+              "choiceValue" : " Riley"
+            },
+            {
+              "elements" : [
+
+              ],
+              "choiceValue" : " Matt"
+            },
+            {
+              "elements" : [
+
+              ],
+              "choiceValue" : " Dale"
+            },
+            {
+              "choiceValue" : " Larry",
+              "elements" : [
+                {
+                  "validation" : "",
+                  "title" : "Name",
+                  "isRequired" : true,
+                  "type" : "text",
+                  "visible" : true,
+                  "value" : "",
+                  "name" : "Q5",
+                  "auto" : false,
+                  "placeHolder" : "Text Input",
+                  "inputType" : "text"
+                }
+              ]
+            },
+            {
+              "choiceValue" : " Virgil",
+              "elements" : [
+
+              ]
+            },
+            {
+              "choiceValue" : " Tyler",
+              "elements" : [
+
+              ]
+            },
+            {
+              "elements" : [
+
+              ],
+              "choiceValue" : " Luis"
+            },
+            {
+              "choiceValue" : " Other",
+              "elements" : [
+
+              ]
+            }
+          ]
+        },
+        {
+          "value" : [
+            "Sunny"
+          ],
+          "name" : "Q6",
+          "title" : "Weather Conditions",
+          "isRequired" : true,
+          "type" : "checkbox",
+          "choices" : [
+            "Sunny",
+            " Calm",
+            " Cloudy",
+            " Windy"
+          ]
+        },
+        {
+          "inputType" : "number",
+          "isRequired" : true,
+          "name" : "Q8",
+          "auto" : false,
+          "visible" : true,
+          "title" : "Tempature",
+          "validation" : "",
+          "type" : "text",
+          "value" : "12",
+          "placeHolder" : ""
+        },
+        {
+          "choices" : [
+            "None",
+            " Drizzle",
+            " Rain",
+            " Flurries",
+            " Snow",
+            " Blizzard",
+            " Hail",
+            " Freezing Rain",
+            " Fog"
+          ],
+          "title" : "Precipitation",
+          "isRequired" : true,
+          "value" : "None",
+          "name" : "Q9",
+          "type" : "dropdown"
+        }
+      ],
+      "title" : "Basic Info"
+    },
+    {
+      "title" : "Inspection Information",
+      "name" : "Page 3",
+      "elements" : [
+        {
+          "value" : "Yes",
+          "title" : "IS THE SITE CLEAR OF ALL EXCESS ICE MELT?",
+          "name" : "Q10",
+          "choices" : [
+            {
+              "elements" : [
+                {
+                  "value" : [
+                    {
+                      "lrImageURL" : "https:\/\/19b5bf454221a3009503-837ce6cc4941d82f7e9704a4735379b2.ssl.cf1.rackcdn.com\/62bc878c5736.jpg"
+                    }
+                  ],
+                  "name" : "Q12",
+                  "title" : "Photo Upload Required",
+                  "type" : "file"
+                },
+                {
+                  "type" : "file",
+                  "name" : "Q25",
+                  "title" : "Photo Upload Required",
+                  "value" : [
+                    {
+                      "lrImageURL" : "https:\/\/19b5bf454221a3009503-837ce6cc4941d82f7e9704a4735379b2.ssl.cf1.rackcdn.com\/0865c18ed54d.jpg"
+                    }
+                  ]
+                },
+                {
+                  "value" : [
+                    {
+                      "lrImageURL" : "https:\/\/19b5bf454221a3009503-837ce6cc4941d82f7e9704a4735379b2.ssl.cf1.rackcdn.com\/b6abe70d76bc.jpg"
+                    }
+                  ],
+                  "title" : "Photo Upload Required",
+                  "type" : "file",
+                  "name" : "Q13"
+                },
+                {
+                  "title" : "Photo Upload",
+                  "name" : "Q87",
+                  "value" : [
+
+                  ],
+                  "type" : "file"
+                },
+                {
+                  "type" : "file",
+                  "title" : "Photo Upload",
+                  "value" : [
+
+                  ],
+                  "name" : "Q84"
+                },
+                {
+                  "type" : "file",
+                  "name" : "Q88",
+                  "value" : [
+
+                  ],
+                  "title" : "Photo Upload"
+                },
+                {
+                  "title" : "Photo Upload",
+                  "name" : "Q86",
+                  "type" : "file",
+                  "value" : [
+
+                  ]
+                },
+                {
+                  "type" : "file",
+                  "title" : "Photo Upload",
+                  "name" : "Q83",
+                  "value" : [
+
+                  ]
+                }
+              ],
+              "choiceValue" : "Yes"
+            },
+            {
+              "elements" : [
+                {
+                  "segment" : true,
+                  "isRequired" : true,
+                  "type" : "segmentInput",
+                  "value" : "",
+                  "choices" : [
+                    {
+                      "elements" : [
+                        {
+                          "type" : "textdisplay",
+                          "text" : "Please upload before and after pictures",
+                          "name" : "Q83",
+                          "title" : ""
+                        },
+                        {
+                          "name" : "Q85",
+                          "type" : "file",
+                          "value" : [
+
+                          ],
+                          "title" : "Photo Upload"
+                        },
+                        {
+                          "value" : [
+
+                          ],
+                          "name" : "Q84",
+                          "title" : "Photo Upload",
+                          "type" : "file"
+                        }
+                      ],
+                      "choiceValue" : "Yes"
+                    },
+                    {
+                      "elements" : [
+                        {
+                          "visible" : true,
+                          "inputType" : "text",
+                          "title" : "What is your action plan to have this addressed immediately? ",
+                          "validation" : "",
+                          "type" : "text",
+                          "isRequired" : true,
+                          "name" : "Q22",
+                          "auto" : false,
+                          "value" : "",
+                          "placeHolder" : "Text Input"
+                        },
+                        {
+                          "type" : "signaturepad",
+                          "title" : "Signature that action plan will be initiated after QA completion",
+                          "isRequired" : true,
+                          "value" : {
+
+                          },
+                          "name" : "Q23"
+                        }
+                      ],
+                      "choiceValue" : "No"
+                    }
+                  ],
+                  "title" : "Can you address the problem right now?",
+                  "name" : "Q16"
+                }
+              ],
+              "choiceValue" : "No"
+            }
+          ],
+          "isRequired" : true,
+          "type" : "segmentInput",
+          "segment" : true
+        },
+        {
+          "name" : "Q20",
+          "choices" : [
+            {
+              "elements" : [
+
+              ],
+              "choiceValue" : "Yes"
+            },
+            {
+              "choiceValue" : "No",
+              "elements" : [
+                {
+                  "type" : "segmentInput",
+                  "segment" : true,
+                  "title" : "Do you have an action plan to address this problem?",
+                  "value" : "",
+                  "choices" : [
+                    {
+                      "elements" : [
+
+                      ],
+                      "choiceValue" : "Yes"
+                    },
+                    {
+                      "elements" : [
+                        {
+                          "isRequired" : true,
+                          "validation" : "",
+                          "name" : "Q25",
+                          "placeHolder" : "Text Input",
+                          "value" : "",
+                          "type" : "text",
+                          "inputType" : "text",
+                          "title" : "Create one now and describe below",
+                          "visible" : true,
+                          "auto" : false
+                        }
+                      ],
+                      "choiceValue" : "No"
+                    }
+                  ],
+                  "isRequired" : true,
+                  "name" : "Q23"
+                }
+              ]
+            }
+          ],
+          "value" : "Yes",
+          "segment" : true,
+          "type" : "segmentInput",
+          "title" : "Are all sidewalks in front of building cleared?",
+          "isRequired" : true
+        },
+        {
+          "name" : "Q26",
+          "value" : "Yes",
+          "segment" : true,
+          "choices" : [
+            {
+              "choiceValue" : "Yes",
+              "elements" : [
+
+              ]
+            },
+            {
+              "elements" : [
+                {
+                  "type" : "segmentInput",
+                  "name" : "Q28",
+                  "segment" : true,
+                  "isRequired" : true,
+                  "value" : "",
+                  "choices" : [
+                    {
+                      "elements" : [
+
+                      ],
+                      "choiceValue" : "Yes"
+                    },
+                    {
+                      "elements" : [
+                        {
+                          "visible" : true,
+                          "isRequired" : true,
+                          "placeHolder" : "Text Input",
+                          "type" : "text",
+                          "value" : "",
+                          "title" : "Create one now and describe below",
+                          "inputType" : "text",
+                          "validation" : "",
+                          "name" : "Q30",
+                          "auto" : false
+                        }
+                      ],
+                      "choiceValue" : "No"
+                    }
+                  ],
+                  "title" : "Do you have an action plan to address this problem?"
+                }
+              ],
+              "choiceValue" : "No"
+            }
+          ],
+          "isRequired" : true,
+          "title" : "Are all drive lanes in front of building cleared?",
+          "type" : "segmentInput"
+        },
+        {
+          "title" : "Are all handicap spots cleared and ice melted?",
+          "value" : "No",
+          "isRequired" : true,
+          "name" : "Q31",
+          "choices" : [
+            {
+              "choiceValue" : "Yes",
+              "elements" : [
+                {
+                  "title" : "Photo Upload",
+                  "type" : "file",
+                  "name" : "Q33",
+                  "value" : [
+
+                  ]
+                }
+              ]
+            },
+            {
+              "choiceValue" : "No",
+              "elements" : [
+                {
+                  "title" : "Do you have an action plan to address this problem?",
+                  "segment" : true,
+                  "choices" : [
+                    {
+                      "elements" : [
+
+                      ],
+                      "choiceValue" : "Yes"
+                    },
+                    {
+                      "choiceValue" : "No",
+                      "elements" : [
+                        {
+                          "inputType" : "text",
+                          "placeHolder" : "Text Input",
+                          "isRequired" : true,
+                          "name" : "Q37",
+                          "title" : "Create one now and describe below",
+                          "value" : "",
+                          "auto" : false,
+                          "type" : "text",
+                          "validation" : "",
+                          "visible" : true
+                        }
+                      ]
+                    }
+                  ],
+                  "value" : "Yes",
+                  "type" : "segmentInput",
+                  "isRequired" : true,
+                  "name" : "Q35"
+                }
+              ]
+            }
+          ],
+          "type" : "segmentInput",
+          "segment" : true
+        },
+        {
+          "segment" : true,
+          "isRequired" : true,
+          "title" : "Are ALL city side walks clear of snow and ice?",
+          "value" : "Yes",
+          "choices" : [
+            {
+              "elements" : [
+
+              ],
+              "choiceValue" : "Yes"
+            },
+            {
+              "elements" : [
+                {
+                  "isRequired" : true,
+                  "segment" : true,
+                  "value" : "",
+                  "name" : "Q91",
+                  "choices" : [
+                    {
+                      "choiceValue" : "Yes",
+                      "elements" : [
+
+                      ]
+                    },
+                    {
+                      "elements" : [
+                        {
+                          "value" : "",
+                          "type" : "comment",
+                          "validation" : "",
+                          "name" : "Q95",
+                          "isWeatherInput" : false,
+                          "title" : "Create one now and describe below",
+                          "isRequired" : true,
+                          "placeHolder" : ""
+                        }
+                      ],
+                      "choiceValue" : "No"
+                    }
+                  ],
+                  "type" : "segmentInput",
+                  "title" : "Do you have an action plan to address this problem?"
+                }
+              ],
+              "choiceValue" : "No"
+            }
+          ],
+          "name" : "Q89",
+          "type" : "segmentInput"
+        },
+        {
+          "value" : "Yes",
+          "isRequired" : true,
+          "choices" : [
+            {
+              "elements" : [
+
+              ],
+              "choiceValue" : "Yes"
+            },
+            {
+              "choiceValue" : "No",
+              "elements" : [
+                {
+                  "type" : "segmentInput",
+                  "value" : "",
+                  "isRequired" : true,
+                  "name" : "Q40",
+                  "segment" : true,
+                  "choices" : [
+                    {
+                      "elements" : [
+
+                      ],
+                      "choiceValue" : "Yes"
+                    },
+                    {
+                      "elements" : [
+                        {
+                          "value" : "",
+                          "visible" : true,
+                          "placeHolder" : "Text Input",
+                          "auto" : false,
+                          "title" : "Create one now and describe below",
+                          "inputType" : "text",
+                          "isRequired" : true,
+                          "type" : "text",
+                          "validation" : "",
+                          "name" : "Q42"
+                        }
+                      ],
+                      "choiceValue" : "No"
+                    }
+                  ],
+                  "title" : "Do you have an action plan to address this problem?"
+                }
+              ]
+            }
+          ],
+          "name" : "Q38",
+          "title" : "Are all curb in parking spots cleared to asphalt\/concrete? ",
+          "type" : "segmentInput",
+          "segment" : true
+        },
+        {
+          "choices" : [
+            {
+              "elements" : [
+
+              ],
+              "choiceValue" : "Yes"
+            },
+            {
+              "choiceValue" : "No",
+              "elements" : [
+                {
+                  "type" : "segmentInput",
+                  "segment" : true,
+                  "title" : "Do you have an action plan to address this problem?",
+                  "isRequired" : true,
+                  "choices" : [
+                    {
+                      "elements" : [
+
+                      ],
+                      "choiceValue" : "Yes"
+                    },
+                    {
+                      "choiceValue" : "No",
+                      "elements" : [
+                        {
+                          "isRequired" : true,
+                          "auto" : false,
+                          "value" : "",
+                          "inputType" : "text",
+                          "title" : "Create one now and describe below",
+                          "placeHolder" : "Text Input",
+                          "validation" : "",
+                          "type" : "text",
+                          "name" : "Q47",
+                          "visible" : true
+                        }
+                      ]
+                    }
+                  ],
+                  "name" : "Q45",
+                  "value" : ""
+                }
+              ]
+            }
+          ],
+          "name" : "Q43",
+          "type" : "segmentInput",
+          "title" : "Are the 1st set of islands cleared to asphalt\/concrete?",
+          "isRequired" : true,
+          "segment" : true,
+          "value" : "Yes"
+        },
+        {
+          "title" : "Has all the building drainage been inspected\/cleared? ",
+          "type" : "segmentInput",
+          "value" : "Yes",
+          "choices" : [
+            {
+              "elements" : [
+
+              ],
+              "choiceValue" : "Yes"
+            },
+            {
+              "choiceValue" : "No",
+              "elements" : [
+                {
+                  "segment" : true,
+                  "type" : "segmentInput",
+                  "title" : "Do you have an action plan to address this problem?",
+                  "isRequired" : true,
+                  "name" : "Q50",
+                  "choices" : [
+                    {
+                      "elements" : [
+
+                      ],
+                      "choiceValue" : "Yes"
+                    },
+                    {
+                      "elements" : [
+                        {
+                          "value" : "",
+                          "validation" : "",
+                          "inputType" : "text",
+                          "name" : "Q52",
+                          "isRequired" : true,
+                          "auto" : false,
+                          "visible" : true,
+                          "title" : "Create one now and describe below",
+                          "type" : "text",
+                          "placeHolder" : "Text Input"
+                        }
+                      ],
+                      "choiceValue" : "No"
+                    }
+                  ],
+                  "value" : ""
+                }
+              ]
+            }
+          ],
+          "isRequired" : true,
+          "segment" : true,
+          "name" : "Q48"
+        },
+        {
+          "choices" : [
+            {
+              "elements" : [
+
+              ],
+              "choiceValue" : "Yes"
+            },
+            {
+              "elements" : [
+                {
+                  "title" : "Do you have an action plan to address this problem?",
+                  "name" : "Q57",
+                  "choices" : [
+                    {
+                      "choiceValue" : "Yes",
+                      "elements" : [
+
+                      ]
+                    },
+                    {
+                      "elements" : [
+                        {
+                          "auto" : false,
+                          "name" : "Q59",
+                          "value" : "",
+                          "isRequired" : true,
+                          "visible" : true,
+                          "placeHolder" : "Text Input",
+                          "inputType" : "text",
+                          "title" : "Create one now and describe below",
+                          "type" : "text",
+                          "validation" : ""
+                        }
+                      ],
+                      "choiceValue" : "No"
+                    }
+                  ],
+                  "segment" : true,
+                  "value" : "",
+                  "type" : "segmentInput",
+                  "isRequired" : true
+                }
+              ],
+              "choiceValue" : "No"
+            }
+          ],
+          "type" : "segmentInput",
+          "title" : "Are all dumpster enclosures cleared of snow and ice?",
+          "value" : "Yes",
+          "segment" : true,
+          "isRequired" : true,
+          "name" : "Q53"
+        },
+        {
+          "value" : "Yes",
+          "title" : "Are all stairs, ramps, and sidewalks clear of ice?",
+          "type" : "segmentInput",
+          "choices" : [
+            {
+              "elements" : [
+
+              ],
+              "choiceValue" : "Yes"
+            },
+            {
+              "choiceValue" : "No",
+              "elements" : [
+                {
+                  "segment" : true,
+                  "title" : "Do you have an action plan to address this problem?",
+                  "choices" : [
+                    {
+                      "choiceValue" : "Yes",
+                      "elements" : [
+
+                      ]
+                    },
+                    {
+                      "elements" : [
+                        {
+                          "auto" : false,
+                          "inputType" : "text",
+                          "value" : "",
+                          "isRequired" : true,
+                          "title" : "Create one now and describe below",
+                          "validation" : "",
+                          "placeHolder" : "Text Input",
+                          "type" : "text",
+                          "name" : "Q64",
+                          "visible" : true
+                        }
+                      ],
+                      "choiceValue" : "No"
+                    }
+                  ],
+                  "isRequired" : true,
+                  "name" : "Q62",
+                  "value" : "",
+                  "type" : "segmentInput"
+                }
+              ]
+            }
+          ],
+          "isRequired" : true,
+          "segment" : true,
+          "name" : "Q60"
+        },
+        {
+          "segment" : true,
+          "choices" : [
+            {
+              "elements" : [
+
+              ],
+              "choiceValue" : "Yes"
+            },
+            {
+              "choiceValue" : "No",
+              "elements" : [
+                {
+                  "type" : "segmentInput",
+                  "name" : "Q67",
+                  "choices" : [
+                    {
+                      "elements" : [
+
+                      ],
+                      "choiceValue" : "Yes"
+                    },
+                    {
+                      "elements" : [
+                        {
+                          "isRequired" : true,
+                          "validation" : "",
+                          "type" : "text",
+                          "name" : "Q69",
+                          "visible" : true,
+                          "placeHolder" : "Text Input",
+                          "auto" : false,
+                          "inputType" : "text",
+                          "title" : "Create one now and describe below",
+                          "value" : ""
+                        }
+                      ],
+                      "choiceValue" : "No"
+                    }
+                  ],
+                  "title" : "Do you have an action plan to address this problem?",
+                  "value" : "",
+                  "segment" : true,
+                  "isRequired" : true
+                }
+              ]
+            }
+          ],
+          "title" : "Are all snow piles in the proper locations? ",
+          "type" : "segmentInput",
+          "value" : "Yes",
+          "isRequired" : true,
+          "name" : "Q65"
+        },
+        {
+          "value" : "Yes",
+          "name" : "Q70",
+          "type" : "segmentInput",
+          "choices" : [
+            {
+              "elements" : [
+
+              ],
+              "choiceValue" : "Yes"
+            },
+            {
+              "elements" : [
+                {
+                  "value" : "",
+                  "name" : "Q72",
+                  "isRequired" : true,
+                  "choices" : [
+                    {
+                      "elements" : [
+
+                      ],
+                      "choiceValue" : "Yes"
+                    },
+                    {
+                      "choiceValue" : "No",
+                      "elements" : [
+                        {
+                          "placeHolder" : "Text Input",
+                          "isRequired" : true,
+                          "value" : "",
+                          "inputType" : "text",
+                          "validation" : "",
+                          "type" : "text",
+                          "title" : "Create one now and describe below",
+                          "visible" : true,
+                          "auto" : false,
+                          "name" : "Q74"
+                        }
+                      ]
+                    }
+                  ],
+                  "type" : "segmentInput",
+                  "title" : "Do you have an action plan to address this problem?",
+                  "segment" : true
+                }
+              ],
+              "choiceValue" : "No"
+            }
+          ],
+          "title" : "Have all your site specific awnings, signage, and hazards been identified and addressed?",
+          "isRequired" : true,
+          "segment" : true
+        }
+      ]
+    },
+    {
+      "name" : "Page 4",
+      "title" : "Conclusion",
+      "elements" : [
+        {
+          "title" : "Does your site require follow up service?",
+          "isRequired" : true,
+          "value" : "Yes",
+          "choices" : [
+            {
+              "choiceValue" : "Yes",
+              "elements" : [
+                {
+                  "inputType" : "text",
+                  "placeHolder" : "Text Input",
+                  "isRequired" : true,
+                  "type" : "text",
+                  "value" : "follow up",
+                  "visible" : true,
+                  "auto" : false,
+                  "validation" : "",
+                  "name" : "Q77",
+                  "title" : "Describe your complete action plan below"
+                }
+              ]
+            },
+            {
+              "elements" : [
+                {
+                  "type" : "textdisplay",
+                  "title" : "",
+                  "name" : "Q79",
+                  "text" : "Thank you for completing this sites QA process"
+                }
+              ],
+              "choiceValue" : "No"
+            }
+          ],
+          "name" : "Q75",
+          "segment" : true,
+          "type" : "segmentInput"
+        },
+        {
+          "inputType" : "text",
+          "isRequired" : false,
+          "placeHolder" : "Ex. Site is clear except awnings that can't be reached.......",
+          "type" : "text",
+          "name" : "Q89",
+          "value" : "",
+          "validation" : "",
+          "auto" : false,
+          "visible" : true,
+          "title" : "General Notes"
+        },
+        {
+          "value" : " Good",
+          "isRequired" : true,
+          "segment" : true,
+          "name" : "Q80",
+          "type" : "segmentInput",
+          "title" : "Property Conditions Quality Assessment",
+          "choices" : [
+            "Excellent",
+            " Good",
+            " Satisfactory",
+            " Unsatisfactory"
+          ]
+        },
+        {
+          "value" : {
+            "lrImageURL" : "https:\/\/19b5bf454221a3009503-837ce6cc4941d82f7e9704a4735379b2.ssl.cf1.rackcdn.com\/267bcffee9e6.jpg"
+          },
+          "name" : "Q81",
+          "title" : "Signature of Approval that all information provided is accurate",
+          "isRequired" : true,
+          "type" : "signaturepad"
+        }
+      ]
+    }
+  ]
+}
