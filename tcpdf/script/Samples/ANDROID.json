@@ -1,0 +1,1702 @@
+{
+   "pages": [
+      {
+         "name": "Page",
+         "title": "",
+         "elements": [
+            {
+               "type": "subHeader",
+               "name": "Q117",
+               "title": "Contract Detail",
+               "id": 0
+            },
+            {
+               "title": "Quiktrak Job #",
+               "type": "text",
+               "name": "Q118",
+               "placeHolder": "Text input",
+               "isRequired": true,
+               "inputType": "number",
+               "scroller": false,
+               "id": 1,
+               "value": "326598"
+            },
+            {
+               "title": "EMG ID #",
+               "type": "text",
+               "name": "Q117",
+               "placeHolder": "Text Input",
+               "isRequired": true,
+               "inputType": "text",
+               "id": 2,
+               "value": "test emg #"
+            },
+            {
+               "type": "subHeader",
+               "name": "Q1",
+               "title": "Office Information",
+               "id": 3
+            },
+            {
+               "title": "Group or Practice Name",
+               "type": "text",
+               "name": "Q114",
+               "placeHolder": "Text Input",
+               "isRequired": true,
+               "inputType": "text",
+               "id": 4,
+               "value": "group name"
+            },
+            {
+               "title": "PCP or Specialist?",
+               "type": "dropdown",
+               "name": "Q4",
+               "isRequired": true,
+               "choices": [
+                  "PCP",
+                  " Specialist"
+               ],
+               "id": 5,
+               "value": " Specialist"
+            },
+            {
+               "title": "Specialty Type",
+               "name": "Q28",
+               "type": "dropdown",
+               "isRequired": true,
+               "choices": [
+                  {
+                     "choiceValue": "Breast Surgery",
+                     "elements": []
+                  },
+                  {
+                     "choiceValue": "Cardiology",
+                     "elements": []
+                  },
+                  {
+                     "choiceValue": "Endocrinology",
+                     "elements": []
+                  },
+                  {
+                     "choiceValue": "Family",
+                     "elements": []
+                  },
+                  {
+                     "choiceValue": "Geriatric",
+                     "elements": []
+                  },
+                  {
+                     "choiceValue": "Gynecological",
+                     "elements": []
+                  },
+                  {
+                     "choiceValue": "Oncology",
+                     "elements": []
+                  },
+                  {
+                     "choiceValue": "Infusion",
+                     "elements": []
+                  },
+                  {
+                     "choiceValue": "Internal Medicine",
+                     "elements": []
+                  },
+                  {
+                     "choiceValue": "Maternal Fetal",
+                     "elements": []
+                  },
+                  {
+                     "choiceValue": "Neonatal",
+                     "elements": []
+                  },
+                  {
+                     "choiceValue": "Nutrition Counseling",
+                     "elements": []
+                  },
+                  {
+                     "choiceValue": "OB",
+                     "elements": []
+                  },
+                  {
+                     "choiceValue": "OB-GYN",
+                     "elements": []
+                  },
+                  {
+                     "choiceValue": "Occupational children and speech therapy",
+                     "elements": []
+                  },
+                  {
+                     "choiceValue": "Occupational Therapy",
+                     "elements": []
+                  },
+                  {
+                     "choiceValue": "OO-GYN",
+                     "elements": []
+                  },
+                  {
+                     "choiceValue": "Optometrist",
+                     "elements": []
+                  },
+                  {
+                     "choiceValue": "Pain Management/Urgent Care",
+                     "elements": []
+                  },
+                  {
+                     "choiceValue": "Perinatology Specialist",
+                     "elements": []
+                  },
+                  {
+                     "choiceValue": "PCP",
+                     "elements": []
+                  },
+                  {
+                     "choiceValue": "Pediatric",
+                     "elements": []
+                  },
+                  {
+                     "choiceValue": "Plastic and Reconstructive Surgery",
+                     "elements": []
+                  },
+                  {
+                     "choiceValue": "Pulmonology",
+                     "elements": []
+                  },
+                  {
+                     "choiceValue": "Speech Therapy",
+                     "elements": []
+                  },
+                  {
+                     "choiceValue": "UCC",
+                     "elements": []
+                  },
+                  {
+                     "choiceValue": "Urogynecology",
+                     "elements": []
+                  },
+                  {
+                     "choiceValue": "Women&#65533;s Health",
+                     "elements": []
+                  },
+                  {
+                     "choiceValue": "Women's Health",
+                     "elements": []
+                  },
+                  {
+                     "choiceValue": "_Other",
+                     "elements": [
+                        {
+                           "title": "Other Specialty Type:",
+                           "type": "text",
+                           "name": "Q119",
+                           "placeHolder": "Text Input",
+                           "isRequired": true,
+                           "inputType": "text",
+                           "id": 7,
+                           "value": "spec type"
+                        }
+                     ]
+                  }
+               ],
+               "id": 6,
+               "value": "_Other"
+            },
+            {
+               "title": "Practitioner Name from Humana Request",
+               "type": "text",
+               "name": "Q117",
+               "placeHolder": "Text Input",
+               "isRequired": true,
+               "inputType": "text",
+               "id": 8,
+               "value": "practitioner "
+            },
+            {
+               "title": "Manager/Contact",
+               "type": "text",
+               "name": "Q35",
+               "placeHolder": "Text Input",
+               "isRequired": true,
+               "inputType": "text",
+               "id": 9,
+               "value": "manager "
+            },
+            {
+               "title": "Office Address",
+               "type": "text",
+               "name": "Q113",
+               "placeHolder": "Text Input",
+               "isRequired": true,
+               "inputType": "text",
+               "id": 10,
+               "value": "1234"
+            },
+            {
+               "title": "Office City",
+               "type": "text",
+               "name": "Q36",
+               "placeHolder": "Text Input",
+               "isRequired": true,
+               "inputType": "text",
+               "id": 11,
+               "value": "Vancouver "
+            },
+            {
+               "title": "Office State",
+               "type": "text",
+               "name": "Q37",
+               "placeHolder": "Text Input",
+               "isRequired": true,
+               "inputType": "text",
+               "id": 12,
+               "value": "Washington "
+            },
+            {
+               "title": "Office Zip Code",
+               "type": "text",
+               "name": "Q38",
+               "placeHolder": "Text Input",
+               "isRequired": true,
+               "inputType": "text",
+               "id": 13,
+               "value": "98683"
+            },
+            {
+               "title": "Office Phone Number",
+               "type": "text",
+               "name": "999-999-9999",
+               "placeHolder": "Phone number input",
+               "isRequired": true,
+               "inputType": "tel",
+               "id": 14,
+               "value": "5032143052"
+            },
+            {
+               "title": "Manager/Contact email",
+               "type": "text",
+               "name": "Q33",
+               "placeHolder": "Text Input",
+               "isRequired": true,
+               "inputType": "text",
+               "id": 15,
+               "value": "email "
+            },
+            {
+               "title": "Practice Tax ID",
+               "type": "text",
+               "name": "Q114",
+               "placeHolder": "Text Input",
+               "isRequired": false,
+               "inputType": "text",
+               "id": 16,
+               "value": "tax id"
+            },
+            {
+               "title": "Organization/ Entity NPI",
+               "type": "text",
+               "name": "Q115",
+               "placeHolder": "Text Input",
+               "isRequired": false,
+               "inputType": "text",
+               "id": 17,
+               "value": "organization "
+            },
+            {
+               "title": "Office Contact Completing and Signing Survey",
+               "type": "text",
+               "name": "Q42",
+               "placeHolder": "Text Input",
+               "isRequired": true,
+               "inputType": "text",
+               "id": 18,
+               "value": "contact completing survey"
+            },
+            {
+               "title": "Date of Survey",
+               "type": "text",
+               "name": "Q116",
+               "isRequired": true,
+               "inputType": "date",
+               "visible": "true",
+               "auto": false,
+               "id": 19,
+               "value": "Oct 23, 2019"
+            },
+            {
+               "title": "Company Conducting Inspection",
+               "type": "checkbox",
+               "name": "Q145",
+               "isRequired": true,
+               "choices": [
+                  "Quiktrak"
+               ],
+               "id": 20,
+               "value": [
+                  "Quiktrak"
+               ]
+            },
+            {
+               "title": "Name of Auditor/Inspector",
+               "type": "text",
+               "name": "Q45",
+               "placeHolder": "Text Input",
+               "isRequired": true,
+               "inputType": "text",
+               "id": 21,
+               "value": "auditor "
+            },
+            {
+               "title": "Survey Purpose",
+               "type": "dropdown",
+               "name": "Q48",
+               "isRequired": false,
+               "choices": [
+                  "  ",
+                  " Initial Credentialing",
+                  " Re-credentialing",
+                  " Complaint"
+               ],
+               "id": 22,
+               "value": " Initial Credentialing"
+            },
+            {
+               "title": "Provider Type",
+               "type": "checkbox",
+               "name": "Q49",
+               "isRequired": true,
+               "choices": [
+                  "Internal Medicine - Family Practice - General Medicine (PCP)",
+                  " OB/GYN",
+                  " Pediatrician",
+                  " Specialist"
+               ],
+               "id": 23,
+               "value": [
+                  "Internal Medicine - Family Practice - General Medicine (PCP)"
+               ]
+            }
+         ]
+      },
+      {
+         "name": "Page",
+         "title": "",
+         "elements": [
+            {
+               "type": "subHeader",
+               "name": "Q111",
+               "title": "Exterior Photos",
+               "id": 24
+            },
+            {
+               "title": "Take photos of the accessible parking spaces.",
+               "type": "file",
+               "name": "Q113",
+               "isRequired": true,
+               "id": 25,
+               "value": [
+                  {
+                     "localHighImagePath": "",
+                     "localLowImagePath": "/storage/emulated/0/Sitefotos/.temp/sitefotos_low_1571841144367.jpg",
+                     "imageId": 1,
+                     "lrImageURL": "https://19b5bf454221a3009503-837ce6cc4941d82f7e9704a4735379b2.ssl.cf1.rackcdn.com/3accf6b1e275.jpg",
+                     "hrImageURL": ""
+                  }
+               ]
+            },
+            {
+               "title": "Take a photo of the front of the building.",
+               "type": "file",
+               "name": "Q114",
+               "isRequired": true,
+               "id": 26,
+               "value": [
+                  {
+                     "localHighImagePath": "",
+                     "localLowImagePath": "/storage/emulated/0/Sitefotos/.temp/sitefotos_low_1571841153273.jpg",
+                     "imageId": 2,
+                     "lrImageURL": "https://19b5bf454221a3009503-837ce6cc4941d82f7e9704a4735379b2.ssl.cf1.rackcdn.com/b7112efa9354.jpg",
+                     "hrImageURL": ""
+                  }
+               ]
+            },
+            {
+               "title": "Take photos of all exterior signage.",
+               "type": "file",
+               "name": "Q112",
+               "isRequired": true,
+               "id": 27,
+               "value": [
+                  {
+                     "localHighImagePath": "",
+                     "localLowImagePath": "/storage/emulated/0/Sitefotos/.temp/sitefotos_low_1571841170168.jpg",
+                     "imageId": 3,
+                     "lrImageURL": "https://19b5bf454221a3009503-837ce6cc4941d82f7e9704a4735379b2.ssl.cf1.rackcdn.com/2005bad4b13b.jpg",
+                     "hrImageURL": ""
+                  }
+               ]
+            },
+            {
+               "title": "Take a photo of the address number on the subject property.",
+               "type": "file",
+               "name": "Q109",
+               "isRequired": true,
+               "id": 28,
+               "value": [
+                  {
+                     "localHighImagePath": "",
+                     "localLowImagePath": "/storage/emulated/0/Sitefotos/.temp/sitefotos_low_1571841182185.jpg",
+                     "imageId": 4,
+                     "lrImageURL": "https://19b5bf454221a3009503-837ce6cc4941d82f7e9704a4735379b2.ssl.cf1.rackcdn.com/da55ef7f3d6a.jpg",
+                     "hrImageURL": ""
+                  }
+               ]
+            },
+            {
+               "title": "Take a photo of the posted operating hours and after hours phone number.",
+               "type": "file",
+               "name": "Q115",
+               "isRequired": true,
+               "id": 29,
+               "value": [
+                  {
+                     "localHighImagePath": "",
+                     "localLowImagePath": "/storage/emulated/0/Sitefotos/.temp/sitefotos_low_1571841195351.jpg",
+                     "imageId": 5,
+                     "lrImageURL": "https://19b5bf454221a3009503-837ce6cc4941d82f7e9704a4735379b2.ssl.cf1.rackcdn.com/ae6674daac67.jpg",
+                     "hrImageURL": ""
+                  }
+               ]
+            },
+            {
+               "type": "subHeader",
+               "name": "Q153",
+               "title": "Parking",
+               "id": 30
+            },
+            {
+               "title": "Is there parking adequate and close by?",
+               "type": "radiogroup",
+               "name": "Q42",
+               "isRequired": true,
+               "segment": true,
+               "choices": [
+                  "Yes",
+                  "No"
+               ],
+               "id": 31,
+               "value": "Yes"
+            },
+            {
+               "title": "Does your facility provide one accessible parking space per 25 total parking spaces?",
+               "type": "radiogroup",
+               "name": "Q43",
+               "isRequired": true,
+               "segment": true,
+               "choices": [
+                  "Yes",
+                  "No"
+               ],
+               "id": 32,
+               "value": "No"
+            },
+            {
+               "title": "  Is at least one van-accessible parking space available per every one to 25 total spaces?",
+               "type": "radiogroup",
+               "name": "Q44",
+               "isRequired": true,
+               "segment": true,
+               "choices": [
+                  "Yes",
+                  "No"
+               ],
+               "id": 33,
+               "value": "Yes"
+            },
+            {
+               "title": "Is the parking space clearly marked by the International Symbol of Access?",
+               "type": "radiogroup",
+               "name": "Q58",
+               "isRequired": true,
+               "segment": true,
+               "choices": [
+                  "Yes",
+                  "No"
+               ],
+               "id": 34,
+               "value": "No"
+            },
+            {
+               "title": "If only street parking is available, is there an unobstructed curb cut/ramp?",
+               "type": "radiogroup",
+               "name": "Q45",
+               "isRequired": true,
+               "segment": true,
+               "choices": [
+                  "Yes",
+                  "No",
+                  "N/A"
+               ],
+               "id": 35,
+               "value": "Yes"
+            },
+            {
+               "title": "If the accessible route crosses a curb, is a curb ramp provided?",
+               "type": "radiogroup",
+               "name": "Q59",
+               "isRequired": true,
+               "segment": true,
+               "choices": [
+                  "Yes",
+                  "No",
+                  "N/A"
+               ],
+               "id": 36,
+               "value": "No"
+            },
+            {
+               "title": "Is the ramp at least 36 inches wide?",
+               "type": "radiogroup",
+               "name": "Q60",
+               "isRequired": true,
+               "segment": true,
+               "choices": [
+                  "Yes",
+                  "No",
+                  "N/A"
+               ],
+               "id": 37,
+               "value": "N/A"
+            },
+            {
+               "type": "subHeader",
+               "name": "Q154",
+               "title": "General Information",
+               "id": 38
+            },
+            {
+               "title": " Do/can you provide alternative appointment scheduling for those who need extra time?",
+               "type": "radiogroup",
+               "name": "Q53",
+               "isRequired": true,
+               "segment": true,
+               "choices": [
+                  "Yes",
+                  "No"
+               ],
+               "id": 39,
+               "value": "Yes"
+            },
+            {
+               "title": "Are members' rights to file a grievance visually posted?",
+               "type": "radiogroup",
+               "name": "Q54",
+               "isRequired": true,
+               "segment": true,
+               "choices": [
+                  "Yes",
+                  "No"
+               ],
+               "id": 40,
+               "value": "No"
+            },
+            {
+               "title": "Is there a policy and procedure document that states what to do in case of emergency?",
+               "name": "Q57",
+               "type": "radiogroup",
+               "isRequired": true,
+               "segment": true,
+               "choices": [
+                  {
+                     "choiceValue": "Yes",
+                     "elements": [
+                        {
+                           "title": "Take a photo of the emergency policy and procedure document.",
+                           "type": "file",
+                           "name": "Q121",
+                           "isRequired": true,
+                           "id": 42,
+                           "value": [
+                              {
+                                 "localHighImagePath": "",
+                                 "localLowImagePath": "/storage/emulated/0/Sitefotos/.temp/sitefotos_low_1571841237968.jpg",
+                                 "imageId": 6,
+                                 "lrImageURL": "https://19b5bf454221a3009503-837ce6cc4941d82f7e9704a4735379b2.ssl.cf1.rackcdn.com/b02fe094c8d2.jpg",
+                                 "hrImageURL": ""
+                              }
+                           ]
+                        }
+                     ]
+                  },
+                  {
+                     "choiceValue": "No",
+                     "elements": []
+                  }
+               ],
+               "id": 41,
+               "value": "Yes"
+            }
+         ]
+      },
+      {
+         "name": "Page",
+         "title": "",
+         "elements": [
+            {
+               "type": "subHeader",
+               "name": "Q62",
+               "title": "Building Entrance",
+               "id": 43
+            },
+            {
+               "title": "Is the exterior entry door at least 32 inches wide and does it open at least 90 degrees?",
+               "type": "radiogroup",
+               "name": "Q43",
+               "isRequired": true,
+               "segment": true,
+               "choices": [
+                  "Yes",
+                  "No"
+               ],
+               "id": 44,
+               "value": "Yes"
+            },
+            {
+               "title": "Does the entrance door have handles that can be opened without grasping, pinching or twisting of the wrist?",
+               "type": "radiogroup",
+               "name": "Q44",
+               "isRequired": true,
+               "segment": true,
+               "choices": [
+                  "Yes",
+                  "No"
+               ],
+               "id": 45,
+               "value": "No"
+            },
+            {
+               "type": "subHeader",
+               "name": "Q155",
+               "title": "Interior Route",
+               "id": 46
+            },
+            {
+               "title": "Are all interior travel route paths at least 36 inches wide?",
+               "type": "radiogroup",
+               "name": "Q46",
+               "isRequired": true,
+               "segment": true,
+               "choices": [
+                  "Yes",
+                  "No"
+               ],
+               "id": 47,
+               "value": "Yes"
+            },
+            {
+               "title": "Is the route stable, firm and slip-resistant?",
+               "type": "radiogroup",
+               "name": "Q47",
+               "isRequired": true,
+               "segment": true,
+               "choices": [
+                  "Yes",
+                  "No"
+               ],
+               "id": 48,
+               "value": "No"
+            },
+            {
+               "title": "Is the route clear of any free object that may stick out?",
+               "type": "radiogroup",
+               "name": "Q48",
+               "isRequired": true,
+               "segment": true,
+               "choices": [
+                  "Yes",
+                  "No"
+               ],
+               "id": 49,
+               "value": "Yes"
+            },
+            {
+               "title": "Is the interior door leading from waiting room to other interior rooms at least 32 inches wide and does it open at least 90 degrees?",
+               "type": "radiogroup",
+               "name": "Q49",
+               "isRequired": true,
+               "segment": true,
+               "choices": [
+                  "Yes",
+                  "No"
+               ],
+               "id": 50,
+               "value": "No"
+            },
+            {
+               "title": "Does the facility have an elevator?",
+               "type": "radiogroup",
+               "name": "Q50",
+               "isRequired": true,
+               "segment": true,
+               "choices": [
+                  "Yes",
+                  "No"
+               ],
+               "id": 51,
+               "value": "Yes"
+            },
+            {
+               "title": "Do  the sliding doors reopen automatically when obstructed by an object?  (Note: If constructed before March 15, 2012, and manually operated, the door is not required to reopen automatically.)",
+               "type": "radiogroup",
+               "name": "Q134",
+               "isRequired": true,
+               "segment": true,
+               "choices": [
+                  "Yes",
+                  "No",
+                  "N/A"
+               ],
+               "id": 52,
+               "value": "No"
+            },
+            {
+               "title": "Are the call buttons no higher than 54 inches from the floor?",
+               "type": "radiogroup",
+               "name": "Q135",
+               "isRequired": true,
+               "segment": true,
+               "choices": [
+                  "Yes",
+                  "No",
+                  "N/A"
+               ],
+               "id": 53,
+               "value": "N/A"
+            },
+            {
+               "title": "Are the in-car buttons no higher than 48 inches from the floor?",
+               "type": "radiogroup",
+               "name": "Q136",
+               "isRequired": true,
+               "segment": true,
+               "choices": [
+                  "Yes",
+                  "No",
+                  "N/A"
+               ],
+               "id": 54,
+               "value": "Yes"
+            },
+            {
+               "title": "Do the elevators provide audible signal indicators and or Braille signage?",
+               "type": "radiogroup",
+               "name": "Q137",
+               "isRequired": true,
+               "segment": true,
+               "choices": [
+                  "Yes",
+                  "No",
+                  "N/A"
+               ],
+               "id": 55,
+               "value": "No"
+            },
+            {
+               "title": "Are there audible signals when the elevator car passes or stops at a floor?",
+               "type": "radiogroup",
+               "name": "Q138",
+               "isRequired": true,
+               "segment": true,
+               "choices": [
+                  "Yes",
+                  "No",
+                  "N/A"
+               ],
+               "id": 56,
+               "value": "N/A"
+            }
+         ]
+      },
+      {
+         "name": "Page",
+         "title": "",
+         "elements": [
+            {
+               "type": "subHeader",
+               "name": "Q58",
+               "title": "Waiting Room Area",
+               "id": 57
+            },
+            {
+               "title": "Is there an open space at least 36 inches wide by 48 inches long in the waiting area to accommodate a wheelchair?",
+               "type": "radiogroup",
+               "name": "Q60",
+               "isRequired": true,
+               "segment": true,
+               "choices": [
+                  "Yes",
+                  "No"
+               ],
+               "id": 58,
+               "value": "Yes"
+            },
+            {
+               "title": "Does the reception area accommodate at least 1.5 seats per number of patients scheduled each hour?",
+               "type": "radiogroup",
+               "name": "Q61",
+               "isRequired": true,
+               "segment": true,
+               "choices": [
+                  "Yes",
+                  "No"
+               ],
+               "id": 59,
+               "value": "No"
+            },
+            {
+               "title": "Take a photo of the waiting area.  (Make you do not capture any patients in the image.)",
+               "type": "file",
+               "name": "Q124",
+               "isRequired": false,
+               "id": 60,
+               "value": []
+            },
+            {
+               "type": "subHeader",
+               "name": "Q156",
+               "title": "Restrooms",
+               "id": 61
+            },
+            {
+               "title": "Does the restroom entry configuration provide adequate maneuvering space for a person using a wheelchair? (Needs 36\" of clear width for forward movement and a five-foot diameter or T-shaped clear space to make turns.  If entry vestibule has two doors, a minimum distance of 48\" clear of the door swing between the two doors.)",
+               "type": "radiogroup",
+               "name": "Q63",
+               "isRequired": true,
+               "segment": true,
+               "choices": [
+                  "Yes",
+                  "No",
+                  " N/A"
+               ],
+               "id": 62,
+               "value": "Yes"
+            },
+            {
+               "title": "In restrooms without stalls, is there at least 30\"X48\" area of open floor space clear of the door swing?",
+               "type": "radiogroup",
+               "name": "Q64",
+               "isRequired": true,
+               "segment": true,
+               "choices": [
+                  "Yes",
+                  "No",
+                  " N/A"
+               ],
+               "id": 63,
+               "value": "No"
+            },
+            {
+               "title": "Is the side-wall grab bar at least 42 inches long?",
+               "type": "radiogroup",
+               "name": "Q65",
+               "isRequired": true,
+               "segment": true,
+               "choices": [
+                  "Yes",
+                  "No"
+               ],
+               "id": 64,
+               "value": "Yes"
+            },
+            {
+               "title": "Is the rear-wall grab bar at least 36 inches long?",
+               "type": "radiogroup",
+               "name": "Q66",
+               "isRequired": true,
+               "segment": true,
+               "choices": [
+                  "Yes",
+                  "No"
+               ],
+               "id": 65,
+               "value": "No"
+            },
+            {
+               "title": "Is the toilet paper dispenser no greater than 48 inches above the floor below the side-wall grab bar?",
+               "type": "radiogroup",
+               "name": "Q67",
+               "isRequired": true,
+               "segment": true,
+               "choices": [
+                  "Yes",
+                  "No"
+               ],
+               "id": 66,
+               "value": "Yes"
+            },
+            {
+               "title": "Is there at least one accessible sink that provides enough space for wheelchair users to park in front of the sink (30\"W X 48\"L)?",
+               "type": "radiogroup",
+               "name": "Q68",
+               "isRequired": true,
+               "segment": true,
+               "choices": [
+                  "Yes",
+                  "No"
+               ],
+               "id": 67,
+               "value": "No"
+            },
+            {
+               "title": "Is the faucet handle operable without needing to grasp, twist or pinch?",
+               "type": "radiogroup",
+               "name": "Q69",
+               "isRequired": true,
+               "segment": true,
+               "choices": [
+                  "Yes",
+                  "No"
+               ],
+               "id": 68,
+               "value": "Yes"
+            },
+            {
+               "title": "Are the soap and towel dispensers (or hand-driers) within reach (i.e., no higher than 48\" from the floor) and not over an obstruction?",
+               "type": "radiogroup",
+               "name": "Q70",
+               "isRequired": true,
+               "segment": true,
+               "choices": [
+                  "Yes",
+                  "No"
+               ],
+               "id": 69,
+               "value": "No"
+            },
+            {
+               "title": "Take at least one photo of the restroom, capturing the accessibility features (rear-wall grab bar, side-wall grab bar, sink, etc.)",
+               "type": "file",
+               "name": "Q122",
+               "isRequired": false,
+               "id": 70,
+               "value": []
+            },
+            {
+               "type": "subHeader",
+               "name": "Q157",
+               "title": "Exam Rooms",
+               "id": 71
+            },
+            {
+               "title": "Is the entry door to the exam room at least 32 inches wide?",
+               "type": "radiogroup",
+               "name": "Q71",
+               "isRequired": true,
+               "segment": true,
+               "choices": [
+                  "Yes",
+                  "No"
+               ],
+               "id": 72,
+               "value": "Yes"
+            },
+            {
+               "title": "Is there adequate space for a mobility device to make a 180-degree turn (i.e., at least 30\" X 48\") on one side of the exam table?",
+               "type": "radiogroup",
+               "name": "Q72",
+               "isRequired": true,
+               "segment": true,
+               "choices": [
+                  "Yes",
+                  "No"
+               ],
+               "id": 73,
+               "value": "No"
+            },
+            {
+               "title": "Are there private changing areas that are accessible?",
+               "type": "radiogroup",
+               "name": "Q73",
+               "isRequired": true,
+               "segment": true,
+               "choices": [
+                  "Yes",
+                  "No",
+                  "N/A"
+               ],
+               "id": 74,
+               "value": "Yes"
+            },
+            {
+               "title": "Are gowns and drapes provided?",
+               "type": "radiogroup",
+               "name": "Q74",
+               "isRequired": true,
+               "segment": true,
+               "choices": [
+                  "Yes",
+                  "No",
+                  " N/A"
+               ],
+               "id": 75,
+               "value": "No"
+            },
+            {
+               "title": "Take a photo of the exam room (only if not in use/occupied by a patient).",
+               "type": "file",
+               "name": "Q123",
+               "isRequired": false,
+               "id": 76,
+               "value": []
+            },
+            {
+               "type": "subHeader",
+               "name": "Q125",
+               "title": "Additional Interior Photos",
+               "id": 77
+            },
+            {
+               "title": "Take photos of the interior of the facility.  The photos should be representational of the facility and include, but not be limited to:  interior signage, posted operating hours/after hours phone number, offices, reception area, employee break room, x-ray room, lab, conference room, storage area).",
+               "type": "file",
+               "name": "Q128",
+               "isRequired": true,
+               "id": 78,
+               "value": [
+                  {
+                     "localHighImagePath": "",
+                     "localLowImagePath": "/storage/emulated/0/Sitefotos/.temp/sitefotos_low_1571841282140.jpg",
+                     "imageId": 7,
+                     "lrImageURL": "https://19b5bf454221a3009503-837ce6cc4941d82f7e9704a4735379b2.ssl.cf1.rackcdn.com/6e0e9352eccd.jpg",
+                     "hrImageURL": ""
+                  }
+               ]
+            }
+         ]
+      },
+      {
+         "name": "Page",
+         "title": "",
+         "elements": [
+            {
+               "type": "subHeader",
+               "name": "Q130",
+               "title": "Equipment/Scales",
+               "id": 79
+            },
+            {
+               "title": "Is there a weight scale that can accommodate wheelchairs or people who are unable to stand without assistance, which is either integrated into a patient lift, integrated into an exam table or has a platform?",
+               "type": "radiogroup",
+               "name": "Q78",
+               "isRequired": true,
+               "segment": true,
+               "choices": [
+                  "Yes",
+                  "No",
+                  "N/A"
+               ],
+               "id": 80,
+               "value": "Yes"
+            },
+            {
+               "title": "Does the office have or can your office adapt an exam table for accessible transfers of people who use a wheelchair or are unable to transfer without assistance?  (This may include the use of an adjustable-height table, transfer board, portable lift or a stretcher/gurney.)",
+               "type": "radiogroup",
+               "name": "Q79",
+               "isRequired": true,
+               "segment": true,
+               "choices": [
+                  "Yes",
+                  "No",
+                  "N/A"
+               ],
+               "id": 81,
+               "value": "No"
+            },
+            {
+               "type": "subHeader",
+               "name": "Q141",
+               "title": "Accommodations\n",
+               "id": 82
+            },
+            {
+               "title": "Does the office have the ability to accommodate members with hearing, speech and sight disabilities?  (The following materials are examples of accommodations: paper/writing utensil, visual aids, written materials, assistive-listening devices or systems and access to qualified sign language interpreters.)",
+               "type": "radiogroup",
+               "name": "Q80",
+               "isRequired": true,
+               "segment": true,
+               "choices": [
+                  "Yes",
+                  "No"
+               ],
+               "id": 83,
+               "value": "Yes"
+            },
+            {
+               "title": "Are translation services available in a minimum of 150 languages (such as an oral interpretation vendor)?",
+               "type": "radiogroup",
+               "name": "Q119",
+               "isRequired": true,
+               "segment": true,
+               "choices": [
+                  "Yes",
+                  "No"
+               ],
+               "id": 84,
+               "value": "No"
+            },
+            {
+               "type": "subHeader",
+               "name": "Q143",
+               "title": "ADA",
+               "id": 85
+            },
+            {
+               "title": "Do  staff members or designated leader receive ADA training once a year?",
+               "type": "radiogroup",
+               "name": "Q81",
+               "isRequired": true,
+               "segment": true,
+               "choices": [
+                  "Yes",
+                  "No"
+               ],
+               "id": 86,
+               "value": "Yes"
+            },
+            {
+               "type": "subHeader",
+               "name": "Q144",
+               "title": "Plans, Policies and Licensure",
+               "id": 87
+            },
+            {
+               "title": "Is there a hazardous materials/waste policy that describes the storage of sterile needles and proper disposal of used needles?",
+               "type": "radiogroup",
+               "name": "Q83",
+               "isRequired": true,
+               "segment": true,
+               "choices": [
+                  "Yes",
+                  "No",
+                  "N/A"
+               ],
+               "id": 88,
+               "value": "No"
+            },
+            {
+               "title": "Is there an exposure-control process that includes infections control and universal precautions policies, procedures or protocols?",
+               "type": "radiogroup",
+               "name": "Q84",
+               "isRequired": true,
+               "segment": true,
+               "choices": [
+                  "Yes",
+                  "No",
+                  "N/A"
+               ],
+               "id": 89,
+               "value": "Yes"
+            },
+            {
+               "title": "Does the office have a Clinical Laboratory Improvement Amendments (CLIA) certificate and/or waiver?",
+               "name": "Q85",
+               "type": "radiogroup",
+               "isRequired": true,
+               "segment": true,
+               "choices": [
+                  {
+                     "choiceValue": "Yes",
+                     "elements": [
+                        {
+                           "title": "CLIA certificate number:",
+                           "type": "text",
+                           "name": "Q116",
+                           "placeHolder": "Text Input",
+                           "isRequired": false,
+                           "inputType": "text",
+                           "id": 91,
+                           "value": ""
+                        },
+                        {
+                           "title": "Certificate date:",
+                           "type": "text",
+                           "name": "Q115",
+                           "isRequired": false,
+                           "inputType": "date",
+                           "visible": true,
+                           "auto": false,
+                           "id": 92,
+                           "value": ""
+                        },
+                        {
+                           "title": "Certificate expiration date:",
+                           "type": "text",
+                           "name": "Q114",
+                           "isRequired": false,
+                           "inputType": "date",
+                           "visible": true,
+                           "auto": false,
+                           "id": 93,
+                           "value": ""
+                        },
+                        {
+                           "title": "Take photo(s) of the CLIA certificate and/or waiver.",
+                           "type": "file",
+                           "name": "Q141",
+                           "isRequired": true,
+                           "id": 94,
+                           "value": []
+                        }
+                     ]
+                  },
+                  {
+                     "choiceValue": "No",
+                     "elements": []
+                  },
+                  {
+                     "choiceValue": " N/A",
+                     "elements": []
+                  }
+               ],
+               "id": 90,
+               "value": "No"
+            },
+            {
+               "title": "Does the office have an automated prescription writing tool that ensures the following list of abbreviations, acronyms, symbols and dose designations are not used?  The list must include: U,u; IU; Q.D., QD, q.d., qd, Q.O.D., QOD, q.o.d., qod; Trailing zero (x.o mg); Lack of leading zero (.xmg); MS; MSO4; MgSO4",
+               "type": "radiogroup",
+               "name": "Q94",
+               "isRequired": true,
+               "segment": true,
+               "choices": [
+                  "Yes",
+                  "No"
+               ],
+               "id": 95,
+               "value": "Yes"
+            },
+            {
+               "title": "Are procedures in place  to review prescriptions for accuracy prior to giving to patients or sending to pharmacies?",
+               "type": "radiogroup",
+               "name": "Q145",
+               "isRequired": true,
+               "segment": true,
+               "choices": [
+                  "Yes",
+                  "No"
+               ],
+               "id": 96,
+               "value": "No"
+            },
+            {
+               "title": "Does the office label all medications and medication containers (e.g., syringes, basins) to identify the contents?",
+               "type": "radiogroup",
+               "name": "Q96",
+               "isRequired": true,
+               "segment": true,
+               "choices": [
+                  "Yes",
+                  "No"
+               ],
+               "id": 97,
+               "value": "Yes"
+            },
+            {
+               "title": "Are all medications stored and maintained in an area away from public access and in an area, cabinet or room that can be securely locked? If no medications currently stored in office is there a policy that addresses medication storage if ever needed?",
+               "type": "radiogroup",
+               "name": "Q97",
+               "isRequired": true,
+               "segment": true,
+               "choices": [
+                  "Yes",
+                  "No"
+               ],
+               "id": 98,
+               "value": "No"
+            },
+            {
+               "title": "Is there a 24-hour answering service or machine instructing members about how to obtain care?",
+               "type": "radiogroup",
+               "name": "Q98",
+               "isRequired": true,
+               "segment": true,
+               "choices": [
+                  "Yes",
+                  "No"
+               ],
+               "id": 99,
+               "value": "Yes"
+            },
+            {
+               "title": "Are your office hours and after-hours phone number posted internally and externally? (NOTE:  May be \"N/A\" only if the office is located in large building and outside posting is prohibited by building management.)",
+               "type": "radiogroup",
+               "name": "Q99",
+               "isRequired": true,
+               "segment": true,
+               "choices": [
+                  "Yes",
+                  "No",
+                  " N/A"
+               ],
+               "id": 100,
+               "value": "No"
+            },
+            {
+               "title": "Take photos of any policies and procedures verified above and any licenses or permits held by the practitioner(s).",
+               "type": "file",
+               "name": "Q129",
+               "isRequired": false,
+               "id": 101,
+               "value": []
+            }
+         ]
+      },
+      {
+         "name": "Page",
+         "title": "",
+         "elements": [
+            {
+               "type": "subHeader",
+               "name": "Q100",
+               "title": "Medical Records",
+               "id": 102
+            },
+            {
+               "type": "textdisplay",
+               "name": "Q101",
+               "text": "NOTE:  For initial credentialing and re-credentialing, the reviewer must evaluate one blinded medical record to assess the adequacy of medical-record-keeping practices.",
+               "id": 103,
+               "value": "NOTE:  For initial credentialing and re-credentialing, the reviewer must evaluate one blinded medical record to assess the adequacy of medical-record-keeping practices."
+            },
+            {
+               "title": "Are medical records maintained in an area away from public access?",
+               "type": "radiogroup",
+               "name": "Q101",
+               "isRequired": true,
+               "segment": true,
+               "choices": [
+                  "Yes",
+                  "No"
+               ],
+               "id": 104,
+               "value": "Yes"
+            },
+            {
+               "title": "Is a Health Insurance Portability and Accountability Act (HIPAA)-compliant written authorization obtained from the member or the member's authorized representative for maintaining the release of medical records?  (Ask to see policy and procedure and the release form.)",
+               "name": "Q102",
+               "type": "radiogroup",
+               "isRequired": true,
+               "segment": true,
+               "choices": [
+                  {
+                     "choiceValue": "Yes",
+                     "elements": [
+                        {
+                           "title": "Take a photo of the HIPAA policy and procedure.",
+                           "type": "file",
+                           "name": "Q119",
+                           "isRequired": true,
+                           "id": 106,
+                           "value": []
+                        },
+                        {
+                           "title": "Take a photo of the HIPAA release form.",
+                           "type": "file",
+                           "name": "Q134",
+                           "isRequired": true,
+                           "id": 107,
+                           "value": []
+                        }
+                     ]
+                  },
+                  {
+                     "choiceValue": "No",
+                     "elements": []
+                  }
+               ],
+               "id": 105,
+               "value": "No"
+            },
+            {
+               "title": "Is there a mechanism for tracking referrals and reports to and from other practitioners and providers (e.g., between a primary care physician and a specialist)?",
+               "type": "radiogroup",
+               "name": "Q107",
+               "isRequired": true,
+               "segment": true,
+               "choices": [
+                  "Yes",
+                  "No"
+               ],
+               "id": 108,
+               "value": "Yes"
+            },
+            {
+               "title": "Is there evidence that medical record documentation standards have been implemented (e.g., legible, clear, concise, consistent, complete)?",
+               "type": "radiogroup",
+               "name": "Q103",
+               "isRequired": false,
+               "segment": true,
+               "choices": [
+                  "Yes",
+                  "No"
+               ],
+               "id": 109,
+               "value": "No"
+            },
+            {
+               "title": "Is there prominent documentation in an individual's record regarding execution of an advance directive?",
+               "type": "radiogroup",
+               "name": "Q104",
+               "isRequired": false,
+               "segment": true,
+               "choices": [
+                  "Yes",
+                  "No"
+               ],
+               "id": 110,
+               "value": "Yes"
+            },
+            {
+               "title": "Is there a policy/procedure that outlines anti-discrimination in health care delivery? (Ask to see policy.)",
+               "name": "Q105",
+               "type": "radiogroup",
+               "isRequired": true,
+               "segment": true,
+               "choices": [
+                  {
+                     "choiceValue": "Yes",
+                     "elements": [
+                        {
+                           "title": "Take a photo of the anti-discrimination policy/procedure document.",
+                           "type": "file",
+                           "name": "Q121",
+                           "isRequired": true,
+                           "id": 112,
+                           "value": []
+                        }
+                     ]
+                  },
+                  {
+                     "choiceValue": "No",
+                     "elements": []
+                  }
+               ],
+               "id": 111,
+               "value": "No"
+            },
+            {
+               "type": "subHeader",
+               "name": "Q140",
+               "title": "Overall Assessment",
+               "id": 113
+            },
+            {
+               "title": "On inspection, is the office functionally safe and sanitary?",
+               "type": "radiogroup",
+               "name": "Q139",
+               "isRequired": true,
+               "segment": true,
+               "choices": [
+                  "Yes",
+                  "No"
+               ],
+               "id": 114,
+               "value": "Yes"
+            },
+            {
+               "type": "textdisplay",
+               "name": "Q109",
+               "text": "Is there an appointment available for:",
+               "id": 115,
+               "value": "Is there an appointment available for:"
+            },
+            {
+               "title": "Complete physical exam, routine preventive health, or well-child visits within 21 to 30 calendar days?",
+               "type": "radiogroup",
+               "name": "Q114",
+               "isRequired": true,
+               "segment": true,
+               "choices": [
+                  "Yes",
+                  "No",
+                  "N/A"
+               ],
+               "id": 116,
+               "value": "No"
+            },
+            {
+               "title": "Symptomatic visit within seven calendar days?",
+               "type": "radiogroup",
+               "name": "Q115",
+               "isRequired": true,
+               "segment": true,
+               "choices": [
+                  "Yes",
+                  "No"
+               ],
+               "id": 117,
+               "value": "Yes"
+            },
+            {
+               "title": "Specialty care within 21 working days?",
+               "type": "radiogroup",
+               "name": "Q116",
+               "isRequired": true,
+               "segment": true,
+               "choices": [
+                  "Yes",
+                  "No",
+                  "N/A"
+               ],
+               "id": 118,
+               "value": "No"
+            },
+            {
+               "title": "Urgent visit  for an established patient within 24 hours?",
+               "type": "radiogroup",
+               "name": "Q117",
+               "isRequired": true,
+               "segment": true,
+               "choices": [
+                  "Yes",
+                  "No"
+               ],
+               "id": 119,
+               "value": "Yes"
+            },
+            {
+               "title": "Emergent visit with an established patient as soon as possible (i.e., immediately)?",
+               "type": "radiogroup",
+               "name": "Q118",
+               "isRequired": true,
+               "segment": true,
+               "choices": [
+                  "Yes",
+                  "No"
+               ],
+               "id": 120,
+               "value": "No"
+            },
+            {
+               "title": "Do physicians see patients within 15 to 30 minutes of scheduled appointments?",
+               "type": "radiogroup",
+               "name": "Q122",
+               "isRequired": true,
+               "segment": true,
+               "choices": [
+                  "Yes",
+                  "No"
+               ],
+               "id": 121,
+               "value": "Yes"
+            }
+         ]
+      },
+      {
+         "name": "Page",
+         "title": "",
+         "elements": [
+            {
+               "type": "subHeader",
+               "name": "Q140",
+               "title": "Additional Details",
+               "id": 122
+            },
+            {
+               "title": "Comments:",
+               "type": "comment",
+               "name": "Q130",
+               "placeHolder": "",
+               "isRequired": false,
+               "id": 123,
+               "isWeatherInput": false,
+               "value": "These are the comments for this inspection.Â  These are the comments for this inspection.These are the comments for this inspection.Â  These are the comments for this inspection.Â  Â These are the comments for this inspection.Â  These are the comments for this inspection.Â Â  These are the comments for this inspection.Â  These are the comments for this inspection.Â  "
+            },
+            {
+               "type": "subHeader",
+               "name": "Q132",
+               "title": "Practitioner/Designee Signature",
+               "id": 124
+            },
+            {
+               "title": "Printed name:",
+               "type": "text",
+               "name": "Q131",
+               "placeHolder": "Text Input",
+               "isRequired": true,
+               "inputType": "text",
+               "id": 125,
+               "value": "John"
+            },
+            {
+               "title": "Signature",
+               "type": "signaturepad",
+               "name": "Q133",
+               "isRequired": true,
+               "value": [
+                  {
+                     "imageId": 8,
+                     "lrImageURL": "https://19b5bf454221a3009503-837ce6cc4941d82f7e9704a4735379b2.ssl.cf1.rackcdn.com/a27162fcb6f9.jpg",
+                     "hrImageURL": "",
+                     "localLowImagePath": "/storage/emulated/0/Sitefotos/.temp/sitefotos_low_1571841369840.jpg",
+                     "localHighImagePath": "",
+                     "isSignature": true
+                  }
+               ],
+               "id": 126
+            },
+            {
+               "title": "Date/Time",
+               "type": "text",
+               "name": "Q135",
+               "isRequired": true,
+               "visible": true,
+               "inputType": "datetime-local",
+               "auto": false,
+               "id": 127,
+               "value": "Oct 23, 2019 07:28 AM"
+            },
+            {
+               "type": "subHeader",
+               "name": "Q136",
+               "title": "EMG Representative Signature",
+               "id": 128
+            },
+            {
+               "title": "Printed name:",
+               "type": "text",
+               "name": "Q137",
+               "placeHolder": "Text Input",
+               "isRequired": true,
+               "inputType": "text",
+               "id": 129,
+               "value": "Michele "
+            },
+            {
+               "title": "Signature",
+               "type": "signaturepad",
+               "name": "Q138",
+               "isRequired": true,
+               "value": [
+                  {
+                     "imageId": 9,
+                     "lrImageURL": "https://19b5bf454221a3009503-837ce6cc4941d82f7e9704a4735379b2.ssl.cf1.rackcdn.com/b30ce8ea56c3.jpg",
+                     "hrImageURL": "",
+                     "localLowImagePath": "/storage/emulated/0/Sitefotos/.temp/sitefotos_low_1571841386970.jpg",
+                     "localHighImagePath": "",
+                     "isSignature": true
+                  }
+               ],
+               "id": 130
+            },
+            {
+               "title": "Date/Time",
+               "type": "text",
+               "name": "Q139",
+               "isRequired": true,
+               "visible": true,
+               "inputType": "datetime-local",
+               "auto": false,
+               "id": 131,
+               "value": "Oct 23, 2019 07:28 AM"
+            }
+         ]
+      }
+   ]
+}

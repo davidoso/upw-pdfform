@@ -1,8 +1,8 @@
 <?php
-// This script is based on: https://tcpdf.org/examples/example_014
-// Note: Sample_Form.json is deprecated. Please check Final Output Sample.zip
+// This script is based on: https://tcpdf.org/examples/example_014 and works with Sample_Form_Short.json
+// That is a simplified JSON version which will not be used for the final view_only.php script
 
-$json = file_get_contents('../../Sample_Form.json');
+$json = file_get_contents('../../Sample_Form_Short.json');
 $data = json_decode($json);
 
 // Include the main TCPDF library (search for installation path)
@@ -14,8 +14,7 @@ $pdf = new TCPDF(PDF_PAGE_ORIENTATION, PDF_UNIT, PDF_PAGE_FORMAT, true, 'UTF-8',
 // Set document information
 $pdf->SetCreator(PDF_CREATOR);
 $pdf->SetAuthor(PDF_AUTHOR);
-$pdf->SetTitle('Your file title here');
-$pdf->SetSubject('Your file subject here');
+$pdf->SetTitle(PDF_TITLE);
 
 // Set default header data
 $pdf->SetHeaderData(PDF_HEADER_LOGO, PDF_HEADER_LOGO_WIDTH, PDF_HEADER_TITLE, PDF_HEADER_STRING);

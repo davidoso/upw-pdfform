@@ -1,0 +1,493 @@
+{
+  "pages" : [
+    {
+      "title" : "",
+      "elements" : [
+        {
+          "inputType" : "text",
+          "visible" : true,
+          "isRequired" : false,
+          "title" : "Text Input",
+          "validation" : "",
+          "name" : "Q1",
+          "type" : "text",
+          "placeHolder" : "Text Input",
+          "auto" : false,
+          "value" : "Fahd"
+        },
+        {
+          "inputType" : "email",
+          "visible" : true,
+          "title" : "Email",
+          "isRequired" : false,
+          "auto" : false,
+          "placeHolder" : "email@domain.com",
+          "name" : "Q2",
+          "value" : "djd@dd.com",
+          "validation" : "",
+          "type" : "text"
+        },
+        {
+          "value" : "Sep 21, 2004",
+          "type" : "text",
+          "placeHolder" : "",
+          "isRequired" : false,
+          "inputType" : "date",
+          "validation" : "",
+          "title" : "Date",
+          "auto" : false,
+          "name" : "Q3",
+          "visible" : true
+        },
+        {
+          "lat" : 34.016413302192475,
+          "siteID" : "-2",
+          "name" : "Q4",
+          "lng" : 71.493504541061341,
+          "buildingID" : "103565",
+          "type" : "geo",
+          "title" : "Location",
+          "buildingName" : "Nasir Home"
+        },
+        {
+          "inputType" : "password",
+          "type" : "text",
+          "name" : "Q5",
+          "isRequired" : false,
+          "visible" : true,
+          "auto" : false,
+          "placeHolder" : "",
+          "title" : "Password",
+          "validation" : "",
+          "value" : "jdjd"
+        },
+        {
+          "title" : "Number",
+          "visible" : true,
+          "value" : "25",
+          "auto" : false,
+          "name" : "Q6",
+          "isRequired" : false,
+          "validation" : "",
+          "inputType" : "number",
+          "type" : "text",
+          "placeHolder" : ""
+        },
+        {
+          "visible" : true,
+          "type" : "text",
+          "auto" : false,
+          "inputType" : "datetime-local",
+          "placeHolder" : "",
+          "name" : "Q7",
+          "value" : "Oct 24, 2019 03:59 PM",
+          "title" : "Date\/Time",
+          "validation" : "",
+          "isRequired" : false
+        },
+        {
+          "placeHolder" : "999-999-9999",
+          "type" : "text",
+          "title" : "Phone",
+          "auto" : false,
+          "value" : "(255) 666 644",
+          "name" : "Q8",
+          "validation" : "",
+          "visible" : true,
+          "inputType" : "tel",
+          "isRequired" : false
+        },
+        {
+          "url" : "http:\/\/www.example.com",
+          "title" : "URL",
+          "type" : "url",
+          "name" : "Q9"
+        },
+        {
+          "validation" : "",
+          "type" : "comment",
+          "name" : "Q10",
+          "placeHolder" : "",
+          "isWeatherInput" : false,
+          "isRequired" : false,
+          "title" : "Text Area",
+          "value" : "Dandy"
+        },
+        {
+          "text" : "Label",
+          "title" : "",
+          "name" : "Q11",
+          "type" : "textdisplay"
+        },
+        {
+          "type" : "subHeader",
+          "name" : "Q12",
+          "title" : "Header"
+        }
+      ],
+      "name" : "Page"
+    },
+    {
+      "name" : "Page",
+      "elements" : [
+        {
+          "segment" : true,
+          "isRequired" : false,
+          "value" : "Yes",
+          "type" : "segmentInput",
+          "title" : "Radio",
+          "name" : "Q13",
+          "choices" : [
+            "Yes",
+            "No"
+          ]
+        },
+        {
+          "choices" : [
+            {
+              "elements" : [
+                {
+                  "title" : "Text Input",
+                  "isRequired" : false,
+                  "name" : "Q15",
+                  "type" : "text",
+                  "visible" : true,
+                  "value" : "",
+                  "validation" : "",
+                  "placeHolder" : "Text Input",
+                  "auto" : false,
+                  "inputType" : "text"
+                },
+                {
+                  "inputType" : "email",
+                  "validation" : "",
+                  "auto" : false,
+                  "placeHolder" : "email@domain.com",
+                  "value" : "",
+                  "type" : "text",
+                  "visible" : true,
+                  "name" : "Q16",
+                  "isRequired" : false,
+                  "title" : "Email"
+                }
+              ],
+              "choiceValue" : "Yes"
+            },
+            {
+              "elements" : [
+
+              ],
+              "choiceValue" : "No"
+            }
+          ],
+          "title" : "Radio",
+          "isRequired" : false,
+          "name" : "Q14",
+          "type" : "radiogroup",
+          "value" : "No",
+          "segment" : false
+        },
+        {
+          "type" : "dropdown",
+          "name" : "Q17",
+          "choices" : [
+            "Red",
+            "Blue"
+          ],
+          "isRequired" : false,
+          "title" : "Select",
+          "value" : "Red"
+        },
+        {
+          "title" : "Select",
+          "choices" : [
+            {
+              "elements" : [
+                {
+                  "inputType" : "text",
+                  "isRequired" : false,
+                  "title" : "Text Input",
+                  "placeHolder" : "Text Input",
+                  "name" : "Q19",
+                  "validation" : "",
+                  "value" : "",
+                  "type" : "text",
+                  "visible" : true,
+                  "auto" : false
+                }
+              ],
+              "choiceValue" : "Red"
+            },
+            {
+              "choiceValue" : "Blue",
+              "elements" : [
+                {
+                  "placeHolder" : "",
+                  "title" : "Text Area",
+                  "isRequired" : false,
+                  "validation" : "",
+                  "value" : "He'd",
+                  "type" : "comment",
+                  "name" : "Q20",
+                  "isWeatherInput" : false
+                }
+              ]
+            }
+          ],
+          "isRequired" : false,
+          "type" : "dropdown",
+          "name" : "Q18",
+          "value" : "Blue"
+        },
+        {
+          "isRequired" : false,
+          "value" : [
+            "Red",
+            "Blue"
+          ],
+          "choices" : [
+            "Red",
+            "Blue"
+          ],
+          "title" : "Checkboxes",
+          "name" : "Q21",
+          "type" : "checkbox"
+        },
+        {
+          "isRequired" : false,
+          "type" : "checkbox",
+          "title" : "Checkboxes",
+          "value" : [
+            "Red",
+            "Blue"
+          ],
+          "name" : "Q22",
+          "choices" : [
+            {
+              "elements" : [
+                {
+                  "isRequired" : false,
+                  "name" : "Q23",
+                  "auto" : false,
+                  "inputType" : "email",
+                  "validation" : "",
+                  "visible" : true,
+                  "placeHolder" : "email@domain.com",
+                  "value" : "ndjd@dd.com",
+                  "type" : "text",
+                  "title" : "Email"
+                }
+              ],
+              "choiceValue" : "Red"
+            },
+            {
+              "choiceValue" : "Blue",
+              "elements" : [
+                {
+                  "title" : "Password",
+                  "isRequired" : false,
+                  "visible" : true,
+                  "name" : "Q24",
+                  "placeHolder" : "",
+                  "auto" : false,
+                  "inputType" : "password",
+                  "validation" : "",
+                  "value" : "hhss",
+                  "type" : "text"
+                },
+                {
+                  "name" : "Q33",
+                  "choices" : [
+                    "Red",
+                    "Blue"
+                  ],
+                  "value" : [
+                    "Red",
+                    "Blue"
+                  ],
+                  "isRequired" : false,
+                  "type" : "dropdownmultiple",
+                  "title" : "Select Multiple"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "title" : ""
+    },
+    {
+      "name" : "Page",
+      "elements" : [
+        {
+          "elements" : [
+            {
+              "isRequired" : false,
+              "sf_id" : "2731",
+              "type" : "service",
+              "Options" : [
+
+              ],
+              "ServiceID" : "206",
+              "Completed" : true,
+              "title" : "Showel",
+              "serviceType" : "AsTask",
+              "name" : "Q26",
+              "ServiceName" : "Showel",
+              "siteID" : "-2"
+            },
+            {
+              "siteID" : "-2",
+              "serviceType" : "AsDetail",
+              "Hour" : "2.75",
+              "People" : "2",
+              "title" : "Cleaning",
+              "ServiceName" : "Cleaning",
+              "name" : "Q27",
+              "sf_id" : "2731",
+              "isRequired" : false,
+              "Options" : [
+                "2\""
+              ],
+              "ServiceID" : "1630",
+              "type" : "service"
+            },
+            {
+              "Options" : [
+                "None",
+                "Free"
+              ],
+              "isRequired" : false,
+              "sf_id" : "2731",
+              "type" : "service",
+              "name" : "Q28",
+              "StartTime" : 1571655742.808033,
+              "siteID" : "-2",
+              "ServiceID" : "1631",
+              "ServiceName" : "Red Carpetting",
+              "title" : "Red Carpetting",
+              "serviceType" : "AsTimer",
+              "StopTime" : 1571656434.9544091
+            }
+          ],
+          "title" : "Services",
+          "name" : "Q25",
+          "type" : "panel",
+          "repeatable" : false
+        },
+        {
+          "name" : "Q29",
+          "repeatable" : false,
+          "type" : "panel",
+          "title" : "Panel",
+          "elements" : [
+            {
+              "quantity" : "25",
+              "material" : "113",
+              "name" : "Q30",
+              "unit" : "KG",
+              "type" : "material",
+              "isRequired" : false,
+              "title" : "Salt"
+            }
+          ]
+        }
+      ],
+      "title" : ""
+    },
+    {
+      "name" : "Page",
+      "title" : "",
+      "elements" : [
+        {
+          "type" : "issues",
+          "title" : "New Issue",
+          "siteID" : "-2",
+          "name" : "Q31",
+          "sf_id" : "2731",
+          "value" : [
+            {
+              "title" : "Hdhd",
+              "type" : "issues",
+              "sf_id" : "2731",
+              "name" : "Q31",
+              "siteID" : "-2",
+              "value" : [
+                {
+                  "lrImageURL" : "https:\/\/19b5bf454221a3009503-837ce6cc4941d82f7e9704a4735379b2.ssl.cf1.rackcdn.com\/c869d097ac86.jpg"
+                }
+              ]
+            },
+            {
+              "sf_id" : "2731",
+              "title" : "Bdhdhh do",
+              "siteID" : "-2",
+              "value" : [
+                {
+                  "lrImageURL" : "https:\/\/19b5bf454221a3009503-837ce6cc4941d82f7e9704a4735379b2.ssl.cf1.rackcdn.com\/5d3fd2358195.jpg"
+                }
+              ],
+              "type" : "issues",
+              "name" : "Q31"
+            }
+          ]
+        },
+        {
+          "siteID" : "-2",
+          "value" : [
+            "4261",
+            "4380"
+          ],
+          "type" : "crew",
+          "name" : "Q32",
+          "isRequired" : false,
+          "title" : "Crew Selector",
+          "sf_id" : "2731"
+        }
+      ]
+    },
+    {
+      "title" : "",
+      "elements" : [
+        {
+          "name" : "Q34",
+          "title" : "Photo",
+          "value" : [
+            {
+              "lrImageURL" : "https:\/\/19b5bf454221a3009503-837ce6cc4941d82f7e9704a4735379b2.ssl.cf1.rackcdn.com\/8bc06a984636.jpg"
+            }
+          ],
+          "type" : "file"
+        },
+        {
+          "value" : {
+            "lrImageURL" : "https:\/\/19b5bf454221a3009503-837ce6cc4941d82f7e9704a4735379b2.ssl.cf1.rackcdn.com\/37329a182321.jpg"
+          },
+          "type" : "signaturepad",
+          "name" : "Q35",
+          "isRequired" : false,
+          "title" : "Signature"
+        },
+        {
+          "title" : "Sketch",
+          "type" : "sketch",
+          "name" : "Q36",
+          "value" : {
+            "lrImageURL" : "https:\/\/19b5bf454221a3009503-837ce6cc4941d82f7e9704a4735379b2.ssl.cf1.rackcdn.com\/15f7cab49c44.jpg"
+          }
+        },
+        {
+          "name" : "Q37",
+          "isWeatherInput" : true,
+          "type" : "comment",
+          "title" : "Weather",
+          "value" : "",
+          "validation" : "",
+          "isRequired" : false,
+          "placeHolder" : ""
+        }
+      ],
+      "name" : "Page"
+    }
+  ]
+}

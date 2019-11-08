@@ -1,84 +1,183 @@
 <?php
-// NOTE: This script was made with PHP v7.2.3
-// Input (GET):			JSON filepath
-// Output:				PDF file
+// --------------------------------------------------------------------------------------
+// Author:				David Osorio, jdavidosori96@gmail.com
+// Upwork profile:		https://www.upwork.com/freelancers/~010be696c9ded003b5
+// Date:				November 2019
+// --------------------------------------------------------------------------------------
+// PHP version:			7.2.3
+// Input method:		GET
+// No. of parameters:	1
+/**
+ * @param fp JSON filepath
+**/
+// --------------------------------------------------------------------------------------
+// Output:				PDF file created with TCPDF
 // How to call script:	view_only.php?fp=json_filepath_here.json
-// NOTE: Modify defined constants on tcpdf_config.php
-// NOTE: Change path to include main TCPDF library
+// --------------------------------------------------------------------------------------
+
+
+// SETUP 1/2: Change path to include main TCPDF library and customize defined constants on tcpdf_config.php
 require_once('../tcpdf_include.php');
-// Extend TCPF with a custom function: MultiRow() allows to add field title and value in a single line
+// Extend TCPDF with a custom function. MultiRow() allows to add field title and value in a single line
 require_once('../tcpdf_multirow.php');
-// Insert generated PDF name here
+// SETUP 2/2: Customize following global variables
+/**
+ * @param outputName		Output PDF filename
+ * @param outputMode		I: view on browser. D: download directly
+ * @param titleWidth		Title column width. Default: 50. Recommended range value: 30-90. Default unit: mm
+ * @param titleColor		Title column background color (RGB array)
+ * @param subheaderColor	Subheader row background color (RGB array)
+ * @param imageWidth		Image width. Default: 40
+ * @param imageHeight		Image height. Default: 30
+ * @param headerTitle		Header title (appears on every page)
+ * @param formTitle			Form title (appears only at the beginning, before printing JSON data)
+ * @param knownTypes		Switch on printField() only works with these types, unless the object contains
+ * 							a "value" key also
+ * @param imageTypes		Images are created with Image(). Field titles are printed with MultiCell() and
+ * 							optional captions with Cell()
+ * @param ignoreTypes		These types contain "title" and "value" keys but are not intended to be visible
+**/
 $outputName = 'PDF name here.pdf';
-// I: view on browser. D: download directly
 $outputMode = 'I';
+$titleWidth = 50;
+$titleColor = array(233, 236, 239);
+$subheaderColor = array(255, 217, 102);
+$imageWidth = 40;
+$imageHeight = 30;
+$headerTitle = 'Your header title here';
+$formTitle = 'Your form title here';
+$knownTypes = array('text', 'comment', 'radiogroup', 'checkbox', 'dropdown', 'dropdownmultiple', 'file', 'signaturepad', 'sketch', 'service', 'material', 'geo', 'url', 'issues', 'segmentInput');
+$imageTypes = array('file', 'signaturepad', 'sketch', 'issues');
+$ignoreTypes = array('crew');
+
 
 /**
  *
- * Please don't change the following code:
+ * The following code has been tested successfully with provided JSON samples
+ * Please do not modify it unless you understand what you are doing
+ * Recursion reference:
+ * https://stackoverflow.com/questions/5524227/php-foreach-with-arrays-within-arrays
  *
 **/
 
-// Retrieve JSON data
-$json_filepath = $_GET['fp'];
-$json_file = file_get_contents($json_filepath);
-$data = json_decode($json_file);
 
-// Create new PDF document
-$pdf = new MYPDF(PDF_PAGE_ORIENTATION, PDF_UNIT, PDF_PAGE_FORMAT, true, 'UTF-8', false);
+// Retrieve JSON data. Script only runs when a filepath is specified
+if(isset($_GET['fp'])) {
+	$json_filepath = $_GET['fp'];
+	$json_file = file_get_contents($json_filepath);
+	$data = json_decode($json_file);
 
-// Set document information
-$pdf->SetCreator(PDF_CREATOR);
-$pdf->SetAuthor(PDF_AUTHOR);
-$pdf->SetTitle(PDF_TITLE);
+	// Create new PDF document
+	$pdf = new MYPDF(PDF_PAGE_ORIENTATION, PDF_UNIT, PDF_PAGE_FORMAT, true, 'UTF-8', false);
 
-// Set default header data
-$pdf->SetHeaderData(PDF_HEADER_LOGO, PDF_HEADER_LOGO_WIDTH, PDF_HEADER_TITLE, PDF_HEADER_STRING);
+	// Set document information
+	$pdf->SetCreator(PDF_CREATOR);
+	$pdf->SetAuthor(PDF_AUTHOR);
+	$pdf->SetTitle(PDF_TITLE);
 
-// Set header and footer fonts
-$pdf->setHeaderFont(Array(PDF_FONT_NAME_MAIN, '', PDF_FONT_SIZE_MAIN));
-$pdf->setFooterFont(Array(PDF_FONT_NAME_DATA, '', PDF_FONT_SIZE_DATA));
+	// Set default header data
+	$pdf->SetHeaderData(PDF_HEADER_LOGO, PDF_HEADER_LOGO_WIDTH, $headerTitle, PDF_HEADER_STRING);
 
-// Set default monospaced font
-$pdf->SetDefaultMonospacedFont(PDF_FONT_MONOSPACED);
+	// Set header and footer fonts
+	$pdf->setHeaderFont(Array(PDF_FONT_NAME_MAIN, '', PDF_FONT_SIZE_MAIN));
+	$pdf->setFooterFont(Array(PDF_FONT_NAME_DATA, '', PDF_FONT_SIZE_DATA));
 
-// Set margins
-$pdf->SetMargins(PDF_MARGIN_LEFT, PDF_MARGIN_TOP, PDF_MARGIN_RIGHT);
-$pdf->SetHeaderMargin(PDF_MARGIN_HEADER);
-$pdf->SetFooterMargin(PDF_MARGIN_FOOTER);
+	// Set default monospaced font
+	$pdf->SetDefaultMonospacedFont(PDF_FONT_MONOSPACED);
 
-// Set auto page breaks
-$pdf->SetAutoPageBreak(TRUE, PDF_MARGIN_BOTTOM);
+	// Set margins
+	$pdf->SetMargins(PDF_MARGIN_LEFT, PDF_MARGIN_TOP, PDF_MARGIN_RIGHT);
+	$pdf->SetHeaderMargin(PDF_MARGIN_HEADER);
+	$pdf->SetFooterMargin(PDF_MARGIN_FOOTER);
 
-// Set image scale factor
-$pdf->setImageScale(PDF_IMAGE_SCALE_RATIO);
+	// Set auto page breaks
+	$pdf->SetAutoPageBreak(TRUE, PDF_MARGIN_BOTTOM);
 
-// Add a page
-$pdf->AddPage();
+	// Set image scale factor
+	$pdf->setImageScale(PDF_IMAGE_SCALE_RATIO);
 
-// Set default form properties
-$pdf->setFormDefaultProp(array('lineWidth'=>1, 'borderStyle'=>'solid', 'fillColor'=>array(255, 255, 200), 'strokeColor'=>array(255, 128, 128)));
-$pdf->SetFont('helvetica', 'BI', 20);			// Title font
-$pdf->Cell(0, 5, PDF_FORM_TITLE, 0, 1, 'C');
-$pdf->Ln(10);
-$pdf->SetFont('helvetica', '', 10);				// JSON data font
+	// Add a page
+	$pdf->AddPage();
 
-// These values must be formatted before output with MultiRow()
-$exceptionTypes = array('geo', 'url');
-// Images are created with Image(). Image titles are printed with Cell()
-$imageTypes = array('file', 'signaturepad', 'sketch', 'issues');
-// Ignore following types. They are valid because contain title and value but are not intended to be visible
-$ignoreTypes = array('crew');
+	// Set default form properties
+	$pdf->setFormDefaultProp(array('lineWidth'=>1, 'borderStyle'=>'solid', 'fillColor'=>array(255, 255, 200), 'strokeColor'=>array(255, 128, 128)));
+	$pdf->SetFont('helvetica', 'BI', 20);			// Form title font
+	$pdf->Cell(0, 5, $formTitle, 0, 1, 'C');
+	$pdf->Ln(10);
+	$pdf->SetFont('helvetica', '', 10);				// JSON data font
 
-// Add view-only fields from JSON data
-foreach($data->pages as $p)
-foreach($p->elements as $e) {
+	// Add view-only fields from JSON data. Each "page" contains "elements". Each element contains fields
+	foreach($data->pages as $p)
+		foreach($p->elements as $e)
+			printField($e);
+
+	// Close and output PDF document
+	$pdf->Output($outputName, $outputMode);
+}
+
+function printField($e) {
+	global $pdf, $knownTypes, $imageTypes, $ignoreTypes, $titleWidth, $titleColor, $subheaderColor, $imageWidth, $imageHeight;
+
 	if(isset($e->title) && isset($e->type)) {
 		$title = $e->title;
 		$type = $e->type;
-		if((isset($e->value) || in_array($type, $exceptionTypes)) && !in_array($type, $ignoreTypes)) {
+		if((isset($e->value) || in_array($type, $knownTypes)) && !in_array($type, $ignoreTypes)) {
 			$value = '';
+			// Get field title and value based on type
 			switch($type) {
+				// There could be +1 image URLs witn NO captions
+				case 'file':
+					$imageURL = array();
+					foreach($e->value as $photo) {
+						array_push($imageURL, $photo->lrImageURL);
+					}
+					break;
+				// There could be +1 image URLs with captions
+				case 'issues':
+					$imageURL = array();
+					$imageName = array();
+					foreach($e->value as $photo) {
+						if(gettype($photo->value) == 'array')
+							array_push($imageURL, $photo->value[0]->lrImageURL);	// Add image URL
+						else
+							array_push($imageURL, $photo->value->lrImageURL);		// Add image URL
+						array_push($imageName, $photo->title);						// Add caption
+					}
+					break;
+				// There is only one image URL
+				case 'signaturepad':
+				case 'sketch':
+					$imageURL = array();
+					if(gettype($e->value) == 'array')
+						array_push($imageURL, $e->value[0]->lrImageURL);
+					else
+						array_push($imageURL, $e->value->lrImageURL);
+					break;
+				case 'service':
+					$title = $e->serviceType;
+					$value = '';
+					switch($title) {
+						case 'AsTask':
+							$value = $e->ServiceName . '. Options: ' . implode(", ", $e->Options);
+							break;
+						case 'AsDetail':
+							$info = '';
+							if(isset($e->People) && isset($e->Hour)) {
+								$info = $e->People . ' People, ' . $e->Hour . ' Hour(s). ';
+							}
+							$value = $e->ServiceName . '. ' . $info . 'Options: ' . implode(", ", $e->Options);
+							break;
+						case 'AsTimer':
+							$info = '';
+							if(isset($e->StartTime) && isset($e->StopTime)) {
+								$timediff = $e->StopTime - $e->StartTime;
+								$info = intdiv($timediff, 60) . ' Minutes. ';
+							}
+							$value = $e->ServiceName . '. ' . $info . 'Options: ' . implode(", ", $e->Options);
+							break;
+					}
+					$title = 'Service (' . $title . ')';
+					break;
 				case 'geo':
 					if(isset($e->buildingName) && isset($e->lat) && isset($e->lng))
 						$value = 'Lat: ' . substr($e->lat, 0, 10) .
@@ -91,97 +190,61 @@ foreach($p->elements as $e) {
 					if(isset($e->url))
 						$value = $e->url;
 					break;
-				case 'issues':			// There could be +1 named images
-					$imageURL = array();
-					$imageName = array();
-					foreach($e->value as $photo) {
-						array_push($imageURL, $photo->value[0]->lrImageURL);
-						array_push($imageName, $photo->title);
-					}
+				case 'material':
+					$title = 'Material';
+					$value = $e->title . ': ' . $e->quantity . ' ' . $e->unit;
 					break;
-				case 'file':			// There could be +1 no-named images
-					$imageURL = array();
-					foreach($e->value as $photo) {
-						array_push($imageURL, $photo->lrImageURL);
-					}
-					break;
-				case 'signaturepad':	// There is only one image
-				case 'sketch':
-					$imageURL = array();
-					array_push($imageURL, $e->value->lrImageURL);
-					break;
-				default:				// Some values are strings. One-dimensional arrays are stringified
+				// Most field values are simple strings or one-dimensional arrays
+				default:
 					if(gettype($e->value) == 'array')
 						$value = implode(", ", $e->value);
 					else
 						$value = $e->value;
 			}
-			// Set field title padding. Cell color is omitted because white cells are added next to issue images
+			// Set field title right padding
 			$pdf->setCellPaddings(0, 0, 2, 0);
-			// Add images
+			// Add images first, then caption if exists, then field title
 			if(in_array($type, $imageTypes)) {
-				$w = 40;		// Image width
-				$h = 30;		// Image height
-				$startX = 57;	// Print image starting from this X value
+				$startX = $titleWidth + 17;						// Print image starting from this X value
 				for($i = 0; $i < count($imageURL); $i++) {
-					$pdf->SetFillColor(233, 236, 239);
-					$pdf->Cell(40, $h, $title, 0, 0, 'R', 1);
-					$pdf->Image($imageURL[$i], $startX, '', $w, $h);
-					$pdf->SetX($startX + $w + 2);
+					$pdf->Image($imageURL[$i], $startX, $pdf->GetY(), $imageWidth, $imageHeight);
 					if($type == 'issues') {
-						$pdf->SetFillColor(255, 255, 255);
-						$pdf->Cell(100, $h, $imageName[$i], 0, 0, 'L', 1);
+						$pdf->SetX($startX + $imageWidth + 2);	// If exists, print caption from this X value
+						$pdf->SetFillColor(255, 255, 255);		// White cells are added next to issue images
+						$pdf->Cell(100, $imageHeight, $imageName[$i], 0, 0, 'L', 1);
 					}
-					$pdf->Ln($h);
+					$pdf->SetFillColor($titleColor[0], $titleColor[1], $titleColor[2]);
+					$pdf->SetX(PDF_MARGIN_LEFT);				// Print field title from this X value
+					$pdf->MultiCell($titleWidth, $imageHeight, $title, 0, 'R', 1);
 				}
 			}
-			// Add normal string field values
+			// Add normal field values (string or stringied array)
 			else {
-				$pdf->SetFillColor(233, 236, 239);
-				$pdf->MultiRow($title, $value);
+				$pdf->SetFillColor($titleColor[0], $titleColor[1], $titleColor[2]);
+				$pdf->MultiRow($titleWidth, $title, $value);
 			}
 		}
-		if(isset($e->elements)) {
-			// Set field title cell color and padding
-			$pdf->SetFillColor(233, 236, 239);
-			$pdf->setCellPaddings(0, 0, 2, 0);
-			foreach($e->elements as $e2) {
-				// Services
-				if(isset($e2->serviceType) && isset($e2->ServiceName) && isset($e2->Options)) {
-					$stitle = $e2->serviceType;
-					$svalue = '';
-					switch($stitle) {
-						case 'AsTask':
-							$svalue = $e2->ServiceName . '. Options: ' . implode(", ", $e2->Options);
-							break;
-						case 'AsDetail':
-							$info = '';
-							if(isset($e2->People) && isset($e2->Hour)) {
-								$info = $e2->People . ' People, ' . $e2->Hour . ' Hour(s). ';
-							}
-							$svalue = $e2->ServiceName . '. ' . $info . 'Options: ' . implode(", ", $e2->Options);
-							break;
-						case 'AsTimer':
-							$info = '';
-							if(isset($e2->StartTime) && isset($e2->StopTime)) {
-								$timediff = $e2->StopTime - $e2->StartTime;
-								$info = intdiv($timediff, 60) . ' Minutes. ';
-							}
-							$svalue = $e2->ServiceName . '. ' . $info . 'Options: ' . implode(", ", $e2->Options);
-							break;
-					}
-					$stitle = 'Service (' . $stitle . ')';
-					$pdf->MultiRow($stitle, $svalue);
-				}
-				// Materials
-				if(isset($e2->title) && isset($e2->quantity) && isset($e2->unit)) {
-					$material = $e2->title . ': ' . $e2->quantity . ' ' . $e2->unit;
-					$pdf->MultiRow('Material', $material);
-				}
+		if($e->type == 'subHeader') {
+			// Set subheader top padding
+			$pdf->setCellPaddings(0, 2, 0, 0);
+			$pdf->SetFillColor($subheaderColor[0], $subheaderColor[1], $subheaderColor[2]);
+			$pdf->MultiCell(186, 8, 'SECTION: ' . strtoupper($e->title), 0, 'C', 1);
+		}
+	}
+	// Recursion if "elements" are nested
+	if(isset($e->elements)) {
+		foreach($e->elements as $e2)
+			printField($e2);
+	}
+	// Recursion if "elements" are nested in "choices" array and "choiceValue" is neither empty nor negative
+	if(isset($e->choices) && gettype($e->choices) == 'array') {
+		foreach($e->choices as $c) {
+			if(/*gettype($c) == 'object' &&*/ isset($c->elements) && isset($c->choiceValue)) {
+				$choice = strtolower($c->choiceValue);
+				if($choice != '' && $choice != 'no')
+					foreach($c->elements as $e3)
+						printField($e3);
 			}
 		}
 	}
 }
-
-// Close and output PDF document
-$pdf->Output($outputName, $outputMode);

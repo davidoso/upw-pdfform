@@ -1,11 +1,11 @@
 <?php
 class MYPDF extends TCPDF {
-    public function MultiRow($left, $right) {
+    public function MultiRow($leftWidth, $left, $right) {
         $page_start = $this->getPage();
         $y_start = $this->GetY();
 		// Write the left cell
 		$this->setCellPaddings(0, 2, 2, 0);
-		$this->MultiCell(40, 10, $left, 0, 'R', 1, 2, '', '', true, 0);
+		$this->MultiCell($leftWidth, 10, $left, 0, 'R', 1, 2, '', '', true, 0);
         $page_end_1 = $this->getPage();
         $y_end_1 = $this->GetY();
         $this->setPage($page_start);
@@ -24,8 +24,8 @@ class MYPDF extends TCPDF {
         } else {
             $ynew = $y_end_2;
         }
-        $this->setPage(max($page_end_1,$page_end_2));
-        $this->SetXY($this->GetX(),$ynew);
+        $this->setPage(max($page_end_1, $page_end_2));
+        $this->SetXY($this->GetX(), $ynew);
     }
 }
 ?>

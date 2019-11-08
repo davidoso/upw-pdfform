@@ -69,7 +69,7 @@ define ('K_PATH_IMAGES', dirname(__FILE__).'/../images/');
  * Deafult image logo used be the default Header() method.
  * Please set here your own logo or an empty string to disable it.
  */
-define ('PDF_HEADER_LOGO', 'logo.png');
+define ('PDF_HEADER_LOGO', 'sf_logo.png');
 
 /**
  * Header logo image width in user units.
@@ -99,32 +99,27 @@ define ('PDF_PAGE_ORIENTATION', 'P');
 /**
  * Document creator.
  */
-define ('PDF_CREATOR', 'Your company creator here');
+define ('PDF_CREATOR', 'Sitefotos. Made with TCPDF');
 
 /**
  * Document author.
  */
-define ('PDF_AUTHOR', 'Your company author here');
+define ('PDF_AUTHOR', 'Sitefotos. Made with TCPDF');
 
 /**
  * Document title.
  */
-define ('PDF_TITLE', 'Your PDF title here');
-
-/**
- * Form title.
- */
-define ('PDF_FORM_TITLE', 'Your form title here');
+define ('PDF_TITLE', 'Sitefotos form');
 
 /**
  * Header title.
  */
-define ('PDF_HEADER_TITLE', 'Your PDF name here');
+//define ('PDF_HEADER_TITLE', 'Sitefotos header title');
 
 /**
  * Header description string.
  */
-define ('PDF_HEADER_STRING', "Sample Form - Your company name\nwww.yourcompanywebsite.com");
+define ('PDF_HEADER_STRING', "Custom form - Sitefotos\nwww.sitefotos.com");
 
 /**
  * Document unit of measure [pt=point, mm=millimeter, cm=centimeter, in=inch].
@@ -144,12 +139,12 @@ define ('PDF_MARGIN_FOOTER', 10);
 /**
  * Top margin.
  */
-define ('PDF_MARGIN_TOP', 25);
+define ('PDF_MARGIN_TOP', 27);
 
 /**
  * Bottom margin.
  */
-define ('PDF_MARGIN_BOTTOM', 25);
+define ('PDF_MARGIN_BOTTOM', 26);
 
 /**
  * Left margin.
