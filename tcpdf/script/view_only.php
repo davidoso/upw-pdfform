@@ -6,13 +6,15 @@
 // --------------------------------------------------------------------------------------
 // PHP version:			7.2.3
 // Input method:		GET
-// No. of parameters:	1
+// No. of parameters:	3
 /**
- * @param fp JSON filepath
+ * @param fp				JSON filepath
+ * @param ht				Header title (appears on every page)
+ * @param ft				Form title (appears only at the beginning, before printing JSON data)
 **/
 // --------------------------------------------------------------------------------------
 // Output:				PDF file created with TCPDF
-// How to call script:	view_only.php?fp=json_filepath_here.json
+// How to call script:	view_only.php?fp=json_filepath.json&ht=header_title&ft=form_title
 // --------------------------------------------------------------------------------------
 
 
@@ -29,8 +31,6 @@ require_once('../tcpdf_multirow.php');
  * @param subheaderColor	Subheader row background color (RGB array)
  * @param imageWidth		Image width. Default: 40
  * @param imageHeight		Image height. Default: 30
- * @param headerTitle		Header title (appears on every page)
- * @param formTitle			Form title (appears only at the beginning, before printing JSON data)
  * @param knownTypes		Switch on printField() only works with these types, unless the object contains
  * 							a "value" key also
  * @param imageTypes		Images are created with Image(). Field titles are printed with MultiCell() and
@@ -44,11 +44,11 @@ $titleColor = array(233, 236, 239);
 $subheaderColor = array(255, 217, 102);
 $imageWidth = 40;
 $imageHeight = 30;
-$headerTitle = 'Your header title here';
-$formTitle = 'Your form title here';
 $knownTypes = array('text', 'comment', 'radiogroup', 'checkbox', 'dropdown', 'dropdownmultiple', 'file', 'signaturepad', 'sketch', 'service', 'material', 'geo', 'url', 'issues', 'segmentInput');
 $imageTypes = array('file', 'signaturepad', 'sketch', 'issues');
 $ignoreTypes = array('crew');
+$headerTitle = isset($_GET['ht']) ? $_GET['ht'] : 'Your header title here';
+$formTitle = isset($_GET['ft']) ? $_GET['ft'] : 'Your form title here';
 
 
 /**
@@ -105,6 +105,9 @@ if(isset($_GET['fp'])) {
 	$pdf->Cell(0, 5, $formTitle, 0, 1, 'C');
 	$pdf->Ln(10);
 	$pdf->SetFont('helvetica', '', 10);				// JSON data font
+
+	// Set border style
+	$pdf->SetLineStyle(array('width' => 0.1, 'cap' => 'butt', 'join' => 'miter', 'dash' => 0, 'color' => array(80, 80, 80)));
 
 	// Add view-only fields from JSON data. Each "page" contains "elements". Each element contains fields
 	foreach($data->pages as $p)
@@ -207,15 +210,15 @@ function printField($e) {
 			if(in_array($type, $imageTypes)) {
 				$startX = $titleWidth + 17;						// Print image starting from this X value
 				for($i = 0; $i < count($imageURL); $i++) {
-					$pdf->Image($imageURL[$i], $startX, $pdf->GetY(), $imageWidth, $imageHeight);
+					$pdf->Image($imageURL[$i], $startX, $pdf->GetY() + 0.5, $imageWidth, $imageHeight);
 					if($type == 'issues') {
 						$pdf->SetX($startX + $imageWidth + 2);	// If exists, print caption from this X value
 						$pdf->SetFillColor(255, 255, 255);		// White cells are added next to issue images
-						$pdf->Cell(100, $imageHeight, ltrim($imageName[$i]), 0, 0, 'L', 1);
+						$pdf->Cell(92, $imageHeight, ltrim($imageName[$i]), 'T', 0, 'L', 1);
 					}
 					$pdf->SetFillColor($titleColor[0], $titleColor[1], $titleColor[2]);
 					$pdf->SetX(PDF_MARGIN_LEFT);				// Print field title from this X value
-					$pdf->MultiCell($titleWidth, $imageHeight, ltrim($title), 0, 'R', 1);
+					$pdf->MultiCell($titleWidth, $imageHeight + 4.5, ltrim($title), 1, 'R', 1);
 				}
 			}
 			// Add normal field values (string or stringied array)
@@ -228,7 +231,7 @@ function printField($e) {
 			// Set subheader top padding
 			$pdf->setCellPaddings(0, 2, 0, 0);
 			$pdf->SetFillColor($subheaderColor[0], $subheaderColor[1], $subheaderColor[2]);
-			$pdf->MultiCell(186, 8, 'SECTION: ' . ltrim(strtoupper($e->title)), 0, 'C', 1);
+			$pdf->MultiCell(186, 8, 'SECTION: ' . ltrim(strtoupper($e->title)), 1, 'C', 1);
 		}
 	}
 	// Recursion if "elements" are nested
