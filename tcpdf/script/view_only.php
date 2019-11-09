@@ -37,7 +37,7 @@ require_once('../tcpdf_multirow.php');
  * 							optional captions with Cell()
  * @param ignoreTypes		These types contain "title" and "value" keys but are not intended to be visible
 **/
-$outputName = 'PDF name here.pdf';
+$outputName = 'Custom form.pdf';
 $outputMode = 'I';
 $titleWidth = 50;
 $titleColor = array(233, 236, 239);
@@ -204,20 +204,21 @@ function printField($e) {
 					else
 						$value = $e->value;
 			}
-			// Set field title right padding
-			$pdf->setCellPaddings(0, 0, 2, 0);
+			$pdf->setCellPaddings(0, 0, 2, 0);					// Set field title right padding
 			// Add images first, then caption if exists, then field title
 			if(in_array($type, $imageTypes)) {
 				$startX = $titleWidth + 17;						// Print image starting from this X value
 				for($i = 0; $i < count($imageURL); $i++) {
 					$pdf->Image($imageURL[$i], $startX, $pdf->GetY() + 0.5, $imageWidth, $imageHeight);
-					if($type == 'issues') {
-						$pdf->SetX($startX + $imageWidth + 2);	// If exists, print caption from this X value
-						$pdf->SetFillColor(255, 255, 255);		// White cells are added next to issue images
-						$pdf->Cell(92, $imageHeight, ltrim($imageName[$i]), 'T', 0, 'L', 1);
-					}
+					$caption = isset($imageName[$i]) ? ltrim($imageName[$i]) : '[No caption]';
+					if($type == 'signaturepad')
+						$caption = '';
+					$pdf->SetX($startX + $imageWidth + 2);		// If exists, print caption from this X value
+					$pdf->SetFillColor(255, 255, 255);			// White cells are added next to issue images
+					$pdf->Cell(92, $imageHeight, $caption, 'T', 0, 'L', 1);
 					$pdf->SetFillColor($titleColor[0], $titleColor[1], $titleColor[2]);
 					$pdf->SetX(PDF_MARGIN_LEFT);				// Print field title from this X value
+					$pdf->setCellPaddings(0, 2, 2, 0);			// Set field title top, right padding
 					$pdf->MultiCell($titleWidth, $imageHeight + 4.5, ltrim($title), 1, 'R', 1);
 				}
 			}
@@ -228,8 +229,7 @@ function printField($e) {
 			}
 		}
 		if($e->type == 'subHeader') {
-			// Set subheader top padding
-			$pdf->setCellPaddings(0, 2, 0, 0);
+			$pdf->setCellPaddings(0, 2, 0, 0);					// Set subheader top padding
 			$pdf->SetFillColor($subheaderColor[0], $subheaderColor[1], $subheaderColor[2]);
 			$pdf->MultiCell(186, 8, 'SECTION: ' . ltrim(strtoupper($e->title)), 1, 'C', 1);
 		}
