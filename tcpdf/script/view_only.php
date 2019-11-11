@@ -8,7 +8,7 @@
 // Input method:		GET
 // No. of parameters:	3
 /**
- * @param fp				JSON filepath
+ * @param fp				JSON filepath (required)
  * @param ht				Header title (appears on every page)
  * @param ft				Form title (appears only at the beginning, before printing JSON data)
 **/
@@ -18,7 +18,7 @@
 // --------------------------------------------------------------------------------------
 
 
-// SETUP 1/2: Change path to include main TCPDF library and customize defined constants on tcpdf_config.php
+// SETUP 1/2: Change path to include main TCPDF library and customize defined constants on config/tcpdf_config.php
 require_once('../tcpdf_include.php');
 // Extend TCPDF with a custom function. MultiRow() allows to add field title and value in a single line
 require_once('../tcpdf_multirow.php');
@@ -29,6 +29,7 @@ require_once('../tcpdf_multirow.php');
  * @param titleWidth		Title column width. Default: 50. Recommended range value: 30-90. Default unit: mm
  * @param titleColor		Title column background color (RGB array)
  * @param subheaderColor	Subheader row background color (RGB array)
+ * @param borderColor		Border color (RGB array)
  * @param imageWidth		Image width. Default: 40
  * @param imageHeight		Image height. Default: 30
  * @param knownTypes		Switch on printField() only works with these types, unless the object contains
@@ -42,13 +43,14 @@ $outputMode = 'I';
 $titleWidth = 50;
 $titleColor = array(233, 236, 239);
 $subheaderColor = array(255, 217, 102);
+$borderColor = array(80, 80, 80);
 $imageWidth = 40;
 $imageHeight = 30;
 $knownTypes = array('text', 'comment', 'radiogroup', 'checkbox', 'dropdown', 'dropdownmultiple', 'file', 'signaturepad', 'sketch', 'service', 'material', 'geo', 'url', 'issues', 'segmentInput');
 $imageTypes = array('file', 'signaturepad', 'sketch', 'issues');
 $ignoreTypes = array('crew');
-$headerTitle = isset($_GET['ht']) ? $_GET['ht'] : 'Your header title here';
-$formTitle = isset($_GET['ft']) ? $_GET['ft'] : 'Your form title here';
+$headerTitle = isset($_GET['ht']) ? $_GET['ht'] : 'Default header title';
+$formTitle = isset($_GET['ft']) ? $_GET['ft'] : 'Default form title';
 
 
 /**
@@ -100,14 +102,14 @@ if(isset($_GET['fp'])) {
 	$pdf->AddPage();
 
 	// Set default form properties
-	$pdf->setFormDefaultProp(array('lineWidth'=>1, 'borderStyle'=>'solid', 'fillColor'=>array(255, 255, 200), 'strokeColor'=>array(255, 128, 128)));
+	$pdf->setFormDefaultProp(array('lineWidth' => 1, 'borderStyle' => 'solid', 'fillColor' => $subheaderColor, 'strokeColor' => $borderColor));
 	$pdf->SetFont('helvetica', 'BI', 20);			// Form title font
 	$pdf->Cell(0, 5, $formTitle, 0, 1, 'C');
 	$pdf->Ln(10);
-	$pdf->SetFont('helvetica', '', 10);				// JSON data font
+	$pdf->SetFont('helvetica', '', 10);				// JSON body font
 
 	// Set border style
-	$pdf->SetLineStyle(array('width' => 0.1, 'cap' => 'butt', 'join' => 'miter', 'dash' => 0, 'color' => array(80, 80, 80)));
+	$pdf->SetLineStyle(array('width' => 0.1, 'cap' => 'butt', 'join' => 'miter', 'dash' => 0, 'color' => $borderColor));
 
 	// Add view-only fields from JSON data. Each "page" contains "elements". Each element contains fields
 	foreach($data->pages as $p)
@@ -214,8 +216,8 @@ function printField($e) {
 					if($type == 'signaturepad')
 						$caption = '';
 					$pdf->SetX($startX + $imageWidth + 2);		// If exists, print caption from this X value
-					$pdf->SetFillColor(255, 255, 255);			// White cells are added next to issue images
-					$pdf->Cell(92, $imageHeight, $caption, 'T', 0, 'L', 1);
+					$pdf->SetFillColor(255, 255, 255);			// Add white cells next to images
+					$pdf->Cell(132 - $imageWidth, $imageHeight, $caption, 'T', 0, 'L', 1);
 					$pdf->SetFillColor($titleColor[0], $titleColor[1], $titleColor[2]);
 					$pdf->SetX(PDF_MARGIN_LEFT);				// Print field title from this X value
 					$pdf->setCellPaddings(0, 2, 2, 0);			// Set field title top, right padding
