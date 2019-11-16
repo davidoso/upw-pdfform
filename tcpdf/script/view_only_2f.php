@@ -44,8 +44,6 @@ require_once('../tcpdf_multirow.php');
 	* @param headerTitle	Header title (appears on every page)
 	* @param formTitle		Form title (appears only at the beginning, before printing JSON data)
 **/
-
-
 function parseJSONPDF($config, $json) {
 	if(isset($json['filepath'])) {
 		// JSON parameters

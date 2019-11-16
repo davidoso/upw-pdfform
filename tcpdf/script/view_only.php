@@ -120,6 +120,7 @@ if(isset($_GET['fp'])) {
 	$pdf->Output($outputName, $outputMode);
 }
 
+
 function printField($e) {
 	global $pdf, $knownTypes, $imageTypes, $ignoreTypes, $titleWidth, $titleColor, $subheaderColor, $imageWidth, $imageHeight;
 
