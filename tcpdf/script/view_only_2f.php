@@ -10,6 +10,11 @@ require_once('../tcpdf_include.php');
 // Extend TCPDF with a custom function. MultiRow() allows to add field title and value in a single line
 require_once('../tcpdf_multirow.php');
 
+// NOTE: Example how to call script and customize input parameters
+$json = array("filepath" => "Samples/1st.json");
+$config = array("headerLogo" => "other_company.png");
+parseJSONPDF($config, $json);
+
 
 /**
  *
@@ -28,8 +33,8 @@ require_once('../tcpdf_multirow.php');
  	* @param titleWidth		Title column width. Default: 50. Recommended range value: 30-90. Default unit: mm
 	* @param titleColor		Title column background color (RGB array)
 	* @param subheaderColor	Subheader row background color (RGB array)
-	* @param imageWidth		Image width. Default: 40
-	* @param imageHeight	Image height. Default: 30
+	* @param imageWidth		Image width. Default: 35
+	* @param imageHeight	Image height. Default: 25
 	* @param lineWidth		Line width. Default: 1
 	* @param borderWidth	Border width. Default: 0.1
 	* @param borderColor	Border color (RGB array)
@@ -50,15 +55,14 @@ function parseJSONPDF($config, $json) {
 		$filepath = $json['filepath'];
 		$headerTitle = isset($json['headerTitle']) ? $json['headerTitle'] : 'Default header title';
 		$formTitle = isset($json['formTitle']) ? $json['formTitle'] : 'Default form title';
-
 		// Config parameters
 		$outputName = isset($config['outputName']) ? $config['outputName'] : 'Custom form.pdf';
 		$outputMode = isset($config['outputMode']) ? $config['outputMode'] : 'I';
 		$titleWidth = isset($config['titleWidth']) ? $config['titleWidth'] : 50;
 		$titleColor = isset($config['titleColor']) ? $config['titleColor'] : array(233, 236, 239);
 		$subheaderColor = isset($config['subheaderColor']) ? $config['subheaderColor'] : array(255, 217, 102);
-		$imageWidth = isset($config['imageWidth']) ? $config['imageWidth'] : 40;
-		$imageHeight = isset($config['imageHeight']) ? $config['imageHeight'] : 30;
+		$imageWidth = isset($config['imageWidth']) ? $config['imageWidth'] : 35;
+		$imageHeight = isset($config['imageHeight']) ? $config['imageHeight'] : 25;
 		$lineWidth = isset($config['lineWidth']) ? $config['lineWidth'] : 1;
 		$borderWidth = isset($config['borderWidth']) ? $config['borderWidth'] : 0.1;
 		$borderColor = isset($config['borderColor']) ? $config['borderColor'] : array(80, 80, 80);
@@ -68,7 +72,6 @@ function parseJSONPDF($config, $json) {
 		$bodyFontStyle = isset($config['bodyFontStyle']) ? $config['bodyFontStyle'] : '';
 		$bodyFontSize = isset($config['bodyFontSize']) ? $config['bodyFontSize'] : 10;
 		$headerLogo = isset($config['headerLogo']) ? $config['headerLogo'] : 'sf_logo.png';
-
 		// Fixed constants (non parameters)
 		// Switch on printField() only works with these types, unless the object contains a "value" key also
 		$knownTypes = array('text', 'comment', 'radiogroup', 'checkbox', 'dropdown', 'dropdownmultiple', 'file', 'signaturepad', 'sketch', 'service', 'material', 'geo', 'url', 'issues', 'segmentInput');
@@ -119,8 +122,8 @@ function parseJSONPDF($config, $json) {
 		// Set default form properties
 		$pdf->setFormDefaultProp(array('lineWidth' => $lineWidth, 'borderStyle' => 'solid', 'fillColor' => $subheaderColor, 'strokeColor' => $borderColor));
 		$pdf->SetFont($font, $titleFontStyle, $titleFontSize);	// Form title font
-		$pdf->Cell(0, 5, $formTitle, 0, 1, 'C');
-		$pdf->Ln(10);
+		$pdf->MultiCell(0, 5, $formTitle, 0, 'C', 0);
+		$pdf->Ln(5);
 		$pdf->SetFont($font, $bodyFontStyle, $bodyFontSize);	// JSON body font
 
 		// Set border style
@@ -129,7 +132,9 @@ function parseJSONPDF($config, $json) {
 		// Add view-only fields from JSON data. Each "page" contains "elements". Each element contains fields
 		foreach($data->pages as $p)
 			foreach($p->elements as $e)
-				printField($e, $pdf, $knownTypes, $imageTypes, $ignoreTypes, $titleWidth, $titleColor, $subheaderColor, $imageWidth, $imageHeight);
+				printField($e, $pdf, $knownTypes, $imageTypes, $ignoreTypes, $titleWidth, $titleColor, $subheaderColor, $imageWidth, $imageHeight, $font, $bodyFontStyle, $bodyFontSize);
+
+		$pdf->Cell(0, 0.5, '', 'T', false, 'C', 0, '', 0, false, 'T', 'M');
 
 		// Close and output PDF document
 		$pdf->Output($outputName, $outputMode);
@@ -137,7 +142,7 @@ function parseJSONPDF($config, $json) {
 }
 
 
-function printField($e, $pdf, $knownTypes, $imageTypes, $ignoreTypes, $titleWidth, $titleColor, $subheaderColor, $imageWidth, $imageHeight) {
+function printField($e, $pdf, $knownTypes, $imageTypes, $ignoreTypes, $titleWidth, $titleColor, $subheaderColor, $imageWidth, $imageHeight, $font, $bodyFontStyle, $bodyFontSize) {
 	if(isset($e->title) && isset($e->type)) {
 		$title = $e->title;
 		$type = $e->type;
@@ -222,21 +227,29 @@ function printField($e, $pdf, $knownTypes, $imageTypes, $ignoreTypes, $titleWidt
 						$value = $e->value;
 			}
 			$pdf->setCellPaddings(0, 0, 2, 0);					// Set field title right padding
-			// Add images first, then caption if exists, then field title
+			// Add image first, then caption if exists, then field title
 			if(in_array($type, $imageTypes)) {
-				$startX = $titleWidth + 17;						// Print image starting from this X value
+				$startX = $titleWidth + 16;						// Print image starting from this X value
 				for($i = 0; $i < count($imageURL); $i++) {
-					$pdf->Image($imageURL[$i], $startX, $pdf->GetY() + 0.5, $imageWidth, $imageHeight);
-					$caption = isset($imageName[$i]) ? ltrim($imageName[$i]) : '[No caption]';
-					if($type == 'signaturepad')
-						$caption = '';
+					// Image
+					$pdf->Image($imageURL[$i], $startX + 2, $pdf->GetY() + 2.5, $imageWidth, $imageHeight);
+					// Caption
+					$caption = isset($imageName[$i]) ? '   ' . ltrim($imageName[$i]) : '';
 					$pdf->SetX($startX + $imageWidth + 2);		// If exists, print caption from this X value
-					$pdf->SetFillColor(255, 255, 255);			// Add white cells next to images
-					$pdf->Cell(132 - $imageWidth, $imageHeight, $caption, 'T', 0, 'L', 1);
+					$pdf->SetFillColor(255, 255, 255);			// Add a white cell for borders next to image
+					$pdf->Cell(133 - $imageWidth, $imageHeight + 5, $caption, 'TBR', 0, 'L', 1);
+					$y = $pdf->GetY();
+					// Top border: empty cell to fill in small left and right spaces above image
+					$pdf->SetXY($startX - 1, $pdf->GetY());
+					$pdf->SetFillColor(255, 255, 255);			// Add a white cell for border above image
+					$pdf->SetFont($font, $bodyFontStyle, $bodyFontSize);
+					$pdf->Cell($imageWidth + 4, 0.1, '', 'LT', 0, 'L', 1);
+					// Field title
+					$pdf->SetXY(PDF_MARGIN_LEFT, $y);			// Print field title from this XY value
 					$pdf->SetFillColor($titleColor[0], $titleColor[1], $titleColor[2]);
-					$pdf->SetX(PDF_MARGIN_LEFT);				// Print field title from this X value
-					$pdf->setCellPaddings(0, 2, 2, 0);			// Set field title top, right padding
-					$pdf->MultiCell($titleWidth, $imageHeight + 4.5, ltrim($title), 1, 'R', 1);
+					$pdf->SetFont('helvetica', '', 10);
+					$pdf->setCellPaddings(0, 2, 2, 0);			// Set field title top and right padding
+					$pdf->MultiCell($titleWidth, $imageHeight + 5, ltrim($title), 1, 'R', 1);
 				}
 			}
 			// Add normal field values (string or stringied array)
@@ -254,7 +267,7 @@ function printField($e, $pdf, $knownTypes, $imageTypes, $ignoreTypes, $titleWidt
 	// Recursion if "elements" are nested
 	if(isset($e->elements)) {
 		foreach($e->elements as $e2)
-			printField($e2, $pdf, $knownTypes, $imageTypes, $ignoreTypes, $titleWidth, $titleColor, $subheaderColor, $imageWidth, $imageHeight);
+			printField($e2, $pdf, $knownTypes, $imageTypes, $ignoreTypes, $titleWidth, $titleColor, $subheaderColor, $imageWidth, $imageHeight, $font, $bodyFontStyle, $bodyFontSize);
 	}
 	// Recursion if "elements" are nested in "choices" array and "choiceValue" matchs witch selected "value"
 	// When "value" is an array e.g. checkboxes, all "elements" ares printed regardless "choiceValue"
@@ -264,10 +277,10 @@ function printField($e, $pdf, $knownTypes, $imageTypes, $ignoreTypes, $titleWidt
 			if(isset($c->choiceValue) && isset($c->elements)) {
 				if(gettype($e->value) == 'array')
 					foreach($c->elements as $e3)
-						printField($e3, $pdf, $knownTypes, $imageTypes, $ignoreTypes, $titleWidth, $titleColor, $subheaderColor, $imageWidth, $imageHeight);
+						printField($e3, $pdf, $knownTypes, $imageTypes, $ignoreTypes, $titleWidth, $titleColor, $subheaderColor, $imageWidth, $imageHeight, $font, $bodyFontStyle, $bodyFontSize);
 				elseif($choiceValue == $c->choiceValue)
 					foreach($c->elements as $e3)
-						printField($e3, $pdf, $knownTypes, $imageTypes, $ignoreTypes, $titleWidth, $titleColor, $subheaderColor, $imageWidth, $imageHeight);
+						printField($e3, $pdf, $knownTypes, $imageTypes, $ignoreTypes, $titleWidth, $titleColor, $subheaderColor, $imageWidth, $imageHeight, $font, $bodyFontStyle, $bodyFontSize);
 			}
 		}
 	}
