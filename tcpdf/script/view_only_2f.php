@@ -134,6 +134,7 @@ function parseJSONPDF($config, $json) {
 			foreach($p->elements as $e)
 				printField($e, $pdf, $knownTypes, $imageTypes, $ignoreTypes, $titleWidth, $titleColor, $subheaderColor, $imageWidth, $imageHeight, $font, $bodyFontStyle, $bodyFontSize);
 
+		// Add bottom border below the last cell. MultiCell() do have this border but Image() don't
 		$pdf->Cell(0, 0.5, '', 'T', false, 'C', 0, '', 0, false, 'T', 'M');
 
 		// Close and output PDF document
