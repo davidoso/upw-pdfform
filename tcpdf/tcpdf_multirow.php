@@ -3,7 +3,7 @@ class MYPDF extends TCPDF {
 
     public function MultiRow($leftWidth, $left, $right) {
         // Disable auto page break if cell size can't fit on current page
-        if($this->GetY() + 10 > 264.5) {
+        if($this->GetY() > 253) {
             $this->AddPage();
         }
         $page_start = $this->getPage();
@@ -19,6 +19,16 @@ class MYPDF extends TCPDF {
 		$this->MultiCell(0, $y_end_1 - $y_start, $right, 'TBR', 'L', 0, 1, $this->GetX() ,$y_start, true, 0);
         $page_end_2 = $this->getPage();
         $y_end_2 = $this->GetY();
+        // Increase field title cell (left) in case value cell (right) is longer
+        if($y_end_2 > $y_end_1 && $page_end_1 == $page_end_2) {
+            // Write the left cell
+            $this->SetXY(15, $y_start);
+            $this->setCellPaddings(0, 2, 2, 0);
+            $this->MultiCell($leftWidth, $y_end_2 - $y_start, '', 1, 'R', 1, 2, '', '', true, 0);
+            $page_end_1 = $this->getPage();
+            $y_end_1 = $this->GetY();
+            $this->SetX(15);
+        }
         // Set the new row position by case
         if(max($page_end_1,$page_end_2) == $page_start) {
             $ynew = max($y_end_1, $y_end_2);

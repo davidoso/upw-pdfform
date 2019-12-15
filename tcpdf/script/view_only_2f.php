@@ -232,6 +232,13 @@ function printField($e, $pdf, $knownTypes, $imageTypes, $ignoreTypes, $titleWidt
 			if(in_array($type, $imageTypes)) {
 				$startX = $titleWidth + 16;						// Print image starting from this X value
 				for($i = 0; $i < count($imageURL); $i++) {
+					// Disable auto page break if cell size can't fit on current page
+					if($pdf->GetY() + $imageHeight > 253) {
+						$pdf->SetXY($startX - 1, $pdf->GetY());
+						$pdf->SetFillColor(255, 255, 255);		// Add a white cell for border below image
+						$pdf->Cell($imageWidth + 4, 0.1, '', 'T', 0, 'L', 1);
+						$pdf->AddPage();
+					}
 					// Image
 					$pdf->Image($imageURL[$i], $startX + 2, $pdf->GetY() + 2.5, $imageWidth, $imageHeight);
 					// Caption
