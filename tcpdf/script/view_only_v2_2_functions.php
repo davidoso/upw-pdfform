@@ -11,8 +11,8 @@ require_once('../tcpdf_include.php');
 require_once('../tcpdf_multirow.php');
 
 // NOTE: Example how to call script and customize input parameters
-$json = array("filepath" => "Samples/1st.json");
 $config = array("headerLogo" => "other_company.png");
+$json = array("filepath" => "Samples/1st.json");
 parseJSONPDF($config, $json);
 
 
@@ -55,6 +55,7 @@ function parseJSONPDF($config, $json) {
 		$filepath = $json['filepath'];
 		$headerTitle = isset($json['headerTitle']) ? $json['headerTitle'] : 'Default header title';
 		$formTitle = isset($json['formTitle']) ? $json['formTitle'] : 'Default form title';
+
 		// Config parameters
 		$outputName = isset($config['outputName']) ? $config['outputName'] : 'Custom form.pdf';
 		$outputMode = isset($config['outputMode']) ? $config['outputMode'] : 'I';
@@ -72,6 +73,7 @@ function parseJSONPDF($config, $json) {
 		$bodyFontStyle = isset($config['bodyFontStyle']) ? $config['bodyFontStyle'] : '';
 		$bodyFontSize = isset($config['bodyFontSize']) ? $config['bodyFontSize'] : 10;
 		$headerLogo = isset($config['headerLogo']) ? $config['headerLogo'] : 'sf_logo.png';
+
 		// Fixed constants (non parameters)
 		// Switch on printField() only works with these types, unless the object contains a "value" key also
 		$knownTypes = array('text', 'comment', 'radiogroup', 'checkbox', 'dropdown', 'dropdownmultiple', 'file', 'signaturepad', 'sketch', 'service', 'material', 'geo', 'url', 'issues', 'segmentInput');
